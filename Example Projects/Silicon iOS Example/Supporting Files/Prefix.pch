@@ -1,0 +1,10 @@
+//
+// Prefix header for all source files in the 'Silicon iOS Example' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+	#import <QuartzCore/QuartzCore.h>
+	#import <UIKIt/UIKit.h>
+	#import <Silicon/Silicon.h>
+#endif
