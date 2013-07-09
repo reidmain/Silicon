@@ -88,8 +88,8 @@
 		2794FC591789F9060015146A /* launch_ipad-Portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch_ipad-Portrait@2x.png"; sourceTree = "<group>"; };
 		2794FC5B1789F9060015146A /* launch_ipad-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch_ipad-Landscape@2x.png"; sourceTree = "<group>"; };
 		2794FC6C178A22500015146A /* Silicon Static Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Silicon Static Library.xcodeproj"; path = "../../Static Library Project/Silicon Static Library.xcodeproj"; sourceTree = "<group>"; };
-		2794FC75178A22C70015146A /* FDRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FDRootViewController.h; path = ../../../../../../../../Documents/FDRootViewController.h; sourceTree = "<group>"; };
-		2794FC76178A22C70015146A /* FDRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FDRootViewController.m; path = ../../../../../../../../Documents/FDRootViewController.m; sourceTree = "<group>"; };
+		2794FC75178A22C70015146A /* FDRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDRootViewController.h; sourceTree = "<group>"; };
+		2794FC76178A22C70015146A /* FDRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDRootViewController.m; sourceTree = "<group>"; };
 		2794FC79178A23F90015146A /* FDRootView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FDRootView_iPad.xib; sourceTree = "<group>"; };
 		2794FC7B178A24040015146A /* FDRootView_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FDRootView_iPhone.xib; sourceTree = "<group>"; };
 		2794FC7D178A24120015146A /* FDRootViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDRootViewController_iPhone.h; sourceTree = "<group>"; };
