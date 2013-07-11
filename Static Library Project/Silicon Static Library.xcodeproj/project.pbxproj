@@ -47,7 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		272FBB1E1786611E002EAF62 /* libSilicon Static Library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libSilicon Static Library.a"; path = libSilicon.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		272FBB1E1786611E002EAF62 /* libSilicon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSilicon.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		272FBB211786611E002EAF62 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		272FBB251786611E002EAF62 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		272FBB33178662E3002EAF62 /* Silicon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Silicon.h; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 		272FBB1F1786611E002EAF62 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				272FBB1E1786611E002EAF62 /* libSilicon Static Library.a */,
+				272FBB1E1786611E002EAF62 /* libSilicon.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -192,7 +192,7 @@
 			);
 			name = Silicon;
 			productName = "Silicon Static Library";
-			productReference = 272FBB1E1786611E002EAF62 /* libSilicon Static Library.a */;
+			productReference = 272FBB1E1786611E002EAF62 /* libSilicon.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
