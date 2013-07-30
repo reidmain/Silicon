@@ -15,6 +15,9 @@
 		272FBB601786663B002EAF62 /* FDSQLiteDatabase.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 272FBB561786661A002EAF62 /* FDSQLiteDatabase.h */; };
 		272FBB611786663B002EAF62 /* FDStatementResult.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 272FBB591786661A002EAF62 /* FDStatementResult.h */; };
 		272FBB621786663B002EAF62 /* NSArray+Accessing.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 272FBB5B1786661A002EAF62 /* NSArray+Accessing.h */; };
+		275160F517A769B500CB1A4E /* FDWeakMutableArray.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27B551DD17A7180F0061F95A /* FDWeakMutableArray.h */; };
+		275160F617A769B500CB1A4E /* FDWeakMutableDictionary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27B551E017A7191B0061F95A /* FDWeakMutableDictionary.h */; };
+		275160F717A76ACD00CB1A4E /* FDWeakReference.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27B551D617A7166C0061F95A /* FDWeakReference.h */; };
 		2794FBE01789DC3D0015146A /* NSBundle+Universal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794FBDF1789DC3D0015146A /* NSBundle+Universal.m */; };
 		2794FBE21789DD0C0015146A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2794FBE11789DD0C0015146A /* UIKit.framework */; };
 		2794FBF01789E2F60015146A /* UIDevice+Family.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794FBEF1789E2F60015146A /* UIDevice+Family.m */; };
@@ -24,6 +27,9 @@
 		2794FC84178A248F0015146A /* NSBundle+Universal.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2794FBDE1789DC3D0015146A /* NSBundle+Universal.h */; };
 		2794FC85178A248F0015146A /* UIDevice+Family.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2794FBEE1789E2F60015146A /* UIDevice+Family.h */; };
 		2794FC86178A248F0015146A /* UITableViewCell+Universal.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2794FBF11789E9C70015146A /* UITableViewCell+Universal.h */; };
+		27B551D817A7166C0061F95A /* FDWeakReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B551D717A7166C0061F95A /* FDWeakReference.m */; };
+		27B551DF17A7180F0061F95A /* FDWeakMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B551DE17A7180F0061F95A /* FDWeakMutableArray.m */; };
+		27B551E217A7191B0061F95A /* FDWeakMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B551E117A7191B0061F95A /* FDWeakMutableDictionary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +39,9 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				275160F717A76ACD00CB1A4E /* FDWeakReference.h in CopyFiles */,
+				275160F517A769B500CB1A4E /* FDWeakMutableArray.h in CopyFiles */,
+				275160F617A769B500CB1A4E /* FDWeakMutableDictionary.h in CopyFiles */,
 				2794FC83178A248F0015146A /* FDViewController.h in CopyFiles */,
 				2794FC84178A248F0015146A /* NSBundle+Universal.h in CopyFiles */,
 				2794FC85178A248F0015146A /* UIDevice+Family.h in CopyFiles */,
@@ -67,6 +76,12 @@
 		2794FBF21789E9C70015146A /* UITableViewCell+Universal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Universal.m"; sourceTree = "<group>"; };
 		2794FBF81789F2C60015146A /* FDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDViewController.h; sourceTree = "<group>"; };
 		2794FBF91789F2C60015146A /* FDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDViewController.m; sourceTree = "<group>"; };
+		27B551D617A7166C0061F95A /* FDWeakReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDWeakReference.h; sourceTree = "<group>"; };
+		27B551D717A7166C0061F95A /* FDWeakReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDWeakReference.m; sourceTree = "<group>"; };
+		27B551DD17A7180F0061F95A /* FDWeakMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDWeakMutableArray.h; sourceTree = "<group>"; };
+		27B551DE17A7180F0061F95A /* FDWeakMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDWeakMutableArray.m; sourceTree = "<group>"; };
+		27B551E017A7191B0061F95A /* FDWeakMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDWeakMutableDictionary.h; sourceTree = "<group>"; };
+		27B551E117A7191B0061F95A /* FDWeakMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDWeakMutableDictionary.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +144,7 @@
 		272FBB31178661E0002EAF62 /* Silicon */ = {
 			isa = PBXGroup;
 			children = (
+				27B551D517A7165D0061F95A /* Common */,
 				272FBB63178701B0002EAF62 /* Controllers */,
 				272FBB6417870306002EAF62 /* Categories */,
 				272FBB551786661A002EAF62 /* FDSQLiteDatabase */,
@@ -173,6 +189,20 @@
 			);
 			name = Categories;
 			path = ../../Silicon/Categories;
+			sourceTree = "<group>";
+		};
+		27B551D517A7165D0061F95A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				27B551D617A7166C0061F95A /* FDWeakReference.h */,
+				27B551D717A7166C0061F95A /* FDWeakReference.m */,
+				27B551DD17A7180F0061F95A /* FDWeakMutableArray.h */,
+				27B551DE17A7180F0061F95A /* FDWeakMutableArray.m */,
+				27B551E017A7191B0061F95A /* FDWeakMutableDictionary.h */,
+				27B551E117A7191B0061F95A /* FDWeakMutableDictionary.m */,
+			);
+			name = Common;
+			path = ../../Silicon/Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +263,9 @@
 				2794FBF01789E2F60015146A /* UIDevice+Family.m in Sources */,
 				2794FBF31789E9C70015146A /* UITableViewCell+Universal.m in Sources */,
 				2794FBFA1789F2C60015146A /* FDViewController.m in Sources */,
+				27B551D817A7166C0061F95A /* FDWeakReference.m in Sources */,
+				27B551DF17A7180F0061F95A /* FDWeakMutableArray.m in Sources */,
+				27B551E217A7191B0061F95A /* FDWeakMutableDictionary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

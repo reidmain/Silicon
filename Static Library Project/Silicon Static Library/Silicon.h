@@ -1,2 +1,5 @@
+#import "FDWeakReference.h"
+#import "FDWeakMutableArray.h"
+#import "FDWeakMutableDictionary.h"
 #import "FDViewController.h"
 #import "FDSQLiteDatabase.h"
