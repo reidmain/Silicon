@@ -1,3 +1,6 @@
 [submodule "Vendors/FDSQLiteDatabase"]
 	path = Vendors/FDSQLiteDatabase
 	url = git@github.com:reidmain/FDSQLiteDatabase.git
+[submodule "Vendors/FDDataClient"]
+	path = Vendors/FDDataClient
+	url = git@github.com:reidmain/FDDataClient.git

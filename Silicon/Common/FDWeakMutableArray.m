@@ -1,5 +1,5 @@
 #import "FDWeakMutableArray.h"
-#import "FDWeakReference.h"
+#import <FDFoundationKit/FDWeakReference.h>
 
 
 #pragma mark Class Definition

@@ -9,15 +9,9 @@
 /* Begin PBXBuildFile section */
 		272FBB221786611E002EAF62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272FBB211786611E002EAF62 /* Foundation.framework */; };
 		272FBB34178662F9002EAF62 /* Silicon.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 272FBB33178662E3002EAF62 /* Silicon.h */; };
-		272FBB5D1786661A002EAF62 /* FDSQLiteDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 272FBB571786661A002EAF62 /* FDSQLiteDatabase.m */; };
-		272FBB5E1786661A002EAF62 /* FDStatementResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 272FBB5A1786661A002EAF62 /* FDStatementResult.m */; };
-		272FBB5F1786661A002EAF62 /* NSArray+Accessing.m in Sources */ = {isa = PBXBuildFile; fileRef = 272FBB5C1786661A002EAF62 /* NSArray+Accessing.m */; };
-		272FBB601786663B002EAF62 /* FDSQLiteDatabase.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 272FBB561786661A002EAF62 /* FDSQLiteDatabase.h */; };
-		272FBB611786663B002EAF62 /* FDStatementResult.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 272FBB591786661A002EAF62 /* FDStatementResult.h */; };
-		272FBB621786663B002EAF62 /* NSArray+Accessing.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 272FBB5B1786661A002EAF62 /* NSArray+Accessing.h */; };
 		275160F517A769B500CB1A4E /* FDWeakMutableArray.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27B551DD17A7180F0061F95A /* FDWeakMutableArray.h */; };
-		275160F617A769B500CB1A4E /* FDWeakMutableDictionary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27B551E017A7191B0061F95A /* FDWeakMutableDictionary.h */; };
-		275160F717A76ACD00CB1A4E /* FDWeakReference.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27B551D617A7166C0061F95A /* FDWeakReference.h */; };
+		278543FF18C4D455000B3EA6 /* libFDDataClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 278543FA18C4D435000B3EA6 /* libFDDataClient.a */; };
+		2785440018C4D455000B3EA6 /* libFDSQLiteDatabase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 278543F318C4D42E000B3EA6 /* libFDSQLiteDatabase.a */; };
 		2794FBE01789DC3D0015146A /* NSBundle+Universal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794FBDF1789DC3D0015146A /* NSBundle+Universal.m */; };
 		2794FBE21789DD0C0015146A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2794FBE11789DD0C0015146A /* UIKit.framework */; };
 		2794FBF01789E2F60015146A /* UIDevice+Family.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794FBEF1789E2F60015146A /* UIDevice+Family.m */; };
@@ -27,10 +21,39 @@
 		2794FC84178A248F0015146A /* NSBundle+Universal.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2794FBDE1789DC3D0015146A /* NSBundle+Universal.h */; };
 		2794FC85178A248F0015146A /* UIDevice+Family.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2794FBEE1789E2F60015146A /* UIDevice+Family.h */; };
 		2794FC86178A248F0015146A /* UITableViewCell+Universal.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2794FBF11789E9C70015146A /* UITableViewCell+Universal.h */; };
-		27B551D817A7166C0061F95A /* FDWeakReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B551D717A7166C0061F95A /* FDWeakReference.m */; };
 		27B551DF17A7180F0061F95A /* FDWeakMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B551DE17A7180F0061F95A /* FDWeakMutableArray.m */; };
-		27B551E217A7191B0061F95A /* FDWeakMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B551E117A7191B0061F95A /* FDWeakMutableDictionary.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		278543F218C4D42E000B3EA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 278543ED18C4D42E000B3EA6 /* FDSQLiteDatabase Static Library.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27A86A70177E67A400C56658;
+			remoteInfo = FDSQLiteDatabase;
+		};
+		278543F918C4D435000B3EA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 278543F418C4D435000B3EA6 /* FDDataClient Static Library.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27D82F5318A5B083004A9D05;
+			remoteInfo = FDDataClient;
+		};
+		278543FB18C4D44D000B3EA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 278543F418C4D435000B3EA6 /* FDDataClient Static Library.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 27D82F5218A5B083004A9D05;
+			remoteInfo = FDDataClient;
+		};
+		278543FD18C4D44F000B3EA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 278543ED18C4D42E000B3EA6 /* FDSQLiteDatabase Static Library.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 27A86A6F177E67A400C56658;
+			remoteInfo = FDSQLiteDatabase;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		272FBB1C1786611E002EAF62 /* CopyFiles */ = {
@@ -39,16 +62,11 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				275160F717A76ACD00CB1A4E /* FDWeakReference.h in CopyFiles */,
 				275160F517A769B500CB1A4E /* FDWeakMutableArray.h in CopyFiles */,
-				275160F617A769B500CB1A4E /* FDWeakMutableDictionary.h in CopyFiles */,
 				2794FC83178A248F0015146A /* FDViewController.h in CopyFiles */,
 				2794FC84178A248F0015146A /* NSBundle+Universal.h in CopyFiles */,
 				2794FC85178A248F0015146A /* UIDevice+Family.h in CopyFiles */,
 				2794FC86178A248F0015146A /* UITableViewCell+Universal.h in CopyFiles */,
-				272FBB601786663B002EAF62 /* FDSQLiteDatabase.h in CopyFiles */,
-				272FBB611786663B002EAF62 /* FDStatementResult.h in CopyFiles */,
-				272FBB621786663B002EAF62 /* NSArray+Accessing.h in CopyFiles */,
 				272FBB34178662F9002EAF62 /* Silicon.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,13 +78,8 @@
 		272FBB211786611E002EAF62 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		272FBB251786611E002EAF62 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		272FBB33178662E3002EAF62 /* Silicon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Silicon.h; sourceTree = "<group>"; };
-		272FBB561786661A002EAF62 /* FDSQLiteDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSQLiteDatabase.h; sourceTree = "<group>"; };
-		272FBB571786661A002EAF62 /* FDSQLiteDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSQLiteDatabase.m; sourceTree = "<group>"; };
-		272FBB581786661A002EAF62 /* FDStatementResult+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FDStatementResult+Private.h"; sourceTree = "<group>"; };
-		272FBB591786661A002EAF62 /* FDStatementResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDStatementResult.h; sourceTree = "<group>"; };
-		272FBB5A1786661A002EAF62 /* FDStatementResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDStatementResult.m; sourceTree = "<group>"; };
-		272FBB5B1786661A002EAF62 /* NSArray+Accessing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Accessing.h"; sourceTree = "<group>"; };
-		272FBB5C1786661A002EAF62 /* NSArray+Accessing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Accessing.m"; sourceTree = "<group>"; };
+		278543ED18C4D42E000B3EA6 /* FDSQLiteDatabase Static Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "FDSQLiteDatabase Static Library.xcodeproj"; path = "FDSQLiteDatabase/Static Library Project/FDSQLiteDatabase Static Library.xcodeproj"; sourceTree = "<group>"; };
+		278543F418C4D435000B3EA6 /* FDDataClient Static Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "FDDataClient Static Library.xcodeproj"; path = "FDDataClient/Static Library Project/FDDataClient Static Library.xcodeproj"; sourceTree = "<group>"; };
 		2794FBDE1789DC3D0015146A /* NSBundle+Universal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Universal.h"; sourceTree = "<group>"; };
 		2794FBDF1789DC3D0015146A /* NSBundle+Universal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Universal.m"; sourceTree = "<group>"; };
 		2794FBE11789DD0C0015146A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -76,12 +89,8 @@
 		2794FBF21789E9C70015146A /* UITableViewCell+Universal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Universal.m"; sourceTree = "<group>"; };
 		2794FBF81789F2C60015146A /* FDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDViewController.h; sourceTree = "<group>"; };
 		2794FBF91789F2C60015146A /* FDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDViewController.m; sourceTree = "<group>"; };
-		27B551D617A7166C0061F95A /* FDWeakReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDWeakReference.h; sourceTree = "<group>"; };
-		27B551D717A7166C0061F95A /* FDWeakReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDWeakReference.m; sourceTree = "<group>"; };
 		27B551DD17A7180F0061F95A /* FDWeakMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDWeakMutableArray.h; sourceTree = "<group>"; };
 		27B551DE17A7180F0061F95A /* FDWeakMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDWeakMutableArray.m; sourceTree = "<group>"; };
-		27B551E017A7191B0061F95A /* FDWeakMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDWeakMutableDictionary.h; sourceTree = "<group>"; };
-		27B551E117A7191B0061F95A /* FDWeakMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDWeakMutableDictionary.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +100,8 @@
 			files = (
 				272FBB221786611E002EAF62 /* Foundation.framework in Frameworks */,
 				2794FBE21789DD0C0015146A /* UIKit.framework in Frameworks */,
+				278543FF18C4D455000B3EA6 /* libFDDataClient.a in Frameworks */,
+				2785440018C4D455000B3EA6 /* libFDSQLiteDatabase.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +139,7 @@
 			children = (
 				272FBB33178662E3002EAF62 /* Silicon.h */,
 				272FBB31178661E0002EAF62 /* Silicon */,
+				2785435618C4D420000B3EA6 /* Vendors */,
 				272FBB241786611E002EAF62 /* Supporting Files */,
 			);
 			path = "Silicon Static Library";
@@ -147,24 +159,8 @@
 				27B551D517A7165D0061F95A /* Common */,
 				272FBB63178701B0002EAF62 /* Controllers */,
 				272FBB6417870306002EAF62 /* Categories */,
-				272FBB551786661A002EAF62 /* FDSQLiteDatabase */,
 			);
 			name = Silicon;
-			sourceTree = "<group>";
-		};
-		272FBB551786661A002EAF62 /* FDSQLiteDatabase */ = {
-			isa = PBXGroup;
-			children = (
-				272FBB561786661A002EAF62 /* FDSQLiteDatabase.h */,
-				272FBB571786661A002EAF62 /* FDSQLiteDatabase.m */,
-				272FBB581786661A002EAF62 /* FDStatementResult+Private.h */,
-				272FBB591786661A002EAF62 /* FDStatementResult.h */,
-				272FBB5A1786661A002EAF62 /* FDStatementResult.m */,
-				272FBB5B1786661A002EAF62 /* NSArray+Accessing.h */,
-				272FBB5C1786661A002EAF62 /* NSArray+Accessing.m */,
-			);
-			name = FDSQLiteDatabase;
-			path = ../../Vendors/FDSQLiteDatabase/FDSQLiteDatabase;
 			sourceTree = "<group>";
 		};
 		272FBB63178701B0002EAF62 /* Controllers */ = {
@@ -191,15 +187,37 @@
 			path = ../../Silicon/Categories;
 			sourceTree = "<group>";
 		};
+		2785435618C4D420000B3EA6 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				278543F418C4D435000B3EA6 /* FDDataClient Static Library.xcodeproj */,
+				278543ED18C4D42E000B3EA6 /* FDSQLiteDatabase Static Library.xcodeproj */,
+			);
+			name = Vendors;
+			path = ../../Vendors;
+			sourceTree = "<group>";
+		};
+		278543EE18C4D42E000B3EA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				278543F318C4D42E000B3EA6 /* libFDSQLiteDatabase.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		278543F518C4D435000B3EA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				278543FA18C4D435000B3EA6 /* libFDDataClient.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		27B551D517A7165D0061F95A /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				27B551D617A7166C0061F95A /* FDWeakReference.h */,
-				27B551D717A7166C0061F95A /* FDWeakReference.m */,
 				27B551DD17A7180F0061F95A /* FDWeakMutableArray.h */,
 				27B551DE17A7180F0061F95A /* FDWeakMutableArray.m */,
-				27B551E017A7191B0061F95A /* FDWeakMutableDictionary.h */,
-				27B551E117A7191B0061F95A /* FDWeakMutableDictionary.m */,
 			);
 			name = Common;
 			path = ../../Silicon/Common;
@@ -219,6 +237,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				278543FC18C4D44D000B3EA6 /* PBXTargetDependency */,
+				278543FE18C4D44F000B3EA6 /* PBXTargetDependency */,
 			);
 			name = Silicon;
 			productName = "Silicon Static Library";
@@ -244,6 +264,16 @@
 			mainGroup = 272FBB151786611E002EAF62;
 			productRefGroup = 272FBB1F1786611E002EAF62 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 278543F518C4D435000B3EA6 /* Products */;
+					ProjectRef = 278543F418C4D435000B3EA6 /* FDDataClient Static Library.xcodeproj */;
+				},
+				{
+					ProductGroup = 278543EE18C4D42E000B3EA6 /* Products */;
+					ProjectRef = 278543ED18C4D42E000B3EA6 /* FDSQLiteDatabase Static Library.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				272FBB1D1786611E002EAF62 /* Silicon */,
@@ -251,52 +281,80 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		278543F318C4D42E000B3EA6 /* libFDSQLiteDatabase.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFDSQLiteDatabase.a;
+			remoteRef = 278543F218C4D42E000B3EA6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		278543FA18C4D435000B3EA6 /* libFDDataClient.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFDDataClient.a;
+			remoteRef = 278543F918C4D435000B3EA6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXSourcesBuildPhase section */
 		272FBB1A1786611E002EAF62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				272FBB5D1786661A002EAF62 /* FDSQLiteDatabase.m in Sources */,
-				272FBB5E1786661A002EAF62 /* FDStatementResult.m in Sources */,
-				272FBB5F1786661A002EAF62 /* NSArray+Accessing.m in Sources */,
 				2794FBE01789DC3D0015146A /* NSBundle+Universal.m in Sources */,
 				2794FBF01789E2F60015146A /* UIDevice+Family.m in Sources */,
 				2794FBF31789E9C70015146A /* UITableViewCell+Universal.m in Sources */,
 				2794FBFA1789F2C60015146A /* FDViewController.m in Sources */,
-				27B551D817A7166C0061F95A /* FDWeakReference.m in Sources */,
 				27B551DF17A7180F0061F95A /* FDWeakMutableArray.m in Sources */,
-				27B551E217A7191B0061F95A /* FDWeakMutableDictionary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		278543FC18C4D44D000B3EA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FDDataClient;
+			targetProxy = 278543FB18C4D44D000B3EA6 /* PBXContainerItemProxy */;
+		};
+		278543FE18C4D44F000B3EA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FDSQLiteDatabase;
+			targetProxy = 278543FD18C4D44F000B3EA6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		272FBB2A1786611E002EAF62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -306,20 +364,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
