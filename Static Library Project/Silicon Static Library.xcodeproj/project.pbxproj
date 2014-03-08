@@ -12,6 +12,7 @@
 		275160F517A769B500CB1A4E /* FDWeakMutableArray.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27B551DD17A7180F0061F95A /* FDWeakMutableArray.h */; };
 		278543FF18C4D455000B3EA6 /* libFDDataClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 278543FA18C4D435000B3EA6 /* libFDDataClient.a */; };
 		2785440018C4D455000B3EA6 /* libFDSQLiteDatabase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 278543F318C4D42E000B3EA6 /* libFDSQLiteDatabase.a */; };
+		278AFC9F18CAB842009571FE /* libFDKeychain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 278AFC9C18CAB82C009571FE /* libFDKeychain.a */; };
 		2794FBE01789DC3D0015146A /* NSBundle+Universal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794FBDF1789DC3D0015146A /* NSBundle+Universal.m */; };
 		2794FBE21789DD0C0015146A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2794FBE11789DD0C0015146A /* UIKit.framework */; };
 		2794FBF01789E2F60015146A /* UIDevice+Family.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794FBEF1789E2F60015146A /* UIDevice+Family.m */; };
@@ -53,6 +54,20 @@
 			remoteGlobalIDString = 27A86A6F177E67A400C56658;
 			remoteInfo = FDSQLiteDatabase;
 		};
+		278AFC9B18CAB82C009571FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 278AFC9718CAB82C009571FE /* FDKeychain Static Library.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27F5117916AF1FEE00B05F89;
+			remoteInfo = FDKeychain;
+		};
+		278AFC9D18CAB83A009571FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 278AFC9718CAB82C009571FE /* FDKeychain Static Library.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 27F5117816AF1FEE00B05F89;
+			remoteInfo = FDKeychain;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -80,6 +95,7 @@
 		272FBB33178662E3002EAF62 /* Silicon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Silicon.h; sourceTree = "<group>"; };
 		278543ED18C4D42E000B3EA6 /* FDSQLiteDatabase Static Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "FDSQLiteDatabase Static Library.xcodeproj"; path = "FDSQLiteDatabase/Static Library Project/FDSQLiteDatabase Static Library.xcodeproj"; sourceTree = "<group>"; };
 		278543F418C4D435000B3EA6 /* FDDataClient Static Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "FDDataClient Static Library.xcodeproj"; path = "FDDataClient/Static Library Project/FDDataClient Static Library.xcodeproj"; sourceTree = "<group>"; };
+		278AFC9718CAB82C009571FE /* FDKeychain Static Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "FDKeychain Static Library.xcodeproj"; path = "FDKeychain/Static Library Project/FDKeychain Static Library.xcodeproj"; sourceTree = "<group>"; };
 		2794FBDE1789DC3D0015146A /* NSBundle+Universal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Universal.h"; sourceTree = "<group>"; };
 		2794FBDF1789DC3D0015146A /* NSBundle+Universal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Universal.m"; sourceTree = "<group>"; };
 		2794FBE11789DD0C0015146A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -100,6 +116,7 @@
 			files = (
 				272FBB221786611E002EAF62 /* Foundation.framework in Frameworks */,
 				2794FBE21789DD0C0015146A /* UIKit.framework in Frameworks */,
+				278AFC9F18CAB842009571FE /* libFDKeychain.a in Frameworks */,
 				278543FF18C4D455000B3EA6 /* libFDDataClient.a in Frameworks */,
 				2785440018C4D455000B3EA6 /* libFDSQLiteDatabase.a in Frameworks */,
 			);
@@ -190,6 +207,7 @@
 		2785435618C4D420000B3EA6 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				278AFC9718CAB82C009571FE /* FDKeychain Static Library.xcodeproj */,
 				278543F418C4D435000B3EA6 /* FDDataClient Static Library.xcodeproj */,
 				278543ED18C4D42E000B3EA6 /* FDSQLiteDatabase Static Library.xcodeproj */,
 			);
@@ -209,6 +227,14 @@
 			isa = PBXGroup;
 			children = (
 				278543FA18C4D435000B3EA6 /* libFDDataClient.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		278AFC9818CAB82C009571FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				278AFC9C18CAB82C009571FE /* libFDKeychain.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -237,6 +263,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				278AFC9E18CAB83A009571FE /* PBXTargetDependency */,
 				278543FC18C4D44D000B3EA6 /* PBXTargetDependency */,
 				278543FE18C4D44F000B3EA6 /* PBXTargetDependency */,
 			);
@@ -270,6 +297,10 @@
 					ProjectRef = 278543F418C4D435000B3EA6 /* FDDataClient Static Library.xcodeproj */;
 				},
 				{
+					ProductGroup = 278AFC9818CAB82C009571FE /* Products */;
+					ProjectRef = 278AFC9718CAB82C009571FE /* FDKeychain Static Library.xcodeproj */;
+				},
+				{
 					ProductGroup = 278543EE18C4D42E000B3EA6 /* Products */;
 					ProjectRef = 278543ED18C4D42E000B3EA6 /* FDSQLiteDatabase Static Library.xcodeproj */;
 				},
@@ -294,6 +325,13 @@
 			fileType = archive.ar;
 			path = libFDDataClient.a;
 			remoteRef = 278543F918C4D435000B3EA6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		278AFC9C18CAB82C009571FE /* libFDKeychain.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFDKeychain.a;
+			remoteRef = 278AFC9B18CAB82C009571FE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -323,6 +361,11 @@
 			isa = PBXTargetDependency;
 			name = FDSQLiteDatabase;
 			targetProxy = 278543FD18C4D44F000B3EA6 /* PBXContainerItemProxy */;
+		};
+		278AFC9E18CAB83A009571FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FDKeychain;
+			targetProxy = 278AFC9D18CAB83A009571FE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

@@ -4,3 +4,6 @@
 [submodule "Vendors/FDDataClient"]
 	path = Vendors/FDDataClient
 	url = git@github.com:reidmain/FDDataClient.git
+[submodule "Vendors/FDKeychain"]
+	path = Vendors/FDKeychain
+	url = git@github.com:reidmain/FDKeychain.git
