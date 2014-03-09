@@ -1,3 +1,4 @@
+#import <FDKeychain/FDKeychain.h>
 #import <FDDataClient/FDDataClient.h>
 #import <FDSQLiteDatabase/FDSQLiteDatabase.h>
 
