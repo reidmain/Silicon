@@ -23,6 +23,8 @@
 		2794FC85178A248F0015146A /* UIDevice+Family.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2794FBEE1789E2F60015146A /* UIDevice+Family.h */; };
 		2794FC86178A248F0015146A /* UITableViewCell+Universal.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2794FBF11789E9C70015146A /* UITableViewCell+Universal.h */; };
 		27B551DF17A7180F0061F95A /* FDWeakMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B551DE17A7180F0061F95A /* FDWeakMutableArray.m */; };
+		27EAC5F418D92E480085C7B6 /* FDActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 27EAC5F318D92E480085C7B6 /* FDActionSheet.m */; };
+		27EAC5F518D934350085C7B6 /* FDActionSheet.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27EAC5F218D92E480085C7B6 /* FDActionSheet.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,7 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				27EAC5F518D934350085C7B6 /* FDActionSheet.h in CopyFiles */,
 				275160F517A769B500CB1A4E /* FDWeakMutableArray.h in CopyFiles */,
 				2794FC83178A248F0015146A /* FDViewController.h in CopyFiles */,
 				2794FC84178A248F0015146A /* NSBundle+Universal.h in CopyFiles */,
@@ -107,6 +110,8 @@
 		2794FBF91789F2C60015146A /* FDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDViewController.m; sourceTree = "<group>"; };
 		27B551DD17A7180F0061F95A /* FDWeakMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDWeakMutableArray.h; sourceTree = "<group>"; };
 		27B551DE17A7180F0061F95A /* FDWeakMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDWeakMutableArray.m; sourceTree = "<group>"; };
+		27EAC5F218D92E480085C7B6 /* FDActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDActionSheet.h; sourceTree = "<group>"; };
+		27EAC5F318D92E480085C7B6 /* FDActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDActionSheet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +180,7 @@
 			children = (
 				27B551D517A7165D0061F95A /* Common */,
 				272FBB63178701B0002EAF62 /* Controllers */,
+				27EAC5F118D92E020085C7B6 /* Controls */,
 				272FBB6417870306002EAF62 /* Categories */,
 			);
 			name = Silicon;
@@ -247,6 +253,16 @@
 			);
 			name = Common;
 			path = ../../Silicon/Common;
+			sourceTree = "<group>";
+		};
+		27EAC5F118D92E020085C7B6 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				27EAC5F218D92E480085C7B6 /* FDActionSheet.h */,
+				27EAC5F318D92E480085C7B6 /* FDActionSheet.m */,
+			);
+			name = Controls;
+			path = ../../Silicon/Controls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,6 +362,7 @@
 				2794FBF31789E9C70015146A /* UITableViewCell+Universal.m in Sources */,
 				2794FBFA1789F2C60015146A /* FDViewController.m in Sources */,
 				27B551DF17A7180F0061F95A /* FDWeakMutableArray.m in Sources */,
+				27EAC5F418D92E480085C7B6 /* FDActionSheet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
