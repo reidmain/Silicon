@@ -13,6 +13,8 @@
 		278543FF18C4D455000B3EA6 /* libFDDataClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 278543FA18C4D435000B3EA6 /* libFDDataClient.a */; };
 		2785440018C4D455000B3EA6 /* libFDSQLiteDatabase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 278543F318C4D42E000B3EA6 /* libFDSQLiteDatabase.a */; };
 		278AFC9F18CAB842009571FE /* libFDKeychain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 278AFC9C18CAB82C009571FE /* libFDKeychain.a */; };
+		278EDF9318F4DAE100A553B8 /* UIColor+Creation.m in Sources */ = {isa = PBXBuildFile; fileRef = 278EDF9218F4DAE100A553B8 /* UIColor+Creation.m */; };
+		278EDF9418F4DBE200A553B8 /* UIColor+Creation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 278EDF9118F4DAE100A553B8 /* UIColor+Creation.h */; };
 		2794FBE01789DC3D0015146A /* NSBundle+Universal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794FBDF1789DC3D0015146A /* NSBundle+Universal.m */; };
 		2794FBE21789DD0C0015146A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2794FBE11789DD0C0015146A /* UIKit.framework */; };
 		2794FBF01789E2F60015146A /* UIDevice+Family.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794FBEF1789E2F60015146A /* UIDevice+Family.m */; };
@@ -79,6 +81,7 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				278EDF9418F4DBE200A553B8 /* UIColor+Creation.h in CopyFiles */,
 				27EAC5F518D934350085C7B6 /* FDActionSheet.h in CopyFiles */,
 				275160F517A769B500CB1A4E /* FDWeakMutableArray.h in CopyFiles */,
 				2794FC83178A248F0015146A /* FDViewController.h in CopyFiles */,
@@ -99,6 +102,8 @@
 		278543ED18C4D42E000B3EA6 /* FDSQLiteDatabase Static Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "FDSQLiteDatabase Static Library.xcodeproj"; path = "FDSQLiteDatabase/Static Library Project/FDSQLiteDatabase Static Library.xcodeproj"; sourceTree = "<group>"; };
 		278543F418C4D435000B3EA6 /* FDDataClient Static Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "FDDataClient Static Library.xcodeproj"; path = "FDDataClient/Static Library Project/FDDataClient Static Library.xcodeproj"; sourceTree = "<group>"; };
 		278AFC9718CAB82C009571FE /* FDKeychain Static Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "FDKeychain Static Library.xcodeproj"; path = "FDKeychain/Static Library Project/FDKeychain Static Library.xcodeproj"; sourceTree = "<group>"; };
+		278EDF9118F4DAE100A553B8 /* UIColor+Creation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Creation.h"; sourceTree = "<group>"; };
+		278EDF9218F4DAE100A553B8 /* UIColor+Creation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Creation.m"; sourceTree = "<group>"; };
 		2794FBDE1789DC3D0015146A /* NSBundle+Universal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Universal.h"; sourceTree = "<group>"; };
 		2794FBDF1789DC3D0015146A /* NSBundle+Universal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Universal.m"; sourceTree = "<group>"; };
 		2794FBE11789DD0C0015146A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -201,6 +206,8 @@
 			children = (
 				2794FBDE1789DC3D0015146A /* NSBundle+Universal.h */,
 				2794FBDF1789DC3D0015146A /* NSBundle+Universal.m */,
+				278EDF9118F4DAE100A553B8 /* UIColor+Creation.h */,
+				278EDF9218F4DAE100A553B8 /* UIColor+Creation.m */,
 				2794FBEE1789E2F60015146A /* UIDevice+Family.h */,
 				2794FBEF1789E2F60015146A /* UIDevice+Family.m */,
 				2794FBF11789E9C70015146A /* UITableViewCell+Universal.h */,
@@ -362,6 +369,7 @@
 				2794FBF31789E9C70015146A /* UITableViewCell+Universal.m in Sources */,
 				2794FBFA1789F2C60015146A /* FDViewController.m in Sources */,
 				27B551DF17A7180F0061F95A /* FDWeakMutableArray.m in Sources */,
+				278EDF9318F4DAE100A553B8 /* UIColor+Creation.m in Sources */,
 				27EAC5F418D92E480085C7B6 /* FDActionSheet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
