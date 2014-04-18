@@ -142,6 +142,15 @@
 	// Designed to be overridden by subclasses to notify when the keyboard will hide.
 }
 
+- (void)dismissKeyboard
+{
+	UIApplication *sharedApplication = [UIApplication sharedApplication];
+	[sharedApplication sendAction: @selector(resignFirstResponder) 
+		to: nil 
+		from: nil 
+		forEvent: nil];
+}
+
 
 #pragma mark - Overridden Methods
 

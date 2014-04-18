@@ -25,6 +25,7 @@
 - (UIView *)keyboardLayoutGuide;
 - (void)keyboardWillShowWithDuration: (double)duration;
 - (void)keyboardWillHideWithDuration: (double)duration;
+- (void)dismissKeyboard;
 
 
 @end
