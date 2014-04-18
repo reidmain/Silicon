@@ -22,5 +22,9 @@
 
 #pragma mark - Instance Methods
 
+- (UIView *)keyboardLayoutGuide;
+- (void)keyboardWillShowWithDuration: (double)duration;
+- (void)keyboardWillHideWithDuration: (double)duration;
+
 
 @end
