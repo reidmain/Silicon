@@ -200,6 +200,15 @@
 	_keyboardTopConstraint.constant = keyboardFrame.origin.y;
 	
 	[self keyboardWillShowWithDuration: [duration doubleValue]];
+	
+	[UIView animateWithDuration: [duration doubleValue] 
+		delay: 0.0 
+		options: UIViewAnimationOptionCurveEaseInOut 
+		animations: ^
+			{
+				[self.view layoutIfNeeded];
+			} 
+		completion: nil];
 }
 
 - (void)_keyboardWillHide: (NSNotification *)notification
@@ -210,6 +219,15 @@
 	_keyboardTopConstraint.constant = self.view.bounds.size.height;
 	
 	[self keyboardWillHideWithDuration: [duration doubleValue]];
+	
+	[UIView animateWithDuration: [duration doubleValue] 
+		delay: 0.0 
+		options: UIViewAnimationOptionCurveEaseInOut 
+		animations: ^
+			{
+				[self.view layoutIfNeeded];
+			} 
+		completion: nil];
 }
 
 
