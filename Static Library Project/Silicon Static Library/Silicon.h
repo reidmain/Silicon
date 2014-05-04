@@ -9,6 +9,7 @@
 #import "FDActionSheet.h"
 
 #import "NSBundle+Universal.h"
+#import "NSDate+RelativeStrings.h"
 #import "UIColor+Creation.h"
 #import "UIDevice+Family.h"
 #import "UITableViewCell+Universal.h"
