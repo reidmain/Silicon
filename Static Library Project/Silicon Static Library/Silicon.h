@@ -8,6 +8,7 @@
 
 #import "FDActionSheet.h"
 
+#import "FDActionSheet+OpenURL.h"
 #import "NSBundle+Universal.h"
 #import "NSDate+RelativeStrings.h"
 #import "UIColor+Creation.h"

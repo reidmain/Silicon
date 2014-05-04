@@ -27,6 +27,8 @@
 		27B551DF17A7180F0061F95A /* FDWeakMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B551DE17A7180F0061F95A /* FDWeakMutableArray.m */; };
 		27DDD27C1915BA2F00254BC8 /* NSDate+RelativeStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DDD27B1915BA2F00254BC8 /* NSDate+RelativeStrings.m */; };
 		27E7A7A719168DBC00509B42 /* NSDate+RelativeStrings.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27DDD27A1915BA2F00254BC8 /* NSDate+RelativeStrings.h */; };
+		27E7A7B11916A52600509B42 /* FDActionSheet+OpenURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E7A7B01916A52600509B42 /* FDActionSheet+OpenURL.m */; };
+		27E7A7B21916ABA800509B42 /* FDActionSheet+OpenURL.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27E7A7AF1916A52600509B42 /* FDActionSheet+OpenURL.h */; };
 		27EAC5F418D92E480085C7B6 /* FDActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 27EAC5F318D92E480085C7B6 /* FDActionSheet.m */; };
 		27EAC5F518D934350085C7B6 /* FDActionSheet.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27EAC5F218D92E480085C7B6 /* FDActionSheet.h */; };
 /* End PBXBuildFile section */
@@ -83,6 +85,7 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				27E7A7B21916ABA800509B42 /* FDActionSheet+OpenURL.h in CopyFiles */,
 				27E7A7A719168DBC00509B42 /* NSDate+RelativeStrings.h in CopyFiles */,
 				278EDF9418F4DBE200A553B8 /* UIColor+Creation.h in CopyFiles */,
 				27EAC5F518D934350085C7B6 /* FDActionSheet.h in CopyFiles */,
@@ -120,6 +123,8 @@
 		27B551DE17A7180F0061F95A /* FDWeakMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDWeakMutableArray.m; sourceTree = "<group>"; };
 		27DDD27A1915BA2F00254BC8 /* NSDate+RelativeStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RelativeStrings.h"; sourceTree = "<group>"; };
 		27DDD27B1915BA2F00254BC8 /* NSDate+RelativeStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RelativeStrings.m"; sourceTree = "<group>"; };
+		27E7A7AF1916A52600509B42 /* FDActionSheet+OpenURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FDActionSheet+OpenURL.h"; sourceTree = "<group>"; };
+		27E7A7B01916A52600509B42 /* FDActionSheet+OpenURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FDActionSheet+OpenURL.m"; sourceTree = "<group>"; };
 		27EAC5F218D92E480085C7B6 /* FDActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDActionSheet.h; sourceTree = "<group>"; };
 		27EAC5F318D92E480085C7B6 /* FDActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDActionSheet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -209,6 +214,8 @@
 		272FBB6417870306002EAF62 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				27E7A7AF1916A52600509B42 /* FDActionSheet+OpenURL.h */,
+				27E7A7B01916A52600509B42 /* FDActionSheet+OpenURL.m */,
 				2794FBDE1789DC3D0015146A /* NSBundle+Universal.h */,
 				2794FBDF1789DC3D0015146A /* NSBundle+Universal.m */,
 				27DDD27A1915BA2F00254BC8 /* NSDate+RelativeStrings.h */,
@@ -371,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27E7A7B11916A52600509B42 /* FDActionSheet+OpenURL.m in Sources */,
 				2794FBE01789DC3D0015146A /* NSBundle+Universal.m in Sources */,
 				2794FBF01789E2F60015146A /* UIDevice+Family.m in Sources */,
 				2794FBF31789E9C70015146A /* UITableViewCell+Universal.m in Sources */,
