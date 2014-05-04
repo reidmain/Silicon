@@ -1,4 +1,5 @@
 #import "FDActionSheet+OpenURL.h"
+#import <FDFoundationKit/NSString+URLEncode.h>
 
 
 #pragma mark Constants
@@ -63,8 +64,8 @@ static NSString * const URLScheme_Tweetbot = @"tweetbot:";
 		for (NSString *queryStringComponent in queryStringComponents)
 		{
 			NSArray *pairComponents = [queryStringComponent componentsSeparatedByString: @"="];
-			NSString *key = [pairComponents objectAtIndex: 0];
-			NSString *value = [pairComponents objectAtIndex: 1];
+			NSString *key = [[pairComponents objectAtIndex: 0] urlDecode];
+			NSString *value = [[pairComponents objectAtIndex: 1] urlDecode];
 
 			[queryParameters setObject: value 
 				forKey: key];
@@ -92,8 +93,8 @@ static NSString * const URLScheme_Tweetbot = @"tweetbot:";
 				pressedBlock: ^
 					{
 						NSString *twitterURLString = [NSString stringWithFormat: @"%@//post?text=%@", 
-							URLScheme_GoogleChrome, 
-							text];
+							URLScheme_Twitter, 
+							[text urlEncode]];
 						NSURL *twitterURL = [NSURL URLWithString: twitterURLString];
 						
 						[sharedApplication openURL: twitterURL];
@@ -108,7 +109,7 @@ static NSString * const URLScheme_Tweetbot = @"tweetbot:";
 					{
 						NSString *tweetbotURLString = [NSString stringWithFormat: @"%@///post?text=%@&callback_url=%@", 
 							URLScheme_Tweetbot, 
-							text, 
+							[text urlEncode], 
 							[callbackURL absoluteString]];
 						NSURL *tweetbotURL = [NSURL URLWithString: tweetbotURLString];
 						
