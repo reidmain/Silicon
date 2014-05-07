@@ -117,10 +117,10 @@
 		_keyboardTopConstraint = [NSLayoutConstraint constraintWithItem: _keyboardLayoutGuide 
 			attribute: NSLayoutAttributeTop 
 			relatedBy: NSLayoutRelationEqual 
-			toItem: self.view 
+			toItem: self.bottomLayoutGuide 
 			attribute: NSLayoutAttributeTop 
 			multiplier: 1.0f 
-			constant: self.view.bounds.size.height];
+			constant: 0.0f];
 		[self.view addConstraint: _keyboardTopConstraint];
 		
 		[self.view addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-0-[_keyboardLayoutGuide]-0-|" 
@@ -196,11 +196,15 @@
 	NSDictionary *userInfo = [notification userInfo];
 	NSNumber *durationNumber = [userInfo objectForKey: UIKeyboardAnimationDurationUserInfoKey];
 	NSNumber *animationCurve = [userInfo objectForKey: UIKeyboardAnimationCurveUserInfoKey];
-	CGRect keyboardFrame = [[userInfo objectForKey: UIKeyboardFrameEndUserInfoKey] CGRectValue];
+	CGRect screenFrame = [[userInfo objectForKey: UIKeyboardFrameEndUserInfoKey] CGRectValue];
+	CGRect windowFrame = [self.view.window convertRect: screenFrame 
+		fromWindow: nil];
+	CGRect keyboardFrame = [self.view convertRect: windowFrame 
+		fromView: nil];
 	
 	double duration = [durationNumber doubleValue];
 	
-	_keyboardTopConstraint.constant = keyboardFrame.origin.y;
+	_keyboardTopConstraint.constant = -(keyboardFrame.size.height - self.bottomLayoutGuide.length);
 	
 	[self keyboardWillShowWithDuration: duration];
 	
@@ -220,11 +224,10 @@
 	NSDictionary *userInfo = [notification userInfo];
 	NSNumber *durationNumber = [userInfo objectForKey: UIKeyboardAnimationDurationUserInfoKey];
 	NSNumber *animationCurve = [userInfo objectForKey: UIKeyboardAnimationCurveUserInfoKey];
-	CGRect keyboardFrame = [[userInfo objectForKey: UIKeyboardFrameEndUserInfoKey] CGRectValue];
 	
 	double duration = [durationNumber doubleValue];
 	
-	_keyboardTopConstraint.constant = keyboardFrame.origin.y;
+	_keyboardTopConstraint.constant = 0.0f;
 	
 	[self keyboardWillHideWithDuration: duration];
 	
