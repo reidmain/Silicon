@@ -194,40 +194,49 @@
 - (void)_keyboardWillShow: (NSNotification *)notification
 {
 	NSDictionary *userInfo = [notification userInfo];
-	NSNumber *duration = [userInfo objectForKey: UIKeyboardAnimationDurationUserInfoKey];
+	NSNumber *durationNumber = [userInfo objectForKey: UIKeyboardAnimationDurationUserInfoKey];
+	NSNumber *animationCurve = [userInfo objectForKey: UIKeyboardAnimationCurveUserInfoKey];
 	CGRect keyboardFrame = [[userInfo objectForKey: UIKeyboardFrameEndUserInfoKey] CGRectValue];
+	
+	double duration = [durationNumber doubleValue];
 	
 	_keyboardTopConstraint.constant = keyboardFrame.origin.y;
 	
-	[self keyboardWillShowWithDuration: [duration doubleValue]];
+	[self keyboardWillShowWithDuration: duration];
 	
-	[UIView animateWithDuration: [duration doubleValue] 
-		delay: 0.0 
-		options: UIViewAnimationOptionCurveEaseInOut 
-		animations: ^
-			{
-				[self.view layoutIfNeeded];
-			} 
-		completion: nil];
+	[UIView beginAnimations: nil 
+		context: nil];
+	[UIView setAnimationDuration: duration];
+	[UIView setAnimationCurve: [animationCurve integerValue]];
+	[UIView setAnimationBeginsFromCurrentState: YES];
+	
+	[self.view layoutIfNeeded];
+	
+	[UIView commitAnimations];
 }
 
 - (void)_keyboardWillHide: (NSNotification *)notification
 {
 	NSDictionary *userInfo = [notification userInfo];
-	NSNumber *duration = [userInfo objectForKey: UIKeyboardAnimationDurationUserInfoKey];
+	NSNumber *durationNumber = [userInfo objectForKey: UIKeyboardAnimationDurationUserInfoKey];
+	NSNumber *animationCurve = [userInfo objectForKey: UIKeyboardAnimationCurveUserInfoKey];
+	CGRect keyboardFrame = [[userInfo objectForKey: UIKeyboardFrameEndUserInfoKey] CGRectValue];
 	
-	_keyboardTopConstraint.constant = self.view.bounds.size.height;
+	double duration = [durationNumber doubleValue];
 	
-	[self keyboardWillHideWithDuration: [duration doubleValue]];
+	_keyboardTopConstraint.constant = keyboardFrame.origin.y;
 	
-	[UIView animateWithDuration: [duration doubleValue] 
-		delay: 0.0 
-		options: UIViewAnimationOptionCurveEaseInOut 
-		animations: ^
-			{
-				[self.view layoutIfNeeded];
-			} 
-		completion: nil];
+	[self keyboardWillHideWithDuration: duration];
+	
+	[UIView beginAnimations: nil 
+		context: nil];
+	[UIView setAnimationDuration: duration];
+	[UIView setAnimationCurve: [animationCurve integerValue]];
+	[UIView setAnimationBeginsFromCurrentState: YES];
+	
+	[self.view layoutIfNeeded];
+	
+	[UIView commitAnimations];
 }
 
 
