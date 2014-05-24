@@ -7,3 +7,6 @@
 [submodule "Vendors/FDKeychain"]
 	path = Vendors/FDKeychain
 	url = git@github.com:reidmain/FDKeychain.git
+[submodule "Vendors/FDImageLoader"]
+	path = Vendors/FDImageLoader
+	url = git@github.com:reidmain/FDImageLoader.git
