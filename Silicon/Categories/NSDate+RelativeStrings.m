@@ -102,5 +102,93 @@
 	return relativeTimeString;
 }
 
+- (NSString *)mediumRelativeDateString
+{
+	NSTimeInterval timeIntervalFromSelfToNow = [self timeIntervalSinceNow] * (-1);
+
+	NSString *relativeDateString = nil;
+
+	if(timeIntervalFromSelfToNow <= 0)
+	{
+		relativeDateString = @"just now";
+	}
+	else if(timeIntervalFromSelfToNow < Minute)
+	{
+		int secondsSinceNow = timeIntervalFromSelfToNow / Second;
+		
+		relativeDateString = [NSString stringWithFormat: @"%ds ago", secondsSinceNow];
+	}
+	else if(timeIntervalFromSelfToNow < Hour)
+	{
+		int minutesSinceNow = timeIntervalFromSelfToNow / Minute;
+		
+		relativeDateString = [NSString stringWithFormat: @"%dm ago", minutesSinceNow];
+	}
+	else if(timeIntervalFromSelfToNow < Day)
+	{
+		int hoursSinceNow = timeIntervalFromSelfToNow / Hour;
+		
+		relativeDateString = [NSString stringWithFormat: @"%dh ago", hoursSinceNow];
+	}
+	else if(timeIntervalFromSelfToNow < Month)
+	{
+		int daysSinceNow = timeIntervalFromSelfToNow / Day;
+		
+		relativeDateString = [NSString stringWithFormat: @"%dd ago", daysSinceNow];
+	}
+	else if (timeIntervalFromSelfToNow < Year)
+	{
+		int monthsSinceNow = timeIntervalFromSelfToNow / Month;
+		
+		relativeDateString = [NSString stringWithFormat: @"%dmo ago", monthsSinceNow];
+	}
+	else
+	{
+		int yearsSinceNow = timeIntervalFromSelfToNow / Year;
+		
+		relativeDateString = [NSString stringWithFormat: @"%dy ago", yearsSinceNow];
+	}
+	
+	return relativeDateString;
+}
+
+- (NSString *)shortRelativeDateString
+{
+	NSTimeInterval timeIntervalFromSelfToNow = [self timeIntervalSinceNow] * (-1);
+
+	NSString *relativeDateString = nil;
+
+	if(timeIntervalFromSelfToNow <= 0)
+	{
+		relativeDateString = @"now";
+	}
+	else if(timeIntervalFromSelfToNow < Minute)
+	{
+		int secondsSinceNow = timeIntervalFromSelfToNow / Second;
+		
+		relativeDateString = [NSString stringWithFormat: @"%ds", secondsSinceNow];
+	}
+	else if(timeIntervalFromSelfToNow < Hour)
+	{
+		int minutesSinceNow = timeIntervalFromSelfToNow / Minute;
+		
+		relativeDateString = [NSString stringWithFormat: @"%dm", minutesSinceNow];
+	}
+	else if(timeIntervalFromSelfToNow < Day)
+	{
+		int hoursSinceNow = timeIntervalFromSelfToNow / Hour;
+		
+		relativeDateString = [NSString stringWithFormat: @"%dh", hoursSinceNow];
+	}
+	else if(timeIntervalFromSelfToNow < Week)
+	{
+		int daysSinceNow = timeIntervalFromSelfToNow / Day;
+		
+		relativeDateString = [NSString stringWithFormat: @"%dd", daysSinceNow];
+	}
+	
+	return relativeDateString;
+}
+
 
 @end

@@ -6,6 +6,8 @@
 #pragma mark - Instance Methods
 
 - (NSString *)relativeTimeString;
+- (NSString *)mediumRelativeDateString;
+- (NSString *)shortRelativeDateString;
 
 
 @end
