@@ -6,6 +6,7 @@
 #import "FDWeakMutableArray.h"
 
 #import "FDViewController.h"
+#import "FDScrollingTabBarController.h"
 
 #import "FDActionSheet.h"
 

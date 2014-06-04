@@ -14,7 +14,7 @@
 
 #pragma mark - Constructors
 
-- (id)initWithUniversalNibName: (NSString *)nibName;
+- (instancetype)initWithUniversalNibName: (NSString *)nibName;
 
 
 #pragma mark - Static Methods

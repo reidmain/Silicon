@@ -35,7 +35,7 @@
 
 #pragma mark - Constructors
 
-- (id)initWithUniversalNibName: (NSString *)nibName
+- (instancetype)initWithUniversalNibName: (NSString *)nibName
 {
 	NSBundle *mainBundle = [NSBundle mainBundle];
 	NSString *universalNibName = [mainBundle universalNibNameForNibName: nibName];

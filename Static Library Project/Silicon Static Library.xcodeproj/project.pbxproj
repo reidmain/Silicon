@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270957D7193BA3D900D2DC49 /* FDScrollingTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270957D6193BA3D900D2DC49 /* FDScrollingTabBarController.m */; };
+		270957D8193BA48800D2DC49 /* FDScrollingTabBarController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 270957D5193BA3D900D2DC49 /* FDScrollingTabBarController.h */; };
 		272FBB221786611E002EAF62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272FBB211786611E002EAF62 /* Foundation.framework */; };
 		272FBB34178662F9002EAF62 /* Silicon.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 272FBB33178662E3002EAF62 /* Silicon.h */; };
 		275160F517A769B500CB1A4E /* FDWeakMutableArray.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27B551DD17A7180F0061F95A /* FDWeakMutableArray.h */; };
@@ -100,6 +102,7 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				270957D8193BA48800D2DC49 /* FDScrollingTabBarController.h in CopyFiles */,
 				27E7A7B21916ABA800509B42 /* FDActionSheet+OpenURL.h in CopyFiles */,
 				27E7A7A719168DBC00509B42 /* NSDate+RelativeStrings.h in CopyFiles */,
 				278EDF9418F4DBE200A553B8 /* UIColor+Creation.h in CopyFiles */,
@@ -116,6 +119,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		270957D5193BA3D900D2DC49 /* FDScrollingTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDScrollingTabBarController.h; sourceTree = "<group>"; };
+		270957D6193BA3D900D2DC49 /* FDScrollingTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDScrollingTabBarController.m; sourceTree = "<group>"; };
 		272FBB1E1786611E002EAF62 /* libSilicon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSilicon.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		272FBB211786611E002EAF62 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		272FBB251786611E002EAF62 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
@@ -223,6 +228,8 @@
 			children = (
 				2794FBF81789F2C60015146A /* FDViewController.h */,
 				2794FBF91789F2C60015146A /* FDViewController.m */,
+				270957D5193BA3D900D2DC49 /* FDScrollingTabBarController.h */,
+				270957D6193BA3D900D2DC49 /* FDScrollingTabBarController.m */,
 			);
 			name = Controllers;
 			path = ../../Silicon/Controllers;
@@ -421,6 +428,7 @@
 				2794FBF01789E2F60015146A /* UIDevice+Family.m in Sources */,
 				2794FBF31789E9C70015146A /* UITableViewCell+Universal.m in Sources */,
 				27DDD27C1915BA2F00254BC8 /* NSDate+RelativeStrings.m in Sources */,
+				270957D7193BA3D900D2DC49 /* FDScrollingTabBarController.m in Sources */,
 				2794FBFA1789F2C60015146A /* FDViewController.m in Sources */,
 				27B551DF17A7180F0061F95A /* FDWeakMutableArray.m in Sources */,
 				278EDF9318F4DAE100A553B8 /* UIColor+Creation.m in Sources */,
