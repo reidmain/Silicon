@@ -27,7 +27,10 @@ static NSString * const CellIdentifier = @"ScrollingTabBarCell";
 @implementation FDScrollingTabBar
 {
 	@private __strong UICollectionView *_collectionView;
+	@private __strong UIView *_maskView;
+	@private __strong CAGradientLayer *_maskLayer;
 	@private __strong FDScrollingTabBarCell *_templateCell;
+	@private CGSize _lastCellSize;
 }
 
 
@@ -60,6 +63,15 @@ static NSString * const CellIdentifier = @"ScrollingTabBarCell";
 	NSIndexPath *selectedIndexPath = [[_collectionView indexPathsForSelectedItems] firstObject];
 	
 	return selectedIndexPath.row;
+}
+
+- (void)setBarTintColor: (UIColor *)barTintColor
+{
+	_barTintColor = barTintColor;
+	
+	// Set the background color of the collection view and the mask view.
+	_collectionView.backgroundColor = _barTintColor;
+	_maskView.backgroundColor = _collectionView.backgroundColor;
 }
 
 
@@ -101,13 +113,14 @@ static NSString * const CellIdentifier = @"ScrollingTabBarCell";
 
 #pragma mark - Overridden Methods
 
-- (void)tintColorDidChange
+- (void)layoutSubviews
 {
 	// Call base implementation.
-	[super tintColorDidChange];
+	[super layoutSubviews];
 	
-	// Set the background color of the collection view.
-	_collectionView.backgroundColor = [self barTintColor];
+	// Update the mask layer's frame to ensure it is in the correct location.
+	CGRect maskFrame = _maskView.bounds;
+	_maskLayer.frame = maskFrame;
 }
 
 
@@ -115,11 +128,12 @@ static NSString * const CellIdentifier = @"ScrollingTabBarCell";
 
 - (void)_initializeScrollingTabBar
 {
+	// Initialize instance variables.
 	_font = [UIFont fontWithName: @"HelveticaNeue-Light" 
 		size: 17.0f];
 	_highlightedFont = [UIFont fontWithName: @"HelveticaNeue-Medium" 
 		size: 17.0f];
-	// Initialize instance variables.
+	
 	_barTintColor = [UIColor whiteColor];
 	_separatorColor = [UIColor colorWithHexString: @"D6D6D6" 
 		alpha: 1.0f];
@@ -133,6 +147,7 @@ static NSString * const CellIdentifier = @"ScrollingTabBarCell";
 			collectionViewLayout: collectionViewFlowLayout];
 	_collectionView.dataSource = self;
 	_collectionView.delegate = self;
+	_collectionView.backgroundColor = _barTintColor;
 	
 	// Ensure the collection view always bounces horizontally and displays no scrolling indicators.
 	_collectionView.alwaysBounceHorizontal = YES;
@@ -146,6 +161,23 @@ static NSString * const CellIdentifier = @"ScrollingTabBarCell";
 	// Add the collection view to the scrolling tab bar.
 	[self addSubview: _collectionView];
 	
+	// Create a mask view and add it to the scrolling tab bar.
+	_maskView = [UIView new];
+	_maskView.backgroundColor = _barTintColor;
+	_maskView.userInteractionEnabled = NO;
+	
+	_maskLayer = [CAGradientLayer layer];
+	_maskLayer.startPoint = CGPointMake(0.0f, 0.5f);
+	_maskLayer.endPoint = CGPointMake(0.8f, 0.5f);
+	
+	CGColorRef innerColor = [[UIColor clearColor] CGColor];
+	CGColorRef outerColor = [[UIColor whiteColor] CGColor];
+	_maskLayer.colors = @[ (__bridge id)innerColor, (__bridge id)outerColor ];
+	
+	_maskView.layer.mask = _maskLayer;
+	
+	[self addSubview: _maskView];
+	
 	// Create a separator view and add it to the scrolling tab bar.
 	UIView *separatorView = [UIView new];
 	separatorView.backgroundColor = _separatorColor;
@@ -154,13 +186,19 @@ static NSString * const CellIdentifier = @"ScrollingTabBarCell";
 	
 	// Position the collection view and the separator view.
 	_collectionView.translatesAutoresizingMaskIntoConstraints = NO;
+	_maskView.translatesAutoresizingMaskIntoConstraints = NO;
 	separatorView.translatesAutoresizingMaskIntoConstraints = NO;
 	
 	NSDictionary *autoLayoutViews = NSDictionaryOfVariableBindings(
 		_collectionView, 
+		_maskView, 
 		separatorView);
 	
 	[self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-0-[_collectionView]-0-|" 
+		options: 0 
+		metrics: nil 
+		views: autoLayoutViews]];
+	[self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:[_maskView(==120)]-0-|" 
 		options: 0 
 		metrics: nil 
 		views: autoLayoutViews]];
@@ -172,7 +210,10 @@ static NSString * const CellIdentifier = @"ScrollingTabBarCell";
 		options: 0 
 		metrics: nil 
 		views: autoLayoutViews]];
-
+	[self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-0-[_maskView(==_collectionView)]" 
+		options: 0 
+		metrics: nil 
+		views: autoLayoutViews]];
 }
 
 
@@ -238,6 +279,12 @@ static NSString * const CellIdentifier = @"ScrollingTabBarCell";
 	CGSize sizeForItem = [_templateCell.contentView systemLayoutSizeFittingSize: UILayoutFittingCompressedSize];
 	sizeForItem.height = collectionView.bounds.size.height;
 	
+	// If this is the final cell in the section track its size so the right inset of the section can be set to that the last item and be scrolled all the way to the left side of the collection view.
+	if (indexPath.row == [collectionView numberOfItemsInSection: indexPath.section] - 1)
+	{
+		_lastCellSize = sizeForItem;
+	}
+	
 	return sizeForItem;
 }
 
@@ -245,7 +292,7 @@ static NSString * const CellIdentifier = @"ScrollingTabBarCell";
 	layout: (UICollectionViewLayout*)collectionViewLayout 
 	insetForSectionAtIndex: (NSInteger)section
 {
-	UIEdgeInsets edgeInsets = UIEdgeInsetsMake(0.0f, 10.0f, 0.0f, collectionView.width - 50.0f);
+	UIEdgeInsets edgeInsets = UIEdgeInsetsMake(0.0f, 10.0f, 0.0f, collectionView.width - _lastCellSize.width);
 	
 	return edgeInsets;
 }
