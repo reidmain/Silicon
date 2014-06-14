@@ -180,7 +180,7 @@
 		
 		relativeDateString = [NSString stringWithFormat: @"%dh", hoursSinceNow];
 	}
-	else if(timeIntervalFromSelfToNow < Week)
+	else
 	{
 		int daysSinceNow = timeIntervalFromSelfToNow / Day;
 		
