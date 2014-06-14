@@ -7,11 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2706A8871949222000AC8552 /* UIViewController+ScrollViewInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 2706A8861949222000AC8552 /* UIViewController+ScrollViewInsets.m */; };
+		2706A8891949224200AC8552 /* UIViewController+ScrollViewInsets.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2706A8851949222000AC8552 /* UIViewController+ScrollViewInsets.h */; };
+		2706A88C1949291B00AC8552 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2706A88B1949291B00AC8552 /* UIView+Layout.m */; };
 		270957D7193BA3D900D2DC49 /* FDScrollingTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270957D6193BA3D900D2DC49 /* FDScrollingTabBarController.m */; };
 		270957D8193BA48800D2DC49 /* FDScrollingTabBarController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 270957D5193BA3D900D2DC49 /* FDScrollingTabBarController.h */; };
 		272FBB221786611E002EAF62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272FBB211786611E002EAF62 /* Foundation.framework */; };
 		272FBB34178662F9002EAF62 /* Silicon.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 272FBB33178662E3002EAF62 /* Silicon.h */; };
+		2742828F1949E95E001CF13C /* FDScrollingTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2742828E1949E95E001CF13C /* FDScrollingTabBar.m */; };
+		274282901949EF16001CF13C /* FDScrollingTabBar.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2742828D1949E95E001CF13C /* FDScrollingTabBar.h */; };
+		274282911949EF16001CF13C /* UIView+Layout.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2706A88A1949291B00AC8552 /* UIView+Layout.h */; };
 		275160F517A769B500CB1A4E /* FDWeakMutableArray.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27B551DD17A7180F0061F95A /* FDWeakMutableArray.h */; };
+		27795CF8194BA0280090DBBD /* FDScrollingTabBarDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27795CF7194B9ED20090DBBD /* FDScrollingTabBarDelegate.h */; };
 		27805B9C192C3D8600C7F215 /* libFDImageLoader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27805B99192C3D7700C7F215 /* libFDImageLoader.a */; };
 		278543FF18C4D455000B3EA6 /* libFDDataClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 278543FA18C4D435000B3EA6 /* libFDDataClient.a */; };
 		2785440018C4D455000B3EA6 /* libFDSQLiteDatabase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 278543F318C4D42E000B3EA6 /* libFDSQLiteDatabase.a */; };
@@ -34,6 +41,7 @@
 		27E7A7B21916ABA800509B42 /* FDActionSheet+OpenURL.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27E7A7AF1916A52600509B42 /* FDActionSheet+OpenURL.h */; };
 		27EAC5F418D92E480085C7B6 /* FDActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 27EAC5F318D92E480085C7B6 /* FDActionSheet.m */; };
 		27EAC5F518D934350085C7B6 /* FDActionSheet.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27EAC5F218D92E480085C7B6 /* FDActionSheet.h */; };
+		27FDE4121941444B00BC777F /* FDScrollingTabBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FDE4111941444B00BC777F /* FDScrollingTabBarCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +110,10 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				27795CF8194BA0280090DBBD /* FDScrollingTabBarDelegate.h in CopyFiles */,
+				274282901949EF16001CF13C /* FDScrollingTabBar.h in CopyFiles */,
+				274282911949EF16001CF13C /* UIView+Layout.h in CopyFiles */,
+				2706A8891949224200AC8552 /* UIViewController+ScrollViewInsets.h in CopyFiles */,
 				270957D8193BA48800D2DC49 /* FDScrollingTabBarController.h in CopyFiles */,
 				27E7A7B21916ABA800509B42 /* FDActionSheet+OpenURL.h in CopyFiles */,
 				27E7A7A719168DBC00509B42 /* NSDate+RelativeStrings.h in CopyFiles */,
@@ -119,12 +131,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2706A8851949222000AC8552 /* UIViewController+ScrollViewInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ScrollViewInsets.h"; sourceTree = "<group>"; };
+		2706A8861949222000AC8552 /* UIViewController+ScrollViewInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ScrollViewInsets.m"; sourceTree = "<group>"; };
+		2706A88A1949291B00AC8552 /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		2706A88B1949291B00AC8552 /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
 		270957D5193BA3D900D2DC49 /* FDScrollingTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDScrollingTabBarController.h; sourceTree = "<group>"; };
 		270957D6193BA3D900D2DC49 /* FDScrollingTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDScrollingTabBarController.m; sourceTree = "<group>"; };
 		272FBB1E1786611E002EAF62 /* libSilicon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSilicon.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		272FBB211786611E002EAF62 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		272FBB251786611E002EAF62 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		272FBB33178662E3002EAF62 /* Silicon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Silicon.h; sourceTree = "<group>"; };
+		2742828D1949E95E001CF13C /* FDScrollingTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDScrollingTabBar.h; sourceTree = "<group>"; };
+		2742828E1949E95E001CF13C /* FDScrollingTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDScrollingTabBar.m; sourceTree = "<group>"; };
+		27795CF7194B9ED20090DBBD /* FDScrollingTabBarDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDScrollingTabBarDelegate.h; sourceTree = "<group>"; };
 		27805B92192C3D7700C7F215 /* FDImageLoader Static Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "FDImageLoader Static Library.xcodeproj"; path = "FDImageLoader/Static Library Project/FDImageLoader Static Library.xcodeproj"; sourceTree = "<group>"; };
 		278543ED18C4D42E000B3EA6 /* FDSQLiteDatabase Static Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "FDSQLiteDatabase Static Library.xcodeproj"; path = "FDSQLiteDatabase/Static Library Project/FDSQLiteDatabase Static Library.xcodeproj"; sourceTree = "<group>"; };
 		278543F418C4D435000B3EA6 /* FDDataClient Static Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "FDDataClient Static Library.xcodeproj"; path = "FDDataClient/Static Library Project/FDDataClient Static Library.xcodeproj"; sourceTree = "<group>"; };
@@ -148,6 +167,8 @@
 		27E7A7B01916A52600509B42 /* FDActionSheet+OpenURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FDActionSheet+OpenURL.m"; sourceTree = "<group>"; };
 		27EAC5F218D92E480085C7B6 /* FDActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDActionSheet.h; sourceTree = "<group>"; };
 		27EAC5F318D92E480085C7B6 /* FDActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDActionSheet.m; sourceTree = "<group>"; };
+		27FDE4101941444B00BC777F /* FDScrollingTabBarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDScrollingTabBarCell.h; sourceTree = "<group>"; };
+		27FDE4111941444B00BC777F /* FDScrollingTabBarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDScrollingTabBarCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +271,10 @@
 				2794FBEF1789E2F60015146A /* UIDevice+Family.m */,
 				2794FBF11789E9C70015146A /* UITableViewCell+Universal.h */,
 				2794FBF21789E9C70015146A /* UITableViewCell+Universal.m */,
+				2706A88A1949291B00AC8552 /* UIView+Layout.h */,
+				2706A88B1949291B00AC8552 /* UIView+Layout.m */,
+				2706A8851949222000AC8552 /* UIViewController+ScrollViewInsets.h */,
+				2706A8861949222000AC8552 /* UIViewController+ScrollViewInsets.m */,
 			);
 			name = Categories;
 			path = ../../Silicon/Categories;
@@ -314,6 +339,11 @@
 			children = (
 				27EAC5F218D92E480085C7B6 /* FDActionSheet.h */,
 				27EAC5F318D92E480085C7B6 /* FDActionSheet.m */,
+				2742828D1949E95E001CF13C /* FDScrollingTabBar.h */,
+				2742828E1949E95E001CF13C /* FDScrollingTabBar.m */,
+				27795CF7194B9ED20090DBBD /* FDScrollingTabBarDelegate.h */,
+				27FDE4101941444B00BC777F /* FDScrollingTabBarCell.h */,
+				27FDE4111941444B00BC777F /* FDScrollingTabBarCell.m */,
 			);
 			name = Controls;
 			path = ../../Silicon/Controls;
@@ -424,15 +454,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				27E7A7B11916A52600509B42 /* FDActionSheet+OpenURL.m in Sources */,
+				2742828F1949E95E001CF13C /* FDScrollingTabBar.m in Sources */,
 				2794FBE01789DC3D0015146A /* NSBundle+Universal.m in Sources */,
+				2706A8871949222000AC8552 /* UIViewController+ScrollViewInsets.m in Sources */,
 				2794FBF01789E2F60015146A /* UIDevice+Family.m in Sources */,
 				2794FBF31789E9C70015146A /* UITableViewCell+Universal.m in Sources */,
+				2706A88C1949291B00AC8552 /* UIView+Layout.m in Sources */,
 				27DDD27C1915BA2F00254BC8 /* NSDate+RelativeStrings.m in Sources */,
 				270957D7193BA3D900D2DC49 /* FDScrollingTabBarController.m in Sources */,
 				2794FBFA1789F2C60015146A /* FDViewController.m in Sources */,
 				27B551DF17A7180F0061F95A /* FDWeakMutableArray.m in Sources */,
 				278EDF9318F4DAE100A553B8 /* UIColor+Creation.m in Sources */,
 				27EAC5F418D92E480085C7B6 /* FDActionSheet.m in Sources */,
+				27FDE4121941444B00BC777F /* FDScrollingTabBarCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

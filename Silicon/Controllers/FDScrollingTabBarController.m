@@ -1,5 +1,6 @@
 #import "FDScrollingTabBarController.h"
-#import <FDFoundationKit/NSArray+Accessing.h>
+#import <FDFoundationKit/FDFoundationKit.h>
+#import "UIViewController+ScrollViewInsets.h"
 
 
 #pragma mark Constants
@@ -10,6 +11,8 @@
 @interface FDScrollingTabBarController ()
 
 - (void)_initializeScrollingTabBarController;
+- (void)_setAdjustableScrollViewInsetsForViewController: (UIViewController *)viewController;
+- (void)_tilePages;
 
 @end
 
@@ -30,6 +33,9 @@
 	{
 		// Set the view controllers.
 		_viewControllers = viewControllers;
+		
+		// Set the items on the scrolling tab bar.
+		_scrollingTabBar.items = [viewControllers valueForKeyPath: @keypath(_selectedViewController.title)];
 		
 		// Set the content size of the scroll view to be large enough for all view controllers.
 		_scrollView.contentSize = CGSizeMake([_viewControllers count] * _scrollView.frame.size.width, 0.0f);
@@ -60,8 +66,10 @@
 		viewControllerToSelect = [_viewControllers firstObject];
 	}
 	
+	// Set the selected view controller.
 	_selectedViewController = viewControllerToSelect;
 	
+	// Set the content offset of the scroll view to ensure the selected view controller is visible.
 	_scrollView.contentOffset = CGPointMake(_scrollView.bounds.size.width * selectedIndex, 0.0f);
 }
 
@@ -129,9 +137,38 @@
 	[self.view addSubview: _scrollView];
 	
 	// Set the content size of the scroll view to be large enough for all view controllers.
+	// NOTE: This should probably be abstracted out into its own method so that this code isn't duplicated all over the controller.
 	_scrollView.contentSize = CGSizeMake([_viewControllers count] * _scrollView.frame.size.width, 0.0f);
 	
+	// Add the scrolling tab bar to the controller's view.
+	[self.view addSubview: _scrollingTabBar];
+	
+	// Size the scrolling tab bar so it is as wide as the controller's view.
+	_scrollingTabBar.translatesAutoresizingMaskIntoConstraints = NO;
+	
+	id topLayoutGuide = self.topLayoutGuide;
+	NSDictionary *autoLayoutViews = NSDictionaryOfVariableBindings(
+		topLayoutGuide, 
+		_scrollingTabBar);
+	
+	[self.view addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|-0-[_scrollingTabBar]-0-|" 
+		options: 0 
+		metrics: nil 
+		views: autoLayoutViews]];
+	[self.view addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:[topLayoutGuide]-0-[_scrollingTabBar(==47)]" 
+		options: 0 
+		metrics: nil 
+		views: autoLayoutViews]];
+	
 	[self _tilePages];
+}
+
+- (void)viewDidLayoutSubviews
+{
+	// Call base implementation.
+	[super viewDidLayoutSubviews];
+	
+	[self _setAdjustableScrollViewInsetsForViewController: _selectedViewController];
 }
 
 
@@ -139,7 +176,7 @@
 
 - (void)_initializeScrollingTabBarController
 {
-	// Initialize instance variables.
+	// Create the scroll view.
 	_scrollView = [[UIScrollView alloc] 
 		initWithFrame: CGRectZero];
 	_scrollView.delegate = self;
@@ -147,9 +184,22 @@
 	// Enable paging on the scroll view.
 	_scrollView.pagingEnabled = YES;
 	
-	// Hide all scrolling indicators.
+	// Hide all scrolling indicators on the scroll view.
 	_scrollView.showsHorizontalScrollIndicator = NO;
 	_scrollView.showsVerticalScrollIndicator = NO;
+	
+	// Create the scrolling tab bar.
+	_scrollingTabBar = [FDScrollingTabBar new];
+	_scrollingTabBar.delegate = self;
+	
+	// Prevent the scroll view's insets from being automatically set.
+	self.automaticallyAdjustsScrollViewInsets = NO;
+}
+
+- (void)_setAdjustableScrollViewInsetsForViewController: (UIViewController *)viewController
+{
+	UIEdgeInsets insets = UIEdgeInsetsMake(CGRectGetMaxY(_scrollingTabBar.frame), 0.0f, [self bottomLayoutGuide].length, 0.0f);
+	[viewController setAdjustableScrollViewInsets: insets];
 }
 
 - (void)_tilePages
@@ -173,12 +223,15 @@
 				if (viewController.view.superview != _scrollView)
 				{
 					// Position the view controller in the scroll view.
-					CGRect viewControllerFrame = self.view.bounds;
+					CGRect viewControllerFrame = _scrollView.frame;
 					viewControllerFrame.origin.x = _scrollView.bounds.size.width * index;
 					viewController.view.autoresizingMask = UIViewAutoresizingFlexibleWidth 
 						| UIViewAutoresizingFlexibleHeight;
 					
 					viewController.view.frame = viewControllerFrame;
+					
+					// Adjust the view controller's scroll view's insets if necessary.
+					[self _setAdjustableScrollViewInsetsForViewController: viewController];
 					
 					// Add the view controller to the scroll view.
 					[self addChildViewController: viewController];
@@ -209,6 +262,10 @@
 - (void)scrollViewDidScroll: (UIScrollView *)scrollView
 {
 	[self _tilePages];
+	
+	NSUInteger selectedControllerIndex = floorf(CGRectGetMidX(_scrollView.bounds) / CGRectGetWidth(_scrollView.bounds));
+	
+	_scrollingTabBar.selectedIndex = selectedControllerIndex;
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
@@ -216,6 +273,17 @@
 	NSUInteger selectedControllerIndex = floorf(CGRectGetMidX(_scrollView.bounds) / CGRectGetWidth(_scrollView.bounds));
 	
 	_selectedViewController = [_viewControllers tryObjectAtIndex: selectedControllerIndex];
+}
+
+
+#pragma mark - FDScrollingTabBarDelegate Methods
+
+- (void)scrollingTabBar: (FDScrollingTabBar *)scrollingTabBar 
+	didSelectItem: (NSString *)item
+{
+	NSUInteger selectedIndex = [scrollingTabBar.items indexOfObject: item];
+	
+	self.selectedIndex = selectedIndex;
 }
 
 
