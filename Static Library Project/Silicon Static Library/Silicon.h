@@ -4,6 +4,7 @@
 #import <FDSQLiteDatabase/FDSQLiteDatabase.h>
 
 #import "FDWeakMutableArray.h"
+#import "FDPushBackAnimator.h"
 
 #import "FDViewController.h"
 #import "FDScrollingTabBarController.h"

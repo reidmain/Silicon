@@ -17,6 +17,8 @@
 		2742828F1949E95E001CF13C /* FDScrollingTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2742828E1949E95E001CF13C /* FDScrollingTabBar.m */; };
 		274282901949EF16001CF13C /* FDScrollingTabBar.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2742828D1949E95E001CF13C /* FDScrollingTabBar.h */; };
 		274282911949EF16001CF13C /* UIView+Layout.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2706A88A1949291B00AC8552 /* UIView+Layout.h */; };
+		2746CB86194D0F52000E73C6 /* FDPushBackAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2746CB85194D0F52000E73C6 /* FDPushBackAnimator.m */; };
+		2746CB87194D0F6B000E73C6 /* FDPushBackAnimator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2746CB84194D0F52000E73C6 /* FDPushBackAnimator.h */; };
 		275160F517A769B500CB1A4E /* FDWeakMutableArray.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27B551DD17A7180F0061F95A /* FDWeakMutableArray.h */; };
 		27795CF8194BA0280090DBBD /* FDScrollingTabBarDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27795CF7194B9ED20090DBBD /* FDScrollingTabBarDelegate.h */; };
 		27805B9C192C3D8600C7F215 /* libFDImageLoader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27805B99192C3D7700C7F215 /* libFDImageLoader.a */; };
@@ -110,6 +112,7 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				2746CB87194D0F6B000E73C6 /* FDPushBackAnimator.h in CopyFiles */,
 				27795CF8194BA0280090DBBD /* FDScrollingTabBarDelegate.h in CopyFiles */,
 				274282901949EF16001CF13C /* FDScrollingTabBar.h in CopyFiles */,
 				274282911949EF16001CF13C /* UIView+Layout.h in CopyFiles */,
@@ -143,6 +146,8 @@
 		272FBB33178662E3002EAF62 /* Silicon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Silicon.h; sourceTree = "<group>"; };
 		2742828D1949E95E001CF13C /* FDScrollingTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDScrollingTabBar.h; sourceTree = "<group>"; };
 		2742828E1949E95E001CF13C /* FDScrollingTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDScrollingTabBar.m; sourceTree = "<group>"; };
+		2746CB84194D0F52000E73C6 /* FDPushBackAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDPushBackAnimator.h; sourceTree = "<group>"; };
+		2746CB85194D0F52000E73C6 /* FDPushBackAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDPushBackAnimator.m; sourceTree = "<group>"; };
 		27795CF7194B9ED20090DBBD /* FDScrollingTabBarDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDScrollingTabBarDelegate.h; sourceTree = "<group>"; };
 		27805B92192C3D7700C7F215 /* FDImageLoader Static Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "FDImageLoader Static Library.xcodeproj"; path = "FDImageLoader/Static Library Project/FDImageLoader Static Library.xcodeproj"; sourceTree = "<group>"; };
 		278543ED18C4D42E000B3EA6 /* FDSQLiteDatabase Static Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "FDSQLiteDatabase Static Library.xcodeproj"; path = "FDSQLiteDatabase/Static Library Project/FDSQLiteDatabase Static Library.xcodeproj"; sourceTree = "<group>"; };
@@ -329,6 +334,8 @@
 			children = (
 				27B551DD17A7180F0061F95A /* FDWeakMutableArray.h */,
 				27B551DE17A7180F0061F95A /* FDWeakMutableArray.m */,
+				2746CB84194D0F52000E73C6 /* FDPushBackAnimator.h */,
+				2746CB85194D0F52000E73C6 /* FDPushBackAnimator.m */,
 			);
 			name = Common;
 			path = ../../Silicon/Common;
@@ -458,6 +465,7 @@
 				2794FBE01789DC3D0015146A /* NSBundle+Universal.m in Sources */,
 				2706A8871949222000AC8552 /* UIViewController+ScrollViewInsets.m in Sources */,
 				2794FBF01789E2F60015146A /* UIDevice+Family.m in Sources */,
+				2746CB86194D0F52000E73C6 /* FDPushBackAnimator.m in Sources */,
 				2794FBF31789E9C70015146A /* UITableViewCell+Universal.m in Sources */,
 				2706A88C1949291B00AC8552 /* UIView+Layout.m in Sources */,
 				27DDD27C1915BA2F00254BC8 /* NSDate+RelativeStrings.m in Sources */,
