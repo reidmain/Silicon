@@ -10,3 +10,6 @@
 [submodule "Vendors/FDImageLoader"]
 	path = Vendors/FDImageLoader
 	url = git@github.com:reidmain/FDImageLoader.git
+[submodule "Vendors/FDLongPressMenu"]
+	path = Vendors/FDLongPressMenu
+	url = git@github.com:reidmain/FDLongPressMenu.git

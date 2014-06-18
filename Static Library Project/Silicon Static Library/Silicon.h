@@ -2,6 +2,8 @@
 #import <FDDataClient/FDDataClient.h>
 #import <FDImageLoader/FDImageLoader.h>
 #import <FDSQLiteDatabase/FDSQLiteDatabase.h>
+#import "FDLongPressMenu.h"
+#import "FDRadialLongPressMenu.h"
 
 #import "FDWeakMutableArray.h"
 #import "FDPushBackAnimator.h"

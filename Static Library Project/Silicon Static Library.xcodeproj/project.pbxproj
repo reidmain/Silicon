@@ -43,6 +43,18 @@
 		27E7A7B21916ABA800509B42 /* FDActionSheet+OpenURL.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27E7A7AF1916A52600509B42 /* FDActionSheet+OpenURL.h */; };
 		27EAC5F418D92E480085C7B6 /* FDActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 27EAC5F318D92E480085C7B6 /* FDActionSheet.m */; };
 		27EAC5F518D934350085C7B6 /* FDActionSheet.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27EAC5F218D92E480085C7B6 /* FDActionSheet.h */; };
+		27ECC1F9195118D600732DCF /* FDCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27ECC1EB195118B400732DCF /* FDCircleView.m */; };
+		27ECC1FA195118DA00732DCF /* FDLongPressMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 27ECC1EE195118B400732DCF /* FDLongPressMenu.m */; };
+		27ECC1FB195118DE00732DCF /* FDRadialLongPressMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 27ECC1F4195118B400732DCF /* FDRadialLongPressMenu.m */; };
+		27ECC1FC195118E000732DCF /* UIView+LongPressMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 27ECC1F8195118B400732DCF /* UIView+LongPressMenu.m */; };
+		27ECC1FD1951191400732DCF /* FDCircleView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27ECC1EA195118B400732DCF /* FDCircleView.h */; };
+		27ECC1FE1951191400732DCF /* FDDegreesToRadians.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27ECC1EC195118B400732DCF /* FDDegreesToRadians.h */; };
+		27ECC1FF1951191400732DCF /* FDLongPressMenu.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27ECC1ED195118B400732DCF /* FDLongPressMenu.h */; };
+		27ECC2001951191400732DCF /* FDLongPressMenuDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27ECC1EF195118B400732DCF /* FDLongPressMenuDelegate.h */; };
+		27ECC2011951191400732DCF /* FDLongPressMenuItem.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27ECC1F1195118B400732DCF /* FDLongPressMenuItem.h */; };
+		27ECC2021951191400732DCF /* FDRadialLongPressMenu.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27ECC1F3195118B400732DCF /* FDRadialLongPressMenu.h */; };
+		27ECC2031951191400732DCF /* UIView+LongPressMenu.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27ECC1F7195118B400732DCF /* UIView+LongPressMenu.h */; };
+		27ECC20419511BA700732DCF /* FDLongPressMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 27ECC1F2195118B400732DCF /* FDLongPressMenuItem.m */; };
 		27FDE4121941444B00BC777F /* FDScrollingTabBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FDE4111941444B00BC777F /* FDScrollingTabBarCell.m */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +124,13 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				27ECC1FD1951191400732DCF /* FDCircleView.h in CopyFiles */,
+				27ECC1FE1951191400732DCF /* FDDegreesToRadians.h in CopyFiles */,
+				27ECC1FF1951191400732DCF /* FDLongPressMenu.h in CopyFiles */,
+				27ECC2001951191400732DCF /* FDLongPressMenuDelegate.h in CopyFiles */,
+				27ECC2011951191400732DCF /* FDLongPressMenuItem.h in CopyFiles */,
+				27ECC2021951191400732DCF /* FDRadialLongPressMenu.h in CopyFiles */,
+				27ECC2031951191400732DCF /* UIView+LongPressMenu.h in CopyFiles */,
 				2746CB87194D0F6B000E73C6 /* FDPushBackAnimator.h in CopyFiles */,
 				27795CF8194BA0280090DBBD /* FDScrollingTabBarDelegate.h in CopyFiles */,
 				274282901949EF16001CF13C /* FDScrollingTabBar.h in CopyFiles */,
@@ -172,6 +191,19 @@
 		27E7A7B01916A52600509B42 /* FDActionSheet+OpenURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FDActionSheet+OpenURL.m"; sourceTree = "<group>"; };
 		27EAC5F218D92E480085C7B6 /* FDActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDActionSheet.h; sourceTree = "<group>"; };
 		27EAC5F318D92E480085C7B6 /* FDActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDActionSheet.m; sourceTree = "<group>"; };
+		27ECC1EA195118B400732DCF /* FDCircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDCircleView.h; sourceTree = "<group>"; };
+		27ECC1EB195118B400732DCF /* FDCircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDCircleView.m; sourceTree = "<group>"; };
+		27ECC1EC195118B400732DCF /* FDDegreesToRadians.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDDegreesToRadians.h; sourceTree = "<group>"; };
+		27ECC1ED195118B400732DCF /* FDLongPressMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLongPressMenu.h; sourceTree = "<group>"; };
+		27ECC1EE195118B400732DCF /* FDLongPressMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLongPressMenu.m; sourceTree = "<group>"; };
+		27ECC1EF195118B400732DCF /* FDLongPressMenuDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLongPressMenuDelegate.h; sourceTree = "<group>"; };
+		27ECC1F0195118B400732DCF /* FDLongPressMenuItem+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FDLongPressMenuItem+Private.h"; sourceTree = "<group>"; };
+		27ECC1F1195118B400732DCF /* FDLongPressMenuItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLongPressMenuItem.h; sourceTree = "<group>"; };
+		27ECC1F2195118B400732DCF /* FDLongPressMenuItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLongPressMenuItem.m; sourceTree = "<group>"; };
+		27ECC1F3195118B400732DCF /* FDRadialLongPressMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDRadialLongPressMenu.h; sourceTree = "<group>"; };
+		27ECC1F4195118B400732DCF /* FDRadialLongPressMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDRadialLongPressMenu.m; sourceTree = "<group>"; };
+		27ECC1F7195118B400732DCF /* UIView+LongPressMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LongPressMenu.h"; sourceTree = "<group>"; };
+		27ECC1F8195118B400732DCF /* UIView+LongPressMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LongPressMenu.m"; sourceTree = "<group>"; };
 		27FDE4101941444B00BC777F /* FDScrollingTabBarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDScrollingTabBarCell.h; sourceTree = "<group>"; };
 		27FDE4111941444B00BC777F /* FDScrollingTabBarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDScrollingTabBarCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -300,6 +332,7 @@
 				278543F418C4D435000B3EA6 /* FDDataClient Static Library.xcodeproj */,
 				27805B92192C3D7700C7F215 /* FDImageLoader Static Library.xcodeproj */,
 				278543ED18C4D42E000B3EA6 /* FDSQLiteDatabase Static Library.xcodeproj */,
+				27ECC1E9195118B400732DCF /* FDLongPressMenu */,
 			);
 			name = Vendors;
 			path = ../../Vendors;
@@ -354,6 +387,27 @@
 			);
 			name = Controls;
 			path = ../../Silicon/Controls;
+			sourceTree = "<group>";
+		};
+		27ECC1E9195118B400732DCF /* FDLongPressMenu */ = {
+			isa = PBXGroup;
+			children = (
+				27ECC1EA195118B400732DCF /* FDCircleView.h */,
+				27ECC1EB195118B400732DCF /* FDCircleView.m */,
+				27ECC1EC195118B400732DCF /* FDDegreesToRadians.h */,
+				27ECC1ED195118B400732DCF /* FDLongPressMenu.h */,
+				27ECC1EE195118B400732DCF /* FDLongPressMenu.m */,
+				27ECC1EF195118B400732DCF /* FDLongPressMenuDelegate.h */,
+				27ECC1F0195118B400732DCF /* FDLongPressMenuItem+Private.h */,
+				27ECC1F1195118B400732DCF /* FDLongPressMenuItem.h */,
+				27ECC1F2195118B400732DCF /* FDLongPressMenuItem.m */,
+				27ECC1F3195118B400732DCF /* FDRadialLongPressMenu.h */,
+				27ECC1F4195118B400732DCF /* FDRadialLongPressMenu.m */,
+				27ECC1F7195118B400732DCF /* UIView+LongPressMenu.h */,
+				27ECC1F8195118B400732DCF /* UIView+LongPressMenu.m */,
+			);
+			name = FDLongPressMenu;
+			path = "../Static Library Project/Silicon Static Library/FDLongPressMenu";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -460,12 +514,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27ECC1F9195118D600732DCF /* FDCircleView.m in Sources */,
 				27E7A7B11916A52600509B42 /* FDActionSheet+OpenURL.m in Sources */,
 				2742828F1949E95E001CF13C /* FDScrollingTabBar.m in Sources */,
 				2794FBE01789DC3D0015146A /* NSBundle+Universal.m in Sources */,
 				2706A8871949222000AC8552 /* UIViewController+ScrollViewInsets.m in Sources */,
 				2794FBF01789E2F60015146A /* UIDevice+Family.m in Sources */,
 				2746CB86194D0F52000E73C6 /* FDPushBackAnimator.m in Sources */,
+				27ECC20419511BA700732DCF /* FDLongPressMenuItem.m in Sources */,
 				2794FBF31789E9C70015146A /* UITableViewCell+Universal.m in Sources */,
 				2706A88C1949291B00AC8552 /* UIView+Layout.m in Sources */,
 				27DDD27C1915BA2F00254BC8 /* NSDate+RelativeStrings.m in Sources */,
@@ -473,7 +529,10 @@
 				2794FBFA1789F2C60015146A /* FDViewController.m in Sources */,
 				27B551DF17A7180F0061F95A /* FDWeakMutableArray.m in Sources */,
 				278EDF9318F4DAE100A553B8 /* UIColor+Creation.m in Sources */,
+				27ECC1FA195118DA00732DCF /* FDLongPressMenu.m in Sources */,
+				27ECC1FB195118DE00732DCF /* FDRadialLongPressMenu.m in Sources */,
 				27EAC5F418D92E480085C7B6 /* FDActionSheet.m in Sources */,
+				27ECC1FC195118E000732DCF /* UIView+LongPressMenu.m in Sources */,
 				27FDE4121941444B00BC777F /* FDScrollingTabBarCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
