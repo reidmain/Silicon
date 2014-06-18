@@ -6,6 +6,8 @@
 
 #pragma mark Constants
 
+#define CellPadding 14.0f
+
 static NSString * const CellIdentifier = @"ScrollingTabBarCell";
 
 
@@ -53,8 +55,10 @@ static NSString * const CellIdentifier = @"ScrollingTabBarCell";
 	if ([_collectionView.indexPathsForSelectedItems firstObject] != indexPath)
 	{
 		[_collectionView selectItemAtIndexPath: indexPath 
-			animated: YES 
-			scrollPosition: UICollectionViewScrollPositionLeft];
+			animated: NO 
+			scrollPosition: UICollectionViewScrollPositionNone];
+		
+		[self _scrollToIndex: selectedIndex];
 	}
 }
 
@@ -216,6 +220,16 @@ static NSString * const CellIdentifier = @"ScrollingTabBarCell";
 		views: autoLayoutViews]];
 }
 
+- (void)_scrollToIndex: (NSUInteger)index
+{
+	NSIndexPath *indexPath = [NSIndexPath indexPathForRow: index 
+		inSection: 0];
+	
+	UICollectionViewLayoutAttributes *layoutAttributes = [_collectionView layoutAttributesForItemAtIndexPath: indexPath];
+	
+	[_collectionView setContentOffset:CGPointMake(layoutAttributes.frame.origin.x - CellPadding, 0.0f) animated: YES];
+}
+
 
 #pragma mark - UICollectionViewDataSource Methods
 
@@ -253,9 +267,7 @@ static NSString * const CellIdentifier = @"ScrollingTabBarCell";
 	[self.delegate scrollingTabBar: self 
 		didSelectItem: item];
 	
-	[collectionView scrollToItemAtIndexPath: indexPath 
-		atScrollPosition: UICollectionViewScrollPositionLeft 
-		animated: YES];
+	[self _scrollToIndex: indexPath.row];
 }
 
 
@@ -292,14 +304,14 @@ static NSString * const CellIdentifier = @"ScrollingTabBarCell";
 	layout: (UICollectionViewLayout*)collectionViewLayout 
 	insetForSectionAtIndex: (NSInteger)section
 {
-	UIEdgeInsets edgeInsets = UIEdgeInsetsMake(0.0f, 10.0f, 0.0f, collectionView.width - _lastCellSize.width);
+	UIEdgeInsets edgeInsets = UIEdgeInsetsMake(0.0f, CellPadding, 0.0f, collectionView.width - _lastCellSize.width);
 	
 	return edgeInsets;
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 {
-	CGFloat minimumInteritemSpacing = 14.0f;
+	CGFloat minimumInteritemSpacing = CellPadding;
 	
 	return minimumInteritemSpacing;
 }
