@@ -6,7 +6,8 @@
 #pragma mark - Instance Methods
 
 - (UIScrollView *)adjustableScrollView;
-- (void)setAdjustableScrollViewInsets: (UIEdgeInsets)insets;
+
+@property (nonatomic, assign) UIEdgeInsets scrollingTabBarControllerContentInsetAdjustment;
 
 
 @end

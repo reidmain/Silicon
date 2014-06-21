@@ -11,7 +11,6 @@
 @interface FDScrollingTabBarController ()
 
 - (void)_initializeScrollingTabBarController;
-- (void)_setAdjustableScrollViewInsetsForViewController: (UIViewController *)viewController;
 - (void)_tilePages;
 
 @end
@@ -31,8 +30,24 @@
 {
 	if (_viewControllers != viewControllers)
 	{
+		// Remove all existing controllers as child controllers.
+		for (UIViewController *viewController in _viewControllers)
+		{
+			[viewController willMoveToParentViewController: nil];
+			
+			[viewController removeFromParentViewController];
+		}
+		
 		// Set the view controllers.
 		_viewControllers = viewControllers;
+		
+		// Add all the new controller as child controllers.
+		for (UIViewController *viewController in _viewControllers)
+		{
+			[self addChildViewController: viewController];
+			
+			[viewController didMoveToParentViewController: self];
+		}
 		
 		// Set the items on the scrolling tab bar.
 		_scrollingTabBar.items = [viewControllers valueForKeyPath: @keypath(_selectedViewController.title)];
@@ -159,8 +174,6 @@
 		options: 0 
 		metrics: nil 
 		views: autoLayoutViews]];
-	
-	[self _tilePages];
 }
 
 - (void)viewDidLayoutSubviews
@@ -168,7 +181,10 @@
 	// Call base implementation.
 	[super viewDidLayoutSubviews];
 	
-	[self _setAdjustableScrollViewInsetsForViewController: _selectedViewController];
+	// Tile the pages and then call layoutSubviews because the tiling of pages could require auto layout to take another pass.
+	[self _tilePages];
+	
+	[self.view layoutSubviews];
 }
 
 
@@ -196,14 +212,14 @@
 	self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
-- (void)_setAdjustableScrollViewInsetsForViewController: (UIViewController *)viewController
-{
-	UIEdgeInsets insets = UIEdgeInsetsMake(CGRectGetMaxY(_scrollingTabBar.frame), 0.0f, [self bottomLayoutGuide].length, 0.0f);
-	[viewController setAdjustableScrollViewInsets: insets];
-}
-
 - (void)_tilePages
 {
+	// If the controller's view has not yet been added as a subview there is no point to laying out any of the pages. The superview must exist because only once the superview exists can the content insets be correctly calculated and adjusted.
+	if (self.view.superview == nil)
+	{
+		return;
+	}
+	
 	// Calculate which view controllers should exist in the scroll view.
 	NSInteger firstControllerIndex = floorf(CGRectGetMinX(_scrollView.bounds) / CGRectGetWidth(_scrollView.bounds));
 	NSInteger lastControllerIndex = floorf((CGRectGetMaxX(_scrollView.bounds) - 1.0f) / CGRectGetWidth(_scrollView.bounds));
@@ -219,10 +235,10 @@
 			if (firstControllerIndex <= index 
 				&& index <= lastControllerIndex)
 			{
-				// Check if the view controller is already in the scroll view.
+				// Check if the controller's view is already in the scroll view.
 				if (viewController.view.superview != _scrollView)
 				{
-					// Position the view controller in the scroll view.
+					// Position the controller's view in the scroll view.
 					CGRect viewControllerFrame = _scrollView.frame;
 					viewControllerFrame.origin.x = _scrollView.bounds.size.width * index;
 					viewController.view.autoresizingMask = UIViewAutoresizingFlexibleWidth 
@@ -230,27 +246,23 @@
 					
 					viewController.view.frame = viewControllerFrame;
 					
-					// Adjust the view controller's scroll view's insets if necessary.
-					[self _setAdjustableScrollViewInsetsForViewController: viewController];
+					// Adjust the controller's scroll view's insets.
+					UIEdgeInsets contentInsetAdjustment = UIEdgeInsetsMake(CGRectGetMaxY(_scrollingTabBar.frame), 0.0f, [self bottomLayoutGuide].length, 0.0f);
+					[viewController setScrollingTabBarControllerContentInsetAdjustment: contentInsetAdjustment];
 					
-					// Add the view controller to the scroll view.
-					[self addChildViewController: viewController];
-					
+					// Add the controller's view to the scroll view.
 					[_scrollView addSubview: viewController.view];
-					
-					[viewController didMoveToParentViewController: self];
 				}
 			}
 			else
 			{
 				if (viewController.view.superview == _scrollView)
 				{
-					// Remove the controller from the scroll view.
-					[viewController willMoveToParentViewController: nil];
+					// Remove the adjustment on the controller's scroll view.
+					[viewController setScrollingTabBarControllerContentInsetAdjustment: UIEdgeInsetsZero];
 					
+					// Remove the controller's view from the scroll view.
 					[viewController.view removeFromSuperview];
-					
-					[viewController removeFromParentViewController];
 				}
 			}
 		}];
@@ -268,7 +280,7 @@
 	_scrollingTabBar.selectedIndex = selectedControllerIndex;
 }
 
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+- (void)scrollViewDidEndDecelerating: (UIScrollView *)scrollView
 {
 	NSUInteger selectedControllerIndex = floorf(CGRectGetMidX(_scrollView.bounds) / CGRectGetWidth(_scrollView.bounds));
 	

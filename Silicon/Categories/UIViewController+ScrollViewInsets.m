@@ -1,7 +1,13 @@
 #import "UIViewController+ScrollViewInsets.h"
+#import <objc/runtime.h>
 
 
-#pragma mark Class Definition
+#pragma mark Constants
+
+static void * const _ScrollingTabBarControllerContentInsetAdjustmentKey = (void *)&_ScrollingTabBarControllerContentInsetAdjustmentKey;
+
+
+#pragma mark - Class Definition
 
 @implementation UIViewController (ScrollViewInsets)
 
@@ -26,12 +32,56 @@
 	return adjustableScrollView;
 }
 
-- (void)setAdjustableScrollViewInsets: (UIEdgeInsets)insets
+- (void)setScrollingTabBarControllerContentInsetAdjustment: (UIEdgeInsets)scrollingTabBarControllerContentInsetAdjustment
 {
+	// Locate the scroll view to be adjusted.
 	UIScrollView *adjustableScrollView = [self adjustableScrollView];
 	
-	adjustableScrollView.contentInset = insets;
-	adjustableScrollView.scrollIndicatorInsets = insets;
+	// If there is no scroll view to adjust return immediately.
+	if (adjustableScrollView == nil)
+	{
+		return;
+	}
+	
+	// Calculate the difference between the stored content inset adjustment and the adjustment being set.
+	UIEdgeInsets currentContentInset = self.scrollingTabBarControllerContentInsetAdjustment;
+	
+	UIEdgeInsets contentInsetToAdd = scrollingTabBarControllerContentInsetAdjustment;
+	contentInsetToAdd.top -= currentContentInset.top;
+	contentInsetToAdd.bottom -= currentContentInset.bottom;
+	
+	// Calculate the expected content offset once the content inset has been updated so it can be used later in a hack.
+	CGPoint expectedContentOffset = adjustableScrollView.contentOffset;
+	expectedContentOffset.y -= contentInsetToAdd.top;
+	
+	// Update the content insets of the scroll view.
+	UIEdgeInsets contentInset = adjustableScrollView.contentInset;
+	contentInset.top += contentInsetToAdd.top;
+	contentInset.bottom += contentInsetToAdd.bottom;
+	
+	adjustableScrollView.contentInset = contentInset;
+	adjustableScrollView.scrollIndicatorInsets = contentInset;
+	
+	// HACK: For some reason if the content offset is CGRectZero and the scroll view has enough content to be scrollable before the insets are updated they do not get set correctly. This is a hack to ensure that the content offset is set correctly for this scenario.
+	if (CGPointEqualToPoint(adjustableScrollView.contentOffset, CGPointZero) && 
+		CGPointEqualToPoint(adjustableScrollView.contentOffset, expectedContentOffset) == NO)
+	{
+		adjustableScrollView.contentOffset = expectedContentOffset;
+	}
+	
+	// Store the adjustment as an associated object so it can be used later.
+	NSValue *boxedValue = [NSValue valueWithUIEdgeInsets: scrollingTabBarControllerContentInsetAdjustment];
+	
+	objc_setAssociatedObject(self, _ScrollingTabBarControllerContentInsetAdjustmentKey, boxedValue, OBJC_ASSOCIATION_COPY);
+}
+
+- (UIEdgeInsets)scrollingTabBarControllerContentInsetAdjustment
+{
+	NSValue *boxedValue = objc_getAssociatedObject(self, _ScrollingTabBarControllerContentInsetAdjustmentKey);
+	
+	UIEdgeInsets scrollingTabBarControllerContentInsetAdjustment = [boxedValue UIEdgeInsetsValue];
+	
+	return scrollingTabBarControllerContentInsetAdjustment;
 }
 
 
