@@ -11,6 +11,7 @@
 @interface FDScrollingTabBarController ()
 
 - (void)_initializeScrollingTabBarController;
+- (void)_updateScrollViewContentSize;
 - (void)_tilePages;
 
 @end
@@ -35,6 +36,8 @@
 		{
 			[viewController willMoveToParentViewController: nil];
 			
+			[viewController.view removeFromSuperview];
+			
 			[viewController removeFromParentViewController];
 		}
 		
@@ -52,8 +55,8 @@
 		// Set the items on the scrolling tab bar.
 		_scrollingTabBar.items = [viewControllers valueForKeyPath: @keypath(_selectedViewController.title)];
 		
-		// Set the content size of the scroll view to be large enough for all view controllers.
-		_scrollView.contentSize = CGSizeMake([_viewControllers count] * _scrollView.frame.size.width, 0.0f);
+		// Update the scroll view's content size to ensure it is large enough for all the view controllers.
+		[self _updateScrollViewContentSize];
 		
 		[self _tilePages];
 		
@@ -151,9 +154,8 @@
 	// Add the scroll view to the controller's view.
 	[self.view addSubview: _scrollView];
 	
-	// Set the content size of the scroll view to be large enough for all view controllers.
-	// NOTE: This should probably be abstracted out into its own method so that this code isn't duplicated all over the controller.
-	_scrollView.contentSize = CGSizeMake([_viewControllers count] * _scrollView.frame.size.width, 0.0f);
+	// Update the scroll view's content size to ensure it is large enough for all the view controllers.
+	[self _updateScrollViewContentSize];
 	
 	// Add the scrolling tab bar to the controller's view.
 	[self.view addSubview: _scrollingTabBar];
@@ -180,6 +182,9 @@
 {
 	// Call base implementation.
 	[super viewDidLayoutSubviews];
+	
+	// Update the scroll view's content size to ensure it is large enough for all the view controllers.
+	[self _updateScrollViewContentSize];
 	
 	// Tile the pages and then call layoutSubviews because the tiling of pages could require auto layout to take another pass.
 	[self _tilePages];
@@ -212,6 +217,11 @@
 	self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
+- (void)_updateScrollViewContentSize
+{
+	_scrollView.contentSize = CGSizeMake([_viewControllers count] * _scrollView.frame.size.width, 0.0f);
+}
+
 - (void)_tilePages
 {
 	// If the controller's view has not yet been added as a subview there is no point to laying out any of the pages. The superview must exist because only once the superview exists can the content insets be correctly calculated and adjusted.
@@ -235,17 +245,17 @@
 			if (firstControllerIndex <= index 
 				&& index <= lastControllerIndex)
 			{
+				// Position the controller's view in the scroll view.
+				CGRect viewControllerFrame = _scrollView.frame;
+				viewControllerFrame.origin.x = _scrollView.bounds.size.width * index;
+				viewController.view.autoresizingMask = UIViewAutoresizingFlexibleWidth 
+					| UIViewAutoresizingFlexibleHeight;
+				
+				viewController.view.frame = viewControllerFrame;
+				
 				// Check if the controller's view is already in the scroll view.
 				if (viewController.view.superview != _scrollView)
 				{
-					// Position the controller's view in the scroll view.
-					CGRect viewControllerFrame = _scrollView.frame;
-					viewControllerFrame.origin.x = _scrollView.bounds.size.width * index;
-					viewController.view.autoresizingMask = UIViewAutoresizingFlexibleWidth 
-						| UIViewAutoresizingFlexibleHeight;
-					
-					viewController.view.frame = viewControllerFrame;
-					
 					// Adjust the controller's scroll view's insets.
 					UIEdgeInsets contentInsetAdjustment = UIEdgeInsetsMake(CGRectGetMaxY(_scrollingTabBar.frame), 0.0f, [self bottomLayoutGuide].length, 0.0f);
 					[viewController setScrollingTabBarControllerContentInsetAdjustment: contentInsetAdjustment];
