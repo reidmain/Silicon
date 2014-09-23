@@ -12,7 +12,6 @@
 		2706A88C1949291B00AC8552 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2706A88B1949291B00AC8552 /* UIView+Layout.m */; };
 		270957D7193BA3D900D2DC49 /* FDScrollingTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270957D6193BA3D900D2DC49 /* FDScrollingTabBarController.m */; };
 		270957D8193BA48800D2DC49 /* FDScrollingTabBarController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 270957D5193BA3D900D2DC49 /* FDScrollingTabBarController.h */; };
-		272FBB221786611E002EAF62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272FBB211786611E002EAF62 /* Foundation.framework */; };
 		272FBB34178662F9002EAF62 /* Silicon.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 272FBB33178662E3002EAF62 /* Silicon.h */; };
 		2742828F1949E95E001CF13C /* FDScrollingTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2742828E1949E95E001CF13C /* FDScrollingTabBar.m */; };
 		274282901949EF16001CF13C /* FDScrollingTabBar.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2742828D1949E95E001CF13C /* FDScrollingTabBar.h */; };
@@ -22,13 +21,10 @@
 		275160F517A769B500CB1A4E /* FDWeakMutableArray.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27B551DD17A7180F0061F95A /* FDWeakMutableArray.h */; };
 		27795CF8194BA0280090DBBD /* FDScrollingTabBarDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27795CF7194B9ED20090DBBD /* FDScrollingTabBarDelegate.h */; };
 		27805B9C192C3D8600C7F215 /* libFDImageLoader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27805B99192C3D7700C7F215 /* libFDImageLoader.a */; };
-		278543FF18C4D455000B3EA6 /* libFDDataClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 278543FA18C4D435000B3EA6 /* libFDDataClient.a */; };
 		2785440018C4D455000B3EA6 /* libFDSQLiteDatabase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 278543F318C4D42E000B3EA6 /* libFDSQLiteDatabase.a */; };
-		278AFC9F18CAB842009571FE /* libFDKeychain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 278AFC9C18CAB82C009571FE /* libFDKeychain.a */; };
 		278EDF9318F4DAE100A553B8 /* UIColor+Creation.m in Sources */ = {isa = PBXBuildFile; fileRef = 278EDF9218F4DAE100A553B8 /* UIColor+Creation.m */; };
 		278EDF9418F4DBE200A553B8 /* UIColor+Creation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 278EDF9118F4DAE100A553B8 /* UIColor+Creation.h */; };
 		2794FBE01789DC3D0015146A /* NSBundle+Universal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794FBDF1789DC3D0015146A /* NSBundle+Universal.m */; };
-		2794FBE21789DD0C0015146A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2794FBE11789DD0C0015146A /* UIKit.framework */; };
 		2794FBF01789E2F60015146A /* UIDevice+Family.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794FBEF1789E2F60015146A /* UIDevice+Family.m */; };
 		2794FBF31789E9C70015146A /* UITableViewCell+Universal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794FBF21789E9C70015146A /* UITableViewCell+Universal.m */; };
 		2794FBFA1789F2C60015146A /* FDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794FBF91789F2C60015146A /* FDViewController.m */; };
@@ -36,6 +32,8 @@
 		2794FC84178A248F0015146A /* NSBundle+Universal.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2794FBDE1789DC3D0015146A /* NSBundle+Universal.h */; };
 		2794FC85178A248F0015146A /* UIDevice+Family.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2794FBEE1789E2F60015146A /* UIDevice+Family.h */; };
 		2794FC86178A248F0015146A /* UITableViewCell+Universal.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2794FBF11789E9C70015146A /* UITableViewCell+Universal.h */; };
+		27A0426F19D13CDE00B723DB /* libFDDataClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A0426A19D13CBA00B723DB /* libFDDataClient.a */; };
+		27A0427019D13CE000B723DB /* libFDKeychain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A0425C19D13CAE00B723DB /* libFDKeychain.a */; };
 		27B551DF17A7180F0061F95A /* FDWeakMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B551DE17A7180F0061F95A /* FDWeakMutableArray.m */; };
 		27DDD27C1915BA2F00254BC8 /* NSDate+RelativeStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DDD27B1915BA2F00254BC8 /* NSDate+RelativeStrings.m */; };
 		27E7A7A719168DBC00509B42 /* NSDate+RelativeStrings.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27DDD27A1915BA2F00254BC8 /* NSDate+RelativeStrings.h */; };
@@ -80,20 +78,6 @@
 			remoteGlobalIDString = 27A86A70177E67A400C56658;
 			remoteInfo = FDSQLiteDatabase;
 		};
-		278543F918C4D435000B3EA6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 278543F418C4D435000B3EA6 /* FDDataClient Static Library.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 27D82F5318A5B083004A9D05;
-			remoteInfo = FDDataClient;
-		};
-		278543FB18C4D44D000B3EA6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 278543F418C4D435000B3EA6 /* FDDataClient Static Library.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 27D82F5218A5B083004A9D05;
-			remoteInfo = FDDataClient;
-		};
 		278543FD18C4D44F000B3EA6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 278543ED18C4D42E000B3EA6 /* FDSQLiteDatabase Static Library.xcodeproj */;
@@ -101,19 +85,61 @@
 			remoteGlobalIDString = 27A86A6F177E67A400C56658;
 			remoteInfo = FDSQLiteDatabase;
 		};
-		278AFC9B18CAB82C009571FE /* PBXContainerItemProxy */ = {
+		27A0425719D13CAE00B723DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 278AFC9718CAB82C009571FE /* FDKeychain Static Library.xcodeproj */;
+			containerPortal = 27A0425119D13CAE00B723DB /* FDKeychain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27FCB40C19C212D700BB1123;
+			remoteInfo = "FDKeychain iOS";
+		};
+		27A0425919D13CAE00B723DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27A0425119D13CAE00B723DB /* FDKeychain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2739252619B662790045EA4B;
+			remoteInfo = "FDKeychain OS X";
+		};
+		27A0425B19D13CAE00B723DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27A0425119D13CAE00B723DB /* FDKeychain.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 27F5117916AF1FEE00B05F89;
-			remoteInfo = FDKeychain;
+			remoteInfo = "FDKeychain iOS (Static)";
 		};
-		278AFC9D18CAB83A009571FE /* PBXContainerItemProxy */ = {
+		27A0426519D13CBA00B723DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 278AFC9718CAB82C009571FE /* FDKeychain Static Library.xcodeproj */;
+			containerPortal = 27A0425D19D13CBA00B723DB /* FDDataClient.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27D0964B19C255F50052B91D;
+			remoteInfo = "FDDataClient iOS";
+		};
+		27A0426719D13CBA00B723DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27A0425D19D13CBA00B723DB /* FDDataClient.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2771CCA119B7A97B008A198A;
+			remoteInfo = "FDDataClient Mac";
+		};
+		27A0426919D13CBA00B723DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27A0425D19D13CBA00B723DB /* FDDataClient.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27D82F5318A5B083004A9D05;
+			remoteInfo = "FDDataClient iOS (Static)";
+		};
+		27A0426B19D13CD100B723DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27A0425119D13CAE00B723DB /* FDKeychain.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 27F5117816AF1FEE00B05F89;
-			remoteInfo = FDKeychain;
+			remoteInfo = "FDKeychain iOS (Static)";
+		};
+		27A0426D19D13CD400B723DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27A0425D19D13CBA00B723DB /* FDDataClient.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 27D82F5218A5B083004A9D05;
+			remoteInfo = "FDDataClient iOS (Static)";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -160,7 +186,6 @@
 		270957D5193BA3D900D2DC49 /* FDScrollingTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDScrollingTabBarController.h; sourceTree = "<group>"; };
 		270957D6193BA3D900D2DC49 /* FDScrollingTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDScrollingTabBarController.m; sourceTree = "<group>"; };
 		272FBB1E1786611E002EAF62 /* libSilicon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSilicon.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		272FBB211786611E002EAF62 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		272FBB251786611E002EAF62 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		272FBB33178662E3002EAF62 /* Silicon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Silicon.h; sourceTree = "<group>"; };
 		2742828D1949E95E001CF13C /* FDScrollingTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDScrollingTabBar.h; sourceTree = "<group>"; };
@@ -170,19 +195,18 @@
 		27795CF7194B9ED20090DBBD /* FDScrollingTabBarDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDScrollingTabBarDelegate.h; sourceTree = "<group>"; };
 		27805B92192C3D7700C7F215 /* FDImageLoader Static Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "FDImageLoader Static Library.xcodeproj"; path = "FDImageLoader/Static Library Project/FDImageLoader Static Library.xcodeproj"; sourceTree = "<group>"; };
 		278543ED18C4D42E000B3EA6 /* FDSQLiteDatabase Static Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "FDSQLiteDatabase Static Library.xcodeproj"; path = "FDSQLiteDatabase/Static Library Project/FDSQLiteDatabase Static Library.xcodeproj"; sourceTree = "<group>"; };
-		278543F418C4D435000B3EA6 /* FDDataClient Static Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "FDDataClient Static Library.xcodeproj"; path = "FDDataClient/Static Library Project/FDDataClient Static Library.xcodeproj"; sourceTree = "<group>"; };
-		278AFC9718CAB82C009571FE /* FDKeychain Static Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "FDKeychain Static Library.xcodeproj"; path = "FDKeychain/Static Library Project/FDKeychain Static Library.xcodeproj"; sourceTree = "<group>"; };
 		278EDF9118F4DAE100A553B8 /* UIColor+Creation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Creation.h"; sourceTree = "<group>"; };
 		278EDF9218F4DAE100A553B8 /* UIColor+Creation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Creation.m"; sourceTree = "<group>"; };
 		2794FBDE1789DC3D0015146A /* NSBundle+Universal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Universal.h"; sourceTree = "<group>"; };
 		2794FBDF1789DC3D0015146A /* NSBundle+Universal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Universal.m"; sourceTree = "<group>"; };
-		2794FBE11789DD0C0015146A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2794FBEE1789E2F60015146A /* UIDevice+Family.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Family.h"; sourceTree = "<group>"; };
 		2794FBEF1789E2F60015146A /* UIDevice+Family.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Family.m"; sourceTree = "<group>"; };
 		2794FBF11789E9C70015146A /* UITableViewCell+Universal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Universal.h"; sourceTree = "<group>"; };
 		2794FBF21789E9C70015146A /* UITableViewCell+Universal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Universal.m"; sourceTree = "<group>"; };
 		2794FBF81789F2C60015146A /* FDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDViewController.h; sourceTree = "<group>"; };
 		2794FBF91789F2C60015146A /* FDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDViewController.m; sourceTree = "<group>"; };
+		27A0425119D13CAE00B723DB /* FDKeychain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FDKeychain.xcodeproj; path = "FDKeychain/Framework Project/FDKeychain.xcodeproj"; sourceTree = "<group>"; };
+		27A0425D19D13CBA00B723DB /* FDDataClient.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FDDataClient.xcodeproj; path = "FDDataClient/Framework Project/FDDataClient.xcodeproj"; sourceTree = "<group>"; };
 		27B551DD17A7180F0061F95A /* FDWeakMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDWeakMutableArray.h; sourceTree = "<group>"; };
 		27B551DE17A7180F0061F95A /* FDWeakMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDWeakMutableArray.m; sourceTree = "<group>"; };
 		27DDD27A1915BA2F00254BC8 /* NSDate+RelativeStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RelativeStrings.h"; sourceTree = "<group>"; };
@@ -213,10 +237,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				272FBB221786611E002EAF62 /* Foundation.framework in Frameworks */,
-				2794FBE21789DD0C0015146A /* UIKit.framework in Frameworks */,
-				278AFC9F18CAB842009571FE /* libFDKeychain.a in Frameworks */,
-				278543FF18C4D455000B3EA6 /* libFDDataClient.a in Frameworks */,
+				27A0427019D13CE000B723DB /* libFDKeychain.a in Frameworks */,
+				27A0426F19D13CDE00B723DB /* libFDDataClient.a in Frameworks */,
 				27805B9C192C3D8600C7F215 /* libFDImageLoader.a in Frameworks */,
 				2785440018C4D455000B3EA6 /* libFDSQLiteDatabase.a in Frameworks */,
 			);
@@ -229,7 +251,6 @@
 			isa = PBXGroup;
 			children = (
 				272FBB231786611E002EAF62 /* Silicon Static Library */,
-				272FBB201786611E002EAF62 /* Frameworks */,
 				272FBB1F1786611E002EAF62 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -240,15 +261,6 @@
 				272FBB1E1786611E002EAF62 /* libSilicon.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		272FBB201786611E002EAF62 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				272FBB211786611E002EAF62 /* Foundation.framework */,
-				2794FBE11789DD0C0015146A /* UIKit.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		272FBB231786611E002EAF62 /* Silicon Static Library */ = {
@@ -328,8 +340,8 @@
 		2785435618C4D420000B3EA6 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
-				278AFC9718CAB82C009571FE /* FDKeychain Static Library.xcodeproj */,
-				278543F418C4D435000B3EA6 /* FDDataClient Static Library.xcodeproj */,
+				27A0425119D13CAE00B723DB /* FDKeychain.xcodeproj */,
+				27A0425D19D13CBA00B723DB /* FDDataClient.xcodeproj */,
 				27805B92192C3D7700C7F215 /* FDImageLoader Static Library.xcodeproj */,
 				278543ED18C4D42E000B3EA6 /* FDSQLiteDatabase Static Library.xcodeproj */,
 				27ECC1E9195118B400732DCF /* FDLongPressMenu */,
@@ -346,18 +358,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		278543F518C4D435000B3EA6 /* Products */ = {
+		27A0425219D13CAE00B723DB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				278543FA18C4D435000B3EA6 /* libFDDataClient.a */,
+				27A0425819D13CAE00B723DB /* FDKeychain.framework */,
+				27A0425A19D13CAE00B723DB /* FDKeychain.framework */,
+				27A0425C19D13CAE00B723DB /* libFDKeychain.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		278AFC9818CAB82C009571FE /* Products */ = {
+		27A0425E19D13CBA00B723DB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				278AFC9C18CAB82C009571FE /* libFDKeychain.a */,
+				27A0426619D13CBA00B723DB /* FDDataClient.framework */,
+				27A0426819D13CBA00B723DB /* FDDataClient.framework */,
+				27A0426A19D13CBA00B723DB /* libFDDataClient.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -424,8 +440,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				278AFC9E18CAB83A009571FE /* PBXTargetDependency */,
-				278543FC18C4D44D000B3EA6 /* PBXTargetDependency */,
+				27A0426C19D13CD100B723DB /* PBXTargetDependency */,
+				27A0426E19D13CD400B723DB /* PBXTargetDependency */,
 				27805B9B192C3D8100C7F215 /* PBXTargetDependency */,
 				278543FE18C4D44F000B3EA6 /* PBXTargetDependency */,
 			);
@@ -455,16 +471,16 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 278543F518C4D435000B3EA6 /* Products */;
-					ProjectRef = 278543F418C4D435000B3EA6 /* FDDataClient Static Library.xcodeproj */;
+					ProductGroup = 27A0425E19D13CBA00B723DB /* Products */;
+					ProjectRef = 27A0425D19D13CBA00B723DB /* FDDataClient.xcodeproj */;
 				},
 				{
 					ProductGroup = 27805B93192C3D7700C7F215 /* Products */;
 					ProjectRef = 27805B92192C3D7700C7F215 /* FDImageLoader Static Library.xcodeproj */;
 				},
 				{
-					ProductGroup = 278AFC9818CAB82C009571FE /* Products */;
-					ProjectRef = 278AFC9718CAB82C009571FE /* FDKeychain Static Library.xcodeproj */;
+					ProductGroup = 27A0425219D13CAE00B723DB /* Products */;
+					ProjectRef = 27A0425119D13CAE00B723DB /* FDKeychain.xcodeproj */;
 				},
 				{
 					ProductGroup = 278543EE18C4D42E000B3EA6 /* Products */;
@@ -493,18 +509,46 @@
 			remoteRef = 278543F218C4D42E000B3EA6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		278543FA18C4D435000B3EA6 /* libFDDataClient.a */ = {
+		27A0425819D13CAE00B723DB /* FDKeychain.framework */ = {
 			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libFDDataClient.a;
-			remoteRef = 278543F918C4D435000B3EA6 /* PBXContainerItemProxy */;
+			fileType = wrapper.framework;
+			path = FDKeychain.framework;
+			remoteRef = 27A0425719D13CAE00B723DB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		278AFC9C18CAB82C009571FE /* libFDKeychain.a */ = {
+		27A0425A19D13CAE00B723DB /* FDKeychain.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FDKeychain.framework;
+			remoteRef = 27A0425919D13CAE00B723DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27A0425C19D13CAE00B723DB /* libFDKeychain.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libFDKeychain.a;
-			remoteRef = 278AFC9B18CAB82C009571FE /* PBXContainerItemProxy */;
+			remoteRef = 27A0425B19D13CAE00B723DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27A0426619D13CBA00B723DB /* FDDataClient.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FDDataClient.framework;
+			remoteRef = 27A0426519D13CBA00B723DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27A0426819D13CBA00B723DB /* FDDataClient.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FDDataClient.framework;
+			remoteRef = 27A0426719D13CBA00B723DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27A0426A19D13CBA00B723DB /* libFDDataClient.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFDDataClient.a;
+			remoteRef = 27A0426919D13CBA00B723DB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -545,20 +589,20 @@
 			name = FDImageLoader;
 			targetProxy = 27805B9A192C3D8100C7F215 /* PBXContainerItemProxy */;
 		};
-		278543FC18C4D44D000B3EA6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FDDataClient;
-			targetProxy = 278543FB18C4D44D000B3EA6 /* PBXContainerItemProxy */;
-		};
 		278543FE18C4D44F000B3EA6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FDSQLiteDatabase;
 			targetProxy = 278543FD18C4D44F000B3EA6 /* PBXContainerItemProxy */;
 		};
-		278AFC9E18CAB83A009571FE /* PBXTargetDependency */ = {
+		27A0426C19D13CD100B723DB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = FDKeychain;
-			targetProxy = 278AFC9D18CAB83A009571FE /* PBXContainerItemProxy */;
+			name = "FDKeychain iOS (Static)";
+			targetProxy = 27A0426B19D13CD100B723DB /* PBXContainerItemProxy */;
+		};
+		27A0426E19D13CD400B723DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FDDataClient iOS (Static)";
+			targetProxy = 27A0426D19D13CD400B723DB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
