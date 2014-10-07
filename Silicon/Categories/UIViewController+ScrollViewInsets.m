@@ -62,9 +62,8 @@ static void * const _ScrollingTabBarControllerContentInsetAdjustmentKey = (void 
 	adjustableScrollView.contentInset = contentInset;
 	adjustableScrollView.scrollIndicatorInsets = contentInset;
 	
-	// HACK: For some reason if the content offset is CGRectZero and the scroll view has enough content to be scrollable before the insets are updated they do not get set correctly. This is a hack to ensure that the content offset is set correctly for this scenario.
-	if (CGPointEqualToPoint(adjustableScrollView.contentOffset, CGPointZero) && 
-		CGPointEqualToPoint(adjustableScrollView.contentOffset, expectedContentOffset) == NO)
+	// HACK: For some reason the content offset does not get set correctly after the insets have been updated. This is a hack to ensure that the content offset is set correctly.
+	if (CGPointEqualToPoint(adjustableScrollView.contentOffset, expectedContentOffset) == NO)
 	{
 		adjustableScrollView.contentOffset = expectedContentOffset;
 	}
