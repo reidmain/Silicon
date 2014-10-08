@@ -20,7 +20,6 @@
 		27C4524419E4F8CA004DCE8A /* FDScrollingTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 2742828D1949E95E001CF13C /* FDScrollingTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		27C4524519E4F8CA004DCE8A /* FDScrollingTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2742828E1949E95E001CF13C /* FDScrollingTabBar.m */; };
 		27C4524619E4F8CA004DCE8A /* FDScrollingTabBarDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 27795CF7194B9ED20090DBBD /* FDScrollingTabBarDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		27C4524719E4F8CA004DCE8A /* FDScrollingTabBarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 27FDE4101941444B00BC777F /* FDScrollingTabBarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		27C4524819E4F8CA004DCE8A /* FDScrollingTabBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FDE4111941444B00BC777F /* FDScrollingTabBarCell.m */; };
 		27C4524919E4F8CE004DCE8A /* FDActionSheet+OpenURL.h in Headers */ = {isa = PBXBuildFile; fileRef = 27E7A7AF1916A52600509B42 /* FDActionSheet+OpenURL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		27C4524A19E4F8CE004DCE8A /* FDActionSheet+OpenURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E7A7B01916A52600509B42 /* FDActionSheet+OpenURL.m */; };
@@ -39,9 +38,7 @@
 		27C4525719E4F8CE004DCE8A /* UIViewController+ScrollViewInsets.h in Headers */ = {isa = PBXBuildFile; fileRef = 2706A8851949222000AC8552 /* UIViewController+ScrollViewInsets.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		27C4525819E4F8CE004DCE8A /* UIViewController+ScrollViewInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 2706A8861949222000AC8552 /* UIViewController+ScrollViewInsets.m */; };
 		27C4525E19E4FA16004DCE8A /* Silicon.h in Headers */ = {isa = PBXBuildFile; fileRef = 272FBB33178662E3002EAF62 /* Silicon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		27D90F6119E4FD4D000E68AD /* FDCircleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 27ECC1EA195118B400732DCF /* FDCircleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		27D90F6219E4FD4D000E68AD /* FDCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27ECC1EB195118B400732DCF /* FDCircleView.m */; };
-		27D90F6319E4FD4D000E68AD /* FDDegreesToRadians.h in Headers */ = {isa = PBXBuildFile; fileRef = 27ECC1EC195118B400732DCF /* FDDegreesToRadians.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		27D90F6419E4FD4D000E68AD /* FDLongPressMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 27ECC1ED195118B400732DCF /* FDLongPressMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		27D90F6519E4FD4D000E68AD /* FDLongPressMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 27ECC1EE195118B400732DCF /* FDLongPressMenu.m */; };
 		27D90F6619E4FD4D000E68AD /* FDLongPressMenuDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 27ECC1EF195118B400732DCF /* FDLongPressMenuDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -404,16 +401,13 @@
 				27C4525719E4F8CE004DCE8A /* UIViewController+ScrollViewInsets.h in Headers */,
 				27C4525119E4F8CE004DCE8A /* UIDevice+Family.h in Headers */,
 				27C4524B19E4F8CE004DCE8A /* NSBundle+Universal.h in Headers */,
-				27C4524719E4F8CA004DCE8A /* FDScrollingTabBarCell.h in Headers */,
 				27C4524919E4F8CE004DCE8A /* FDActionSheet+OpenURL.h in Headers */,
 				27D90F6C19E4FD4D000E68AD /* UIView+LongPressMenu.h in Headers */,
 				27C4524D19E4F8CE004DCE8A /* NSDate+RelativeStrings.h in Headers */,
-				27D90F6119E4FD4D000E68AD /* FDCircleView.h in Headers */,
 				27C4524619E4F8CA004DCE8A /* FDScrollingTabBarDelegate.h in Headers */,
 				27D90F6419E4FD4D000E68AD /* FDLongPressMenu.h in Headers */,
 				27C4523E19E4F8B7004DCE8A /* FDViewController.h in Headers */,
 				27C4523C19E4F8AE004DCE8A /* FDPushBackAnimator.h in Headers */,
-				27D90F6319E4FD4D000E68AD /* FDDegreesToRadians.h in Headers */,
 				27C4523A19E4F8A9004DCE8A /* FDWeakMutableArray.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
