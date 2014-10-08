@@ -7,84 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2706A8871949222000AC8552 /* UIViewController+ScrollViewInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 2706A8861949222000AC8552 /* UIViewController+ScrollViewInsets.m */; };
-		2706A8891949224200AC8552 /* UIViewController+ScrollViewInsets.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2706A8851949222000AC8552 /* UIViewController+ScrollViewInsets.h */; };
-		2706A88C1949291B00AC8552 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2706A88B1949291B00AC8552 /* UIView+Layout.m */; };
-		270957D7193BA3D900D2DC49 /* FDScrollingTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270957D6193BA3D900D2DC49 /* FDScrollingTabBarController.m */; };
-		270957D8193BA48800D2DC49 /* FDScrollingTabBarController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 270957D5193BA3D900D2DC49 /* FDScrollingTabBarController.h */; };
-		272FBB34178662F9002EAF62 /* Silicon.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 272FBB33178662E3002EAF62 /* Silicon.h */; };
-		2742828F1949E95E001CF13C /* FDScrollingTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2742828E1949E95E001CF13C /* FDScrollingTabBar.m */; };
-		274282901949EF16001CF13C /* FDScrollingTabBar.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2742828D1949E95E001CF13C /* FDScrollingTabBar.h */; };
-		274282911949EF16001CF13C /* UIView+Layout.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2706A88A1949291B00AC8552 /* UIView+Layout.h */; };
-		2746CB86194D0F52000E73C6 /* FDPushBackAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2746CB85194D0F52000E73C6 /* FDPushBackAnimator.m */; };
-		2746CB87194D0F6B000E73C6 /* FDPushBackAnimator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2746CB84194D0F52000E73C6 /* FDPushBackAnimator.h */; };
-		275160F517A769B500CB1A4E /* FDWeakMutableArray.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27B551DD17A7180F0061F95A /* FDWeakMutableArray.h */; };
-		27795CF8194BA0280090DBBD /* FDScrollingTabBarDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27795CF7194B9ED20090DBBD /* FDScrollingTabBarDelegate.h */; };
-		27805B9C192C3D8600C7F215 /* libFDImageLoader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27805B99192C3D7700C7F215 /* libFDImageLoader.a */; };
-		2785440018C4D455000B3EA6 /* libFDSQLiteDatabase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 278543F318C4D42E000B3EA6 /* libFDSQLiteDatabase.a */; };
-		278EDF9318F4DAE100A553B8 /* UIColor+Creation.m in Sources */ = {isa = PBXBuildFile; fileRef = 278EDF9218F4DAE100A553B8 /* UIColor+Creation.m */; };
-		278EDF9418F4DBE200A553B8 /* UIColor+Creation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 278EDF9118F4DAE100A553B8 /* UIColor+Creation.h */; };
-		2794FBE01789DC3D0015146A /* NSBundle+Universal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794FBDF1789DC3D0015146A /* NSBundle+Universal.m */; };
-		2794FBF01789E2F60015146A /* UIDevice+Family.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794FBEF1789E2F60015146A /* UIDevice+Family.m */; };
-		2794FBF31789E9C70015146A /* UITableViewCell+Universal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794FBF21789E9C70015146A /* UITableViewCell+Universal.m */; };
-		2794FBFA1789F2C60015146A /* FDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794FBF91789F2C60015146A /* FDViewController.m */; };
-		2794FC83178A248F0015146A /* FDViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2794FBF81789F2C60015146A /* FDViewController.h */; };
-		2794FC84178A248F0015146A /* NSBundle+Universal.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2794FBDE1789DC3D0015146A /* NSBundle+Universal.h */; };
-		2794FC85178A248F0015146A /* UIDevice+Family.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2794FBEE1789E2F60015146A /* UIDevice+Family.h */; };
-		2794FC86178A248F0015146A /* UITableViewCell+Universal.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2794FBF11789E9C70015146A /* UITableViewCell+Universal.h */; };
-		27A0426F19D13CDE00B723DB /* libFDDataClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A0426A19D13CBA00B723DB /* libFDDataClient.a */; };
-		27A0427019D13CE000B723DB /* libFDKeychain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A0425C19D13CAE00B723DB /* libFDKeychain.a */; };
-		27B551DF17A7180F0061F95A /* FDWeakMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B551DE17A7180F0061F95A /* FDWeakMutableArray.m */; };
-		27DDD27C1915BA2F00254BC8 /* NSDate+RelativeStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DDD27B1915BA2F00254BC8 /* NSDate+RelativeStrings.m */; };
-		27E7A7A719168DBC00509B42 /* NSDate+RelativeStrings.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27DDD27A1915BA2F00254BC8 /* NSDate+RelativeStrings.h */; };
-		27E7A7B11916A52600509B42 /* FDActionSheet+OpenURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E7A7B01916A52600509B42 /* FDActionSheet+OpenURL.m */; };
-		27E7A7B21916ABA800509B42 /* FDActionSheet+OpenURL.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27E7A7AF1916A52600509B42 /* FDActionSheet+OpenURL.h */; };
-		27EAC5F418D92E480085C7B6 /* FDActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 27EAC5F318D92E480085C7B6 /* FDActionSheet.m */; };
-		27EAC5F518D934350085C7B6 /* FDActionSheet.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27EAC5F218D92E480085C7B6 /* FDActionSheet.h */; };
-		27ECC1F9195118D600732DCF /* FDCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27ECC1EB195118B400732DCF /* FDCircleView.m */; };
-		27ECC1FA195118DA00732DCF /* FDLongPressMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 27ECC1EE195118B400732DCF /* FDLongPressMenu.m */; };
-		27ECC1FB195118DE00732DCF /* FDRadialLongPressMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 27ECC1F4195118B400732DCF /* FDRadialLongPressMenu.m */; };
-		27ECC1FC195118E000732DCF /* UIView+LongPressMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 27ECC1F8195118B400732DCF /* UIView+LongPressMenu.m */; };
-		27ECC1FD1951191400732DCF /* FDCircleView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27ECC1EA195118B400732DCF /* FDCircleView.h */; };
-		27ECC1FE1951191400732DCF /* FDDegreesToRadians.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27ECC1EC195118B400732DCF /* FDDegreesToRadians.h */; };
-		27ECC1FF1951191400732DCF /* FDLongPressMenu.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27ECC1ED195118B400732DCF /* FDLongPressMenu.h */; };
-		27ECC2001951191400732DCF /* FDLongPressMenuDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27ECC1EF195118B400732DCF /* FDLongPressMenuDelegate.h */; };
-		27ECC2011951191400732DCF /* FDLongPressMenuItem.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27ECC1F1195118B400732DCF /* FDLongPressMenuItem.h */; };
-		27ECC2021951191400732DCF /* FDRadialLongPressMenu.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27ECC1F3195118B400732DCF /* FDRadialLongPressMenu.h */; };
-		27ECC2031951191400732DCF /* UIView+LongPressMenu.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27ECC1F7195118B400732DCF /* UIView+LongPressMenu.h */; };
-		27ECC20419511BA700732DCF /* FDLongPressMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 27ECC1F2195118B400732DCF /* FDLongPressMenuItem.m */; };
-		27FDE4121941444B00BC777F /* FDScrollingTabBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FDE4111941444B00BC777F /* FDScrollingTabBarCell.m */; };
+		27C4523A19E4F8A9004DCE8A /* FDWeakMutableArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B551DD17A7180F0061F95A /* FDWeakMutableArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27C4523B19E4F8AC004DCE8A /* FDWeakMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B551DE17A7180F0061F95A /* FDWeakMutableArray.m */; };
+		27C4523C19E4F8AE004DCE8A /* FDPushBackAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 2746CB84194D0F52000E73C6 /* FDPushBackAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27C4523D19E4F8B1004DCE8A /* FDPushBackAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2746CB85194D0F52000E73C6 /* FDPushBackAnimator.m */; };
+		27C4523E19E4F8B7004DCE8A /* FDViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2794FBF81789F2C60015146A /* FDViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27C4523F19E4F8BB004DCE8A /* FDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794FBF91789F2C60015146A /* FDViewController.m */; };
+		27C4524019E4F8BF004DCE8A /* FDScrollingTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 270957D5193BA3D900D2DC49 /* FDScrollingTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27C4524119E4F8C3004DCE8A /* FDScrollingTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270957D6193BA3D900D2DC49 /* FDScrollingTabBarController.m */; };
+		27C4524219E4F8CA004DCE8A /* FDActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 27EAC5F218D92E480085C7B6 /* FDActionSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27C4524319E4F8CA004DCE8A /* FDActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 27EAC5F318D92E480085C7B6 /* FDActionSheet.m */; };
+		27C4524419E4F8CA004DCE8A /* FDScrollingTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 2742828D1949E95E001CF13C /* FDScrollingTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27C4524519E4F8CA004DCE8A /* FDScrollingTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2742828E1949E95E001CF13C /* FDScrollingTabBar.m */; };
+		27C4524619E4F8CA004DCE8A /* FDScrollingTabBarDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 27795CF7194B9ED20090DBBD /* FDScrollingTabBarDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27C4524719E4F8CA004DCE8A /* FDScrollingTabBarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 27FDE4101941444B00BC777F /* FDScrollingTabBarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27C4524819E4F8CA004DCE8A /* FDScrollingTabBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FDE4111941444B00BC777F /* FDScrollingTabBarCell.m */; };
+		27C4524919E4F8CE004DCE8A /* FDActionSheet+OpenURL.h in Headers */ = {isa = PBXBuildFile; fileRef = 27E7A7AF1916A52600509B42 /* FDActionSheet+OpenURL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27C4524A19E4F8CE004DCE8A /* FDActionSheet+OpenURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E7A7B01916A52600509B42 /* FDActionSheet+OpenURL.m */; };
+		27C4524B19E4F8CE004DCE8A /* NSBundle+Universal.h in Headers */ = {isa = PBXBuildFile; fileRef = 2794FBDE1789DC3D0015146A /* NSBundle+Universal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27C4524C19E4F8CE004DCE8A /* NSBundle+Universal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794FBDF1789DC3D0015146A /* NSBundle+Universal.m */; };
+		27C4524D19E4F8CE004DCE8A /* NSDate+RelativeStrings.h in Headers */ = {isa = PBXBuildFile; fileRef = 27DDD27A1915BA2F00254BC8 /* NSDate+RelativeStrings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27C4524E19E4F8CE004DCE8A /* NSDate+RelativeStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DDD27B1915BA2F00254BC8 /* NSDate+RelativeStrings.m */; };
+		27C4524F19E4F8CE004DCE8A /* UIColor+Creation.h in Headers */ = {isa = PBXBuildFile; fileRef = 278EDF9118F4DAE100A553B8 /* UIColor+Creation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27C4525019E4F8CE004DCE8A /* UIColor+Creation.m in Sources */ = {isa = PBXBuildFile; fileRef = 278EDF9218F4DAE100A553B8 /* UIColor+Creation.m */; };
+		27C4525119E4F8CE004DCE8A /* UIDevice+Family.h in Headers */ = {isa = PBXBuildFile; fileRef = 2794FBEE1789E2F60015146A /* UIDevice+Family.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27C4525219E4F8CE004DCE8A /* UIDevice+Family.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794FBEF1789E2F60015146A /* UIDevice+Family.m */; };
+		27C4525319E4F8CE004DCE8A /* UITableViewCell+Universal.h in Headers */ = {isa = PBXBuildFile; fileRef = 2794FBF11789E9C70015146A /* UITableViewCell+Universal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27C4525419E4F8CE004DCE8A /* UITableViewCell+Universal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794FBF21789E9C70015146A /* UITableViewCell+Universal.m */; };
+		27C4525519E4F8CE004DCE8A /* UIView+Layout.h in Headers */ = {isa = PBXBuildFile; fileRef = 2706A88A1949291B00AC8552 /* UIView+Layout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27C4525619E4F8CE004DCE8A /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2706A88B1949291B00AC8552 /* UIView+Layout.m */; };
+		27C4525719E4F8CE004DCE8A /* UIViewController+ScrollViewInsets.h in Headers */ = {isa = PBXBuildFile; fileRef = 2706A8851949222000AC8552 /* UIViewController+ScrollViewInsets.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27C4525819E4F8CE004DCE8A /* UIViewController+ScrollViewInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 2706A8861949222000AC8552 /* UIViewController+ScrollViewInsets.m */; };
+		27C4525E19E4FA16004DCE8A /* Silicon.h in Headers */ = {isa = PBXBuildFile; fileRef = 272FBB33178662E3002EAF62 /* Silicon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27D90F6119E4FD4D000E68AD /* FDCircleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 27ECC1EA195118B400732DCF /* FDCircleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27D90F6219E4FD4D000E68AD /* FDCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27ECC1EB195118B400732DCF /* FDCircleView.m */; };
+		27D90F6319E4FD4D000E68AD /* FDDegreesToRadians.h in Headers */ = {isa = PBXBuildFile; fileRef = 27ECC1EC195118B400732DCF /* FDDegreesToRadians.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27D90F6419E4FD4D000E68AD /* FDLongPressMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 27ECC1ED195118B400732DCF /* FDLongPressMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27D90F6519E4FD4D000E68AD /* FDLongPressMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 27ECC1EE195118B400732DCF /* FDLongPressMenu.m */; };
+		27D90F6619E4FD4D000E68AD /* FDLongPressMenuDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 27ECC1EF195118B400732DCF /* FDLongPressMenuDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27D90F6819E4FD4D000E68AD /* FDLongPressMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 27ECC1F1195118B400732DCF /* FDLongPressMenuItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27D90F6919E4FD4D000E68AD /* FDLongPressMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 27ECC1F2195118B400732DCF /* FDLongPressMenuItem.m */; };
+		27D90F6A19E4FD4D000E68AD /* FDRadialLongPressMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 27ECC1F3195118B400732DCF /* FDRadialLongPressMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27D90F6B19E4FD4D000E68AD /* FDRadialLongPressMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 27ECC1F4195118B400732DCF /* FDRadialLongPressMenu.m */; };
+		27D90F6C19E4FD4D000E68AD /* UIView+LongPressMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 27ECC1F7195118B400732DCF /* UIView+LongPressMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27D90F6D19E4FD4D000E68AD /* UIView+LongPressMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 27ECC1F8195118B400732DCF /* UIView+LongPressMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		27805B98192C3D7700C7F215 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 27805B92192C3D7700C7F215 /* FDImageLoader Static Library.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 275624B4192C2E0700D0331F;
-			remoteInfo = FDImageLoader;
-		};
-		27805B9A192C3D8100C7F215 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 27805B92192C3D7700C7F215 /* FDImageLoader Static Library.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 275624B3192C2E0700D0331F;
-			remoteInfo = FDImageLoader;
-		};
-		278543F218C4D42E000B3EA6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 278543ED18C4D42E000B3EA6 /* FDSQLiteDatabase Static Library.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 27A86A70177E67A400C56658;
-			remoteInfo = FDSQLiteDatabase;
-		};
-		278543FD18C4D44F000B3EA6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 278543ED18C4D42E000B3EA6 /* FDSQLiteDatabase Static Library.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 27A86A6F177E67A400C56658;
-			remoteInfo = FDSQLiteDatabase;
-		};
 		27A0425719D13CAE00B723DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 27A0425119D13CAE00B723DB /* FDKeychain.xcodeproj */;
@@ -127,56 +96,49 @@
 			remoteGlobalIDString = 27D82F5318A5B083004A9D05;
 			remoteInfo = "FDDataClient iOS (Static)";
 		};
-		27A0426B19D13CD100B723DB /* PBXContainerItemProxy */ = {
+		27C4522719E4F85B004DCE8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27C4522119E4F85B004DCE8A /* FDImageLoader.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27016AE619E4DFE400743236;
+			remoteInfo = "FDImageLoader iOS";
+		};
+		27C4522E19E4F86D004DCE8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27C4522919E4F86D004DCE8A /* FDSQLiteDatabase.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 275999DC19E4EB93009B6C56;
+			remoteInfo = "FDSQLiteDatabase iOS";
+		};
+		27C4523219E4F885004DCE8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 27A0425119D13CAE00B723DB /* FDKeychain.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 27F5117816AF1FEE00B05F89;
-			remoteInfo = "FDKeychain iOS (Static)";
+			remoteGlobalIDString = 27FCB40B19C212D700BB1123;
+			remoteInfo = "FDKeychain iOS";
 		};
-		27A0426D19D13CD400B723DB /* PBXContainerItemProxy */ = {
+		27C4523419E4F885004DCE8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 27A0425D19D13CBA00B723DB /* FDDataClient.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 27D82F5218A5B083004A9D05;
-			remoteInfo = "FDDataClient iOS (Static)";
+			remoteGlobalIDString = 27D0964A19C255F50052B91D;
+			remoteInfo = "FDDataClient iOS";
+		};
+		27C4523619E4F885004DCE8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27C4522119E4F85B004DCE8A /* FDImageLoader.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 27016AE519E4DFE400743236;
+			remoteInfo = "FDImageLoader iOS";
+		};
+		27C4523819E4F885004DCE8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27C4522919E4F86D004DCE8A /* FDSQLiteDatabase.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 275999DB19E4EB93009B6C56;
+			remoteInfo = "FDSQLiteDatabase iOS";
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		272FBB1C1786611E002EAF62 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/${PRODUCT_NAME}";
-			dstSubfolderSpec = 16;
-			files = (
-				27ECC1FD1951191400732DCF /* FDCircleView.h in CopyFiles */,
-				27ECC1FE1951191400732DCF /* FDDegreesToRadians.h in CopyFiles */,
-				27ECC1FF1951191400732DCF /* FDLongPressMenu.h in CopyFiles */,
-				27ECC2001951191400732DCF /* FDLongPressMenuDelegate.h in CopyFiles */,
-				27ECC2011951191400732DCF /* FDLongPressMenuItem.h in CopyFiles */,
-				27ECC2021951191400732DCF /* FDRadialLongPressMenu.h in CopyFiles */,
-				27ECC2031951191400732DCF /* UIView+LongPressMenu.h in CopyFiles */,
-				2746CB87194D0F6B000E73C6 /* FDPushBackAnimator.h in CopyFiles */,
-				27795CF8194BA0280090DBBD /* FDScrollingTabBarDelegate.h in CopyFiles */,
-				274282901949EF16001CF13C /* FDScrollingTabBar.h in CopyFiles */,
-				274282911949EF16001CF13C /* UIView+Layout.h in CopyFiles */,
-				2706A8891949224200AC8552 /* UIViewController+ScrollViewInsets.h in CopyFiles */,
-				270957D8193BA48800D2DC49 /* FDScrollingTabBarController.h in CopyFiles */,
-				27E7A7B21916ABA800509B42 /* FDActionSheet+OpenURL.h in CopyFiles */,
-				27E7A7A719168DBC00509B42 /* NSDate+RelativeStrings.h in CopyFiles */,
-				278EDF9418F4DBE200A553B8 /* UIColor+Creation.h in CopyFiles */,
-				27EAC5F518D934350085C7B6 /* FDActionSheet.h in CopyFiles */,
-				275160F517A769B500CB1A4E /* FDWeakMutableArray.h in CopyFiles */,
-				2794FC83178A248F0015146A /* FDViewController.h in CopyFiles */,
-				2794FC84178A248F0015146A /* NSBundle+Universal.h in CopyFiles */,
-				2794FC85178A248F0015146A /* UIDevice+Family.h in CopyFiles */,
-				2794FC86178A248F0015146A /* UITableViewCell+Universal.h in CopyFiles */,
-				272FBB34178662F9002EAF62 /* Silicon.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2706A8851949222000AC8552 /* UIViewController+ScrollViewInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ScrollViewInsets.h"; sourceTree = "<group>"; };
@@ -185,16 +147,13 @@
 		2706A88B1949291B00AC8552 /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
 		270957D5193BA3D900D2DC49 /* FDScrollingTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDScrollingTabBarController.h; sourceTree = "<group>"; };
 		270957D6193BA3D900D2DC49 /* FDScrollingTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDScrollingTabBarController.m; sourceTree = "<group>"; };
-		272FBB1E1786611E002EAF62 /* libSilicon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSilicon.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		272FBB251786611E002EAF62 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		272FBB33178662E3002EAF62 /* Silicon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Silicon.h; sourceTree = "<group>"; };
 		2742828D1949E95E001CF13C /* FDScrollingTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDScrollingTabBar.h; sourceTree = "<group>"; };
 		2742828E1949E95E001CF13C /* FDScrollingTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDScrollingTabBar.m; sourceTree = "<group>"; };
 		2746CB84194D0F52000E73C6 /* FDPushBackAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDPushBackAnimator.h; sourceTree = "<group>"; };
 		2746CB85194D0F52000E73C6 /* FDPushBackAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDPushBackAnimator.m; sourceTree = "<group>"; };
+		2775317E19E4F77300AFAB61 /* Silicon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Silicon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27795CF7194B9ED20090DBBD /* FDScrollingTabBarDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDScrollingTabBarDelegate.h; sourceTree = "<group>"; };
-		27805B92192C3D7700C7F215 /* FDImageLoader Static Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "FDImageLoader Static Library.xcodeproj"; path = "FDImageLoader/Static Library Project/FDImageLoader Static Library.xcodeproj"; sourceTree = "<group>"; };
-		278543ED18C4D42E000B3EA6 /* FDSQLiteDatabase Static Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "FDSQLiteDatabase Static Library.xcodeproj"; path = "FDSQLiteDatabase/Static Library Project/FDSQLiteDatabase Static Library.xcodeproj"; sourceTree = "<group>"; };
 		278EDF9118F4DAE100A553B8 /* UIColor+Creation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Creation.h"; sourceTree = "<group>"; };
 		278EDF9218F4DAE100A553B8 /* UIColor+Creation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Creation.m"; sourceTree = "<group>"; };
 		2794FBDE1789DC3D0015146A /* NSBundle+Universal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Universal.h"; sourceTree = "<group>"; };
@@ -209,6 +168,9 @@
 		27A0425D19D13CBA00B723DB /* FDDataClient.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FDDataClient.xcodeproj; path = "FDDataClient/Framework Project/FDDataClient.xcodeproj"; sourceTree = "<group>"; };
 		27B551DD17A7180F0061F95A /* FDWeakMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDWeakMutableArray.h; sourceTree = "<group>"; };
 		27B551DE17A7180F0061F95A /* FDWeakMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDWeakMutableArray.m; sourceTree = "<group>"; };
+		27C4522119E4F85B004DCE8A /* FDImageLoader.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FDImageLoader.xcodeproj; path = "FDImageLoader/Framework Project/FDImageLoader.xcodeproj"; sourceTree = "<group>"; };
+		27C4522919E4F86D004DCE8A /* FDSQLiteDatabase.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FDSQLiteDatabase.xcodeproj; path = "FDSQLiteDatabase/Framework Project/FDSQLiteDatabase.xcodeproj"; sourceTree = "<group>"; };
+		27C4525A19E4F98D004DCE8A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27DDD27A1915BA2F00254BC8 /* NSDate+RelativeStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RelativeStrings.h"; sourceTree = "<group>"; };
 		27DDD27B1915BA2F00254BC8 /* NSDate+RelativeStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RelativeStrings.m"; sourceTree = "<group>"; };
 		27E7A7AF1916A52600509B42 /* FDActionSheet+OpenURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FDActionSheet+OpenURL.h"; sourceTree = "<group>"; };
@@ -233,14 +195,10 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		272FBB1B1786611E002EAF62 /* Frameworks */ = {
+		2775317A19E4F77300AFAB61 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27A0427019D13CE000B723DB /* libFDKeychain.a in Frameworks */,
-				27A0426F19D13CDE00B723DB /* libFDDataClient.a in Frameworks */,
-				27805B9C192C3D8600C7F215 /* libFDImageLoader.a in Frameworks */,
-				2785440018C4D455000B3EA6 /* libFDSQLiteDatabase.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +216,7 @@
 		272FBB1F1786611E002EAF62 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				272FBB1E1786611E002EAF62 /* libSilicon.a */,
+				2775317E19E4F77300AFAB61 /* Silicon.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -268,18 +226,10 @@
 			children = (
 				272FBB33178662E3002EAF62 /* Silicon.h */,
 				272FBB31178661E0002EAF62 /* Silicon */,
+				27C4525919E4F98D004DCE8A /* iOS Supporting Files */,
 				2785435618C4D420000B3EA6 /* Vendors */,
-				272FBB241786611E002EAF62 /* Supporting Files */,
 			);
 			path = "Silicon Static Library";
-			sourceTree = "<group>";
-		};
-		272FBB241786611E002EAF62 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				272FBB251786611E002EAF62 /* Prefix.pch */,
-			);
-			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		272FBB31178661E0002EAF62 /* Silicon */ = {
@@ -329,33 +279,17 @@
 			path = ../../Silicon/Categories;
 			sourceTree = "<group>";
 		};
-		27805B93192C3D7700C7F215 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				27805B99192C3D7700C7F215 /* libFDImageLoader.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		2785435618C4D420000B3EA6 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
 				27A0425119D13CAE00B723DB /* FDKeychain.xcodeproj */,
 				27A0425D19D13CBA00B723DB /* FDDataClient.xcodeproj */,
-				27805B92192C3D7700C7F215 /* FDImageLoader Static Library.xcodeproj */,
-				278543ED18C4D42E000B3EA6 /* FDSQLiteDatabase Static Library.xcodeproj */,
+				27C4522119E4F85B004DCE8A /* FDImageLoader.xcodeproj */,
+				27C4522919E4F86D004DCE8A /* FDSQLiteDatabase.xcodeproj */,
 				27ECC1E9195118B400732DCF /* FDLongPressMenu */,
 			);
 			name = Vendors;
 			path = ../../Vendors;
-			sourceTree = "<group>";
-		};
-		278543EE18C4D42E000B3EA6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				278543F318C4D42E000B3EA6 /* libFDSQLiteDatabase.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		27A0425219D13CAE00B723DB /* Products */ = {
@@ -390,6 +324,30 @@
 			path = ../../Silicon/Common;
 			sourceTree = "<group>";
 		};
+		27C4522219E4F85B004DCE8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27C4522819E4F85B004DCE8A /* FDImageLoader.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27C4522A19E4F86D004DCE8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27C4522F19E4F86D004DCE8A /* FDSQLiteDatabase.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27C4525919E4F98D004DCE8A /* iOS Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27C4525A19E4F98D004DCE8A /* Info.plist */,
+			);
+			path = "iOS Supporting Files";
+			sourceTree = SOURCE_ROOT;
+		};
 		27EAC5F118D92E020085C7B6 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
@@ -423,32 +381,67 @@
 				27ECC1F8195118B400732DCF /* UIView+LongPressMenu.m */,
 			);
 			name = FDLongPressMenu;
-			path = "../Static Library Project/Silicon Static Library/FDLongPressMenu";
+			path = FDLongPressMenu/FDLongPressMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		2775317B19E4F77300AFAB61 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27C4525E19E4FA16004DCE8A /* Silicon.h in Headers */,
+				27C4524019E4F8BF004DCE8A /* FDScrollingTabBarController.h in Headers */,
+				27C4525319E4F8CE004DCE8A /* UITableViewCell+Universal.h in Headers */,
+				27C4524419E4F8CA004DCE8A /* FDScrollingTabBar.h in Headers */,
+				27C4524219E4F8CA004DCE8A /* FDActionSheet.h in Headers */,
+				27C4524F19E4F8CE004DCE8A /* UIColor+Creation.h in Headers */,
+				27D90F6A19E4FD4D000E68AD /* FDRadialLongPressMenu.h in Headers */,
+				27D90F6619E4FD4D000E68AD /* FDLongPressMenuDelegate.h in Headers */,
+				27C4525519E4F8CE004DCE8A /* UIView+Layout.h in Headers */,
+				27D90F6819E4FD4D000E68AD /* FDLongPressMenuItem.h in Headers */,
+				27C4525719E4F8CE004DCE8A /* UIViewController+ScrollViewInsets.h in Headers */,
+				27C4525119E4F8CE004DCE8A /* UIDevice+Family.h in Headers */,
+				27C4524B19E4F8CE004DCE8A /* NSBundle+Universal.h in Headers */,
+				27C4524719E4F8CA004DCE8A /* FDScrollingTabBarCell.h in Headers */,
+				27C4524919E4F8CE004DCE8A /* FDActionSheet+OpenURL.h in Headers */,
+				27D90F6C19E4FD4D000E68AD /* UIView+LongPressMenu.h in Headers */,
+				27C4524D19E4F8CE004DCE8A /* NSDate+RelativeStrings.h in Headers */,
+				27D90F6119E4FD4D000E68AD /* FDCircleView.h in Headers */,
+				27C4524619E4F8CA004DCE8A /* FDScrollingTabBarDelegate.h in Headers */,
+				27D90F6419E4FD4D000E68AD /* FDLongPressMenu.h in Headers */,
+				27C4523E19E4F8B7004DCE8A /* FDViewController.h in Headers */,
+				27C4523C19E4F8AE004DCE8A /* FDPushBackAnimator.h in Headers */,
+				27D90F6319E4FD4D000E68AD /* FDDegreesToRadians.h in Headers */,
+				27C4523A19E4F8A9004DCE8A /* FDWeakMutableArray.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		272FBB1D1786611E002EAF62 /* Silicon */ = {
+		2775317D19E4F77300AFAB61 /* Silicon iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 272FBB2C1786611E002EAF62 /* Build configuration list for PBXNativeTarget "Silicon" */;
+			buildConfigurationList = 2775319619E4F77400AFAB61 /* Build configuration list for PBXNativeTarget "Silicon iOS" */;
 			buildPhases = (
-				272FBB1A1786611E002EAF62 /* Sources */,
-				272FBB1B1786611E002EAF62 /* Frameworks */,
-				272FBB1C1786611E002EAF62 /* CopyFiles */,
+				2775317919E4F77300AFAB61 /* Sources */,
+				2775317A19E4F77300AFAB61 /* Frameworks */,
+				2775317B19E4F77300AFAB61 /* Headers */,
+				2775317C19E4F77300AFAB61 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				27A0426C19D13CD100B723DB /* PBXTargetDependency */,
-				27A0426E19D13CD400B723DB /* PBXTargetDependency */,
-				27805B9B192C3D8100C7F215 /* PBXTargetDependency */,
-				278543FE18C4D44F000B3EA6 /* PBXTargetDependency */,
+				27C4523319E4F885004DCE8A /* PBXTargetDependency */,
+				27C4523519E4F885004DCE8A /* PBXTargetDependency */,
+				27C4523719E4F885004DCE8A /* PBXTargetDependency */,
+				27C4523919E4F885004DCE8A /* PBXTargetDependency */,
 			);
-			name = Silicon;
-			productName = "Silicon Static Library";
-			productReference = 272FBB1E1786611E002EAF62 /* libSilicon.a */;
-			productType = "com.apple.product-type.library.static";
+			name = "Silicon iOS";
+			productName = "Silicon iOS";
+			productReference = 2775317E19E4F77300AFAB61 /* Silicon.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -458,6 +451,11 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "1414 Degrees";
+				TargetAttributes = {
+					2775317D19E4F77300AFAB61 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
 			};
 			buildConfigurationList = 272FBB191786611E002EAF62 /* Build configuration list for PBXProject "Silicon Static Library" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -475,40 +473,26 @@
 					ProjectRef = 27A0425D19D13CBA00B723DB /* FDDataClient.xcodeproj */;
 				},
 				{
-					ProductGroup = 27805B93192C3D7700C7F215 /* Products */;
-					ProjectRef = 27805B92192C3D7700C7F215 /* FDImageLoader Static Library.xcodeproj */;
+					ProductGroup = 27C4522219E4F85B004DCE8A /* Products */;
+					ProjectRef = 27C4522119E4F85B004DCE8A /* FDImageLoader.xcodeproj */;
 				},
 				{
 					ProductGroup = 27A0425219D13CAE00B723DB /* Products */;
 					ProjectRef = 27A0425119D13CAE00B723DB /* FDKeychain.xcodeproj */;
 				},
 				{
-					ProductGroup = 278543EE18C4D42E000B3EA6 /* Products */;
-					ProjectRef = 278543ED18C4D42E000B3EA6 /* FDSQLiteDatabase Static Library.xcodeproj */;
+					ProductGroup = 27C4522A19E4F86D004DCE8A /* Products */;
+					ProjectRef = 27C4522919E4F86D004DCE8A /* FDSQLiteDatabase.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
-				272FBB1D1786611E002EAF62 /* Silicon */,
+				2775317D19E4F77300AFAB61 /* Silicon iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		27805B99192C3D7700C7F215 /* libFDImageLoader.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libFDImageLoader.a;
-			remoteRef = 27805B98192C3D7700C7F215 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		278543F318C4D42E000B3EA6 /* libFDSQLiteDatabase.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libFDSQLiteDatabase.a;
-			remoteRef = 278543F218C4D42E000B3EA6 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		27A0425819D13CAE00B723DB /* FDKeychain.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -551,58 +535,82 @@
 			remoteRef = 27A0426919D13CBA00B723DB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		27C4522819E4F85B004DCE8A /* FDImageLoader.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FDImageLoader.framework;
+			remoteRef = 27C4522719E4F85B004DCE8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27C4522F19E4F86D004DCE8A /* FDSQLiteDatabase.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FDSQLiteDatabase.framework;
+			remoteRef = 27C4522E19E4F86D004DCE8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
+/* Begin PBXResourcesBuildPhase section */
+		2775317C19E4F77300AFAB61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		272FBB1A1786611E002EAF62 /* Sources */ = {
+		2775317919E4F77300AFAB61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27ECC1F9195118D600732DCF /* FDCircleView.m in Sources */,
-				27E7A7B11916A52600509B42 /* FDActionSheet+OpenURL.m in Sources */,
-				2742828F1949E95E001CF13C /* FDScrollingTabBar.m in Sources */,
-				2794FBE01789DC3D0015146A /* NSBundle+Universal.m in Sources */,
-				2706A8871949222000AC8552 /* UIViewController+ScrollViewInsets.m in Sources */,
-				2794FBF01789E2F60015146A /* UIDevice+Family.m in Sources */,
-				2746CB86194D0F52000E73C6 /* FDPushBackAnimator.m in Sources */,
-				27ECC20419511BA700732DCF /* FDLongPressMenuItem.m in Sources */,
-				2794FBF31789E9C70015146A /* UITableViewCell+Universal.m in Sources */,
-				2706A88C1949291B00AC8552 /* UIView+Layout.m in Sources */,
-				27DDD27C1915BA2F00254BC8 /* NSDate+RelativeStrings.m in Sources */,
-				270957D7193BA3D900D2DC49 /* FDScrollingTabBarController.m in Sources */,
-				2794FBFA1789F2C60015146A /* FDViewController.m in Sources */,
-				27B551DF17A7180F0061F95A /* FDWeakMutableArray.m in Sources */,
-				278EDF9318F4DAE100A553B8 /* UIColor+Creation.m in Sources */,
-				27ECC1FA195118DA00732DCF /* FDLongPressMenu.m in Sources */,
-				27ECC1FB195118DE00732DCF /* FDRadialLongPressMenu.m in Sources */,
-				27EAC5F418D92E480085C7B6 /* FDActionSheet.m in Sources */,
-				27ECC1FC195118E000732DCF /* UIView+LongPressMenu.m in Sources */,
-				27FDE4121941444B00BC777F /* FDScrollingTabBarCell.m in Sources */,
+				27D90F6B19E4FD4D000E68AD /* FDRadialLongPressMenu.m in Sources */,
+				27D90F6219E4FD4D000E68AD /* FDCircleView.m in Sources */,
+				27D90F6919E4FD4D000E68AD /* FDLongPressMenuItem.m in Sources */,
+				27C4523B19E4F8AC004DCE8A /* FDWeakMutableArray.m in Sources */,
+				27C4524E19E4F8CE004DCE8A /* NSDate+RelativeStrings.m in Sources */,
+				27C4524519E4F8CA004DCE8A /* FDScrollingTabBar.m in Sources */,
+				27C4525419E4F8CE004DCE8A /* UITableViewCell+Universal.m in Sources */,
+				27C4525619E4F8CE004DCE8A /* UIView+Layout.m in Sources */,
+				27C4523D19E4F8B1004DCE8A /* FDPushBackAnimator.m in Sources */,
+				27C4524A19E4F8CE004DCE8A /* FDActionSheet+OpenURL.m in Sources */,
+				27C4523F19E4F8BB004DCE8A /* FDViewController.m in Sources */,
+				27D90F6D19E4FD4D000E68AD /* UIView+LongPressMenu.m in Sources */,
+				27C4524119E4F8C3004DCE8A /* FDScrollingTabBarController.m in Sources */,
+				27C4524319E4F8CA004DCE8A /* FDActionSheet.m in Sources */,
+				27C4525019E4F8CE004DCE8A /* UIColor+Creation.m in Sources */,
+				27C4525819E4F8CE004DCE8A /* UIViewController+ScrollViewInsets.m in Sources */,
+				27C4524819E4F8CA004DCE8A /* FDScrollingTabBarCell.m in Sources */,
+				27D90F6519E4FD4D000E68AD /* FDLongPressMenu.m in Sources */,
+				27C4524C19E4F8CE004DCE8A /* NSBundle+Universal.m in Sources */,
+				27C4525219E4F8CE004DCE8A /* UIDevice+Family.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		27805B9B192C3D8100C7F215 /* PBXTargetDependency */ = {
+		27C4523319E4F885004DCE8A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = FDImageLoader;
-			targetProxy = 27805B9A192C3D8100C7F215 /* PBXContainerItemProxy */;
+			name = "FDKeychain iOS";
+			targetProxy = 27C4523219E4F885004DCE8A /* PBXContainerItemProxy */;
 		};
-		278543FE18C4D44F000B3EA6 /* PBXTargetDependency */ = {
+		27C4523519E4F885004DCE8A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = FDSQLiteDatabase;
-			targetProxy = 278543FD18C4D44F000B3EA6 /* PBXContainerItemProxy */;
+			name = "FDDataClient iOS";
+			targetProxy = 27C4523419E4F885004DCE8A /* PBXContainerItemProxy */;
 		};
-		27A0426C19D13CD100B723DB /* PBXTargetDependency */ = {
+		27C4523719E4F885004DCE8A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "FDKeychain iOS (Static)";
-			targetProxy = 27A0426B19D13CD100B723DB /* PBXContainerItemProxy */;
+			name = "FDImageLoader iOS";
+			targetProxy = 27C4523619E4F885004DCE8A /* PBXContainerItemProxy */;
 		};
-		27A0426E19D13CD400B723DB /* PBXTargetDependency */ = {
+		27C4523919E4F885004DCE8A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "FDDataClient iOS (Static)";
-			targetProxy = 27A0426D19D13CD400B723DB /* PBXContainerItemProxy */;
+			name = "FDSQLiteDatabase iOS";
+			targetProxy = 27C4523819E4F885004DCE8A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -620,6 +628,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -630,12 +639,14 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Silicon;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -652,6 +663,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -659,36 +671,60 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = Silicon;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		272FBB2D1786611E002EAF62 /* Debug */ = {
+		2775318E19E4F77400AFAB61 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/Silicon_Static_Library.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Silicon Static Library/Supporting Files/Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "iOS Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		272FBB2E1786611E002EAF62 /* Release */ = {
+		2775318F19E4F77400AFAB61 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/Silicon_Static_Library.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Silicon Static Library/Supporting Files/Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "iOS Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -704,11 +740,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		272FBB2C1786611E002EAF62 /* Build configuration list for PBXNativeTarget "Silicon" */ = {
+		2775319619E4F77400AFAB61 /* Build configuration list for PBXNativeTarget "Silicon iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				272FBB2D1786611E002EAF62 /* Debug */,
-				272FBB2E1786611E002EAF62 /* Release */,
+				2775318E19E4F77400AFAB61 /* Debug */,
+				2775318F19E4F77400AFAB61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

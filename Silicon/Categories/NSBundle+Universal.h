@@ -1,4 +1,5 @@
 #import <Foundation/Foundation.h>
+@import Foundation;
 
 
 #pragma mark Class Interface

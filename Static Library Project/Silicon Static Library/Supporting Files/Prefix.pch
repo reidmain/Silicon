@@ -1,8 +1,0 @@
-//
-// Prefix header for all source files of the 'Silicon Static Library' target in the 'Silicon Static Library' project
-//
-
-#ifdef __OBJC__
-	@import Foundation;
-	@import UIKit;
-#endif

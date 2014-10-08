@@ -3,8 +3,9 @@
 //
 
 #ifdef __OBJC__
-	#import <Foundation/Foundation.h>
-	#import <QuartzCore/QuartzCore.h>
-	#import <UIKIt/UIKit.h>
-	#import <Silicon/Silicon.h>
+	@import Foundation;
+	@import QuartzCore;
+	@import UIKit;
+	
+	@import Silicon;
 #endif

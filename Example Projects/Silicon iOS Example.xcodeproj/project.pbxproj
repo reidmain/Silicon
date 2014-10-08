@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2794FC081789F9060015146A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2794FC071789F9060015146A /* Foundation.framework */; };
-		2794FC0A1789F9060015146A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2794FC091789F9060015146A /* CoreGraphics.framework */; };
-		2794FC0C1789F9060015146A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2794FC0B1789F9060015146A /* QuartzCore.framework */; };
-		2794FC0E1789F9060015146A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2794FC0D1789F9060015146A /* UIKit.framework */; };
 		2794FC141789F9060015146A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794FC131789F9060015146A /* main.m */; };
 		2794FC1A1789F9060015146A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794FC191789F9060015146A /* AppDelegate.m */; };
 		2794FC1D1789F9060015146A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2794FC1C1789F9060015146A /* InfoPlist.strings */; };
@@ -31,7 +27,6 @@
 		2794FC581789F9060015146A /* launch_ipad-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 2794FC571789F9060015146A /* launch_ipad-Landscape.png */; };
 		2794FC5A1789F9060015146A /* launch_ipad-Portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2794FC591789F9060015146A /* launch_ipad-Portrait@2x.png */; };
 		2794FC5C1789F9060015146A /* launch_ipad-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2794FC5B1789F9060015146A /* launch_ipad-Landscape@2x.png */; };
-		2794FC74178A22650015146A /* libSilicon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2794FC71178A22500015146A /* libSilicon.a */; };
 		2794FC77178A22C70015146A /* FDRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794FC76178A22C70015146A /* FDRootViewController.m */; };
 		2794FC7A178A23F90015146A /* FDRootView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2794FC79178A23F90015146A /* FDRootView_iPad.xib */; };
 		2794FC7C178A24040015146A /* FDRootView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2794FC7B178A24040015146A /* FDRootView_iPhone.xib */; };
@@ -41,28 +36,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2794FC70178A22500015146A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2794FC6C178A22500015146A /* Silicon Static Library.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 272FBB1E1786611E002EAF62;
-			remoteInfo = Silicon;
-		};
-		2794FC72178A22600015146A /* PBXContainerItemProxy */ = {
+		27C4525F19E4FAD9004DCE8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2794FC6C178A22500015146A /* Silicon Static Library.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 272FBB1D1786611E002EAF62;
-			remoteInfo = Silicon;
+			remoteGlobalIDString = 2775317D19E4F77300AFAB61;
+			remoteInfo = "Silicon iOS";
+		};
+		27C4526219E4FAD9004DCE8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2794FC6C178A22500015146A /* Silicon Static Library.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2775317E19E4F77300AFAB61;
+			remoteInfo = "Silicon iOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2794FC041789F9060015146A /* Silicon iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Silicon iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2794FC071789F9060015146A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		2794FC091789F9060015146A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2794FC0B1789F9060015146A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		2794FC0D1789F9060015146A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2794FC111789F9060015146A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2794FC121789F9060015146A /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		2794FC131789F9060015146A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -105,11 +96,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2794FC8A178A27120015146A /* libsqlite3.dylib in Frameworks */,
-				2794FC74178A22650015146A /* libSilicon.a in Frameworks */,
-				2794FC081789F9060015146A /* Foundation.framework in Frameworks */,
-				2794FC0A1789F9060015146A /* CoreGraphics.framework in Frameworks */,
-				2794FC0C1789F9060015146A /* QuartzCore.framework in Frameworks */,
-				2794FC0E1789F9060015146A /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,10 +123,6 @@
 		2794FC061789F9060015146A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2794FC071789F9060015146A /* Foundation.framework */,
-				2794FC091789F9060015146A /* CoreGraphics.framework */,
-				2794FC0B1789F9060015146A /* QuartzCore.framework */,
-				2794FC0D1789F9060015146A /* UIKit.framework */,
 				2794FC89178A27120015146A /* libsqlite3.dylib */,
 			);
 			name = Frameworks;
@@ -405,7 +387,7 @@
 		2794FC6D178A22500015146A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2794FC71178A22500015146A /* libSilicon.a */,
+				27C4526319E4FAD9004DCE8A /* Silicon.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -432,7 +414,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				2794FC73178A22600015146A /* PBXTargetDependency */,
+				27C4526019E4FAD9004DCE8A /* PBXTargetDependency */,
 			);
 			name = "Silicon iOS Example";
 			productName = "Silicon iOS Example";
@@ -472,11 +454,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		2794FC71178A22500015146A /* libSilicon.a */ = {
+		27C4526319E4FAD9004DCE8A /* Silicon.framework */ = {
 			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSilicon.a;
-			remoteRef = 2794FC70178A22500015146A /* PBXContainerItemProxy */;
+			fileType = wrapper.framework;
+			path = Silicon.framework;
+			remoteRef = 27C4526219E4FAD9004DCE8A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -527,10 +509,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2794FC73178A22600015146A /* PBXTargetDependency */ = {
+		27C4526019E4FAD9004DCE8A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Silicon;
-			targetProxy = 2794FC72178A22600015146A /* PBXContainerItemProxy */;
+			name = "Silicon iOS";
+			targetProxy = 27C4525F19E4FAD9004DCE8A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -541,6 +523,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -580,6 +563,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -617,6 +601,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
