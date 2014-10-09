@@ -18,16 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		27C4525F19E4FAD9004DCE8A /* PBXContainerItemProxy */ = {
+		277814E419E62E04005C3CB3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2794FC6C178A22500015146A /* Silicon Static Library.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 2775317D19E4F77300AFAB61;
-			remoteInfo = "Silicon iOS";
-		};
-		27C4526219E4FAD9004DCE8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2794FC6C178A22500015146A /* Silicon Static Library.xcodeproj */;
+			containerPortal = 279E7FD019E62C4900A12BE2 /* Silicon.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 2775317E19E4F77300AFAB61;
 			remoteInfo = "Silicon iOS";
@@ -40,7 +33,6 @@
 		2794FC121789F9060015146A /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		2794FC131789F9060015146A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2794FC151789F9060015146A /* Entitlements.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Entitlements.entitlements; sourceTree = "<group>"; };
-		2794FC6C178A22500015146A /* Silicon Static Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Silicon Static Library.xcodeproj"; path = "../../Static Library Project/Silicon Static Library.xcodeproj"; sourceTree = "<group>"; };
 		2794FC89178A27120015146A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		279E7FB719E5133100A12BE2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		279E7FB819E5133100A12BE2 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -50,6 +42,7 @@
 		279E7FBE19E5133100A12BE2 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		279E7FBF19E5133100A12BE2 /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
 		279E7FC519E5134300A12BE2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		279E7FD019E62C4900A12BE2 /* Silicon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Silicon.xcodeproj; path = "../../Framework Project/Silicon.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		277814E119E62E04005C3CB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				277814E519E62E04005C3CB3 /* Silicon.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		2794FBFB1789F9060015146A = {
 			isa = PBXGroup;
 			children = (
@@ -114,18 +115,10 @@
 		2794FC161789F9060015146A /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
-				2794FC6C178A22500015146A /* Silicon Static Library.xcodeproj */,
+				279E7FD019E62C4900A12BE2 /* Silicon.xcodeproj */,
 			);
 			name = Vendors;
 			path = "Silicon iOS Example";
-			sourceTree = "<group>";
-		};
-		2794FC6D178A22500015146A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				27C4526319E4FAD9004DCE8A /* Silicon.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		279E7FB619E5133100A12BE2 /* Classes */ = {
@@ -172,7 +165,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				27C4526019E4FAD9004DCE8A /* PBXTargetDependency */,
 			);
 			name = "Silicon iOS Example";
 			productName = "Silicon iOS Example";
@@ -200,8 +192,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 2794FC6D178A22500015146A /* Products */;
-					ProjectRef = 2794FC6C178A22500015146A /* Silicon Static Library.xcodeproj */;
+					ProductGroup = 277814E119E62E04005C3CB3 /* Products */;
+					ProjectRef = 279E7FD019E62C4900A12BE2 /* Silicon.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -212,11 +204,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		27C4526319E4FAD9004DCE8A /* Silicon.framework */ = {
+		277814E519E62E04005C3CB3 /* Silicon.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Silicon.framework;
-			remoteRef = 27C4526219E4FAD9004DCE8A /* PBXContainerItemProxy */;
+			remoteRef = 277814E419E62E04005C3CB3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -247,14 +239,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		27C4526019E4FAD9004DCE8A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Silicon iOS";
-			targetProxy = 27C4525F19E4FAD9004DCE8A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2794FC641789F9060015146A /* Debug */ = {

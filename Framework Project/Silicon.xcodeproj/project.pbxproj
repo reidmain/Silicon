@@ -205,7 +205,7 @@
 		272FBB151786611E002EAF62 = {
 			isa = PBXGroup;
 			children = (
-				272FBB231786611E002EAF62 /* Silicon Static Library */,
+				272FBB231786611E002EAF62 /* Silicon Framework */,
 				272FBB1F1786611E002EAF62 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -218,7 +218,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		272FBB231786611E002EAF62 /* Silicon Static Library */ = {
+		272FBB231786611E002EAF62 /* Silicon Framework */ = {
 			isa = PBXGroup;
 			children = (
 				272FBB33178662E3002EAF62 /* Silicon.h */,
@@ -226,7 +226,7 @@
 				27C4525919E4F98D004DCE8A /* iOS Supporting Files */,
 				2785435618C4D420000B3EA6 /* Vendors */,
 			);
-			path = "Silicon Static Library";
+			path = "Silicon Framework";
 			sourceTree = "<group>";
 		};
 		272FBB31178661E0002EAF62 /* Silicon */ = {
@@ -451,7 +451,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 272FBB191786611E002EAF62 /* Build configuration list for PBXProject "Silicon Static Library" */;
+			buildConfigurationList = 272FBB191786611E002EAF62 /* Build configuration list for PBXProject "Silicon" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -725,7 +725,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		272FBB191786611E002EAF62 /* Build configuration list for PBXProject "Silicon Static Library" */ = {
+		272FBB191786611E002EAF62 /* Build configuration list for PBXProject "Silicon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				272FBB2A1786611E002EAF62 /* Debug */,

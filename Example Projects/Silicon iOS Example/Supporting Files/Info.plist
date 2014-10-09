@@ -41,10 +41,6 @@
 	<string>0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>UILaunchImageFile~ipad</key>
-	<string>launch_ipad.png</string>
-	<key>UILaunchImageFile~iphone</key>
-	<string>launch_iphone.png</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
