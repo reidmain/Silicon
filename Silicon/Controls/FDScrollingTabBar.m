@@ -44,6 +44,8 @@ static NSString * const CellIdentifier = @"ScrollingTabBarCell";
 	{
 		_items = items;
 		
+		[_collectionView reloadData];
+		
 		self.selectedIndex = 0;
 	}
 }
