@@ -58,11 +58,11 @@
 		// Update the scroll view's content size to ensure it is large enough for all the view controllers.
 		[self _updateScrollViewContentSize];
 		
-		[self _tilePages];
-		
 		// Attempt to select the previously selected view controller.
 		UIViewController *previouslySelectedViewController = _selectedViewController;
 		self.selectedIndex = [_viewControllers indexOfObject: previouslySelectedViewController];
+		
+		[self _tilePages];
 	}
 }
 
@@ -89,6 +89,8 @@
 	
 	// Set the content offset of the scroll view to ensure the selected view controller is visible.
 	_scrollView.contentOffset = CGPointMake(_scrollView.bounds.size.width * selectedIndex, 0.0f);
+	
+	_scrollingTabBar.selectedIndex = selectedIndex;
 }
 
 - (NSUInteger)selectedIndex

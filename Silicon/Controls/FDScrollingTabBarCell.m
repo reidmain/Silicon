@@ -1,4 +1,5 @@
 #import "FDScrollingTabBarCell.h"
+#import <FDFoundationKit/FDFoundationKit.h>
 
 
 #pragma mark Constants
@@ -29,7 +30,14 @@
 
 - (void)setText: (NSString *)text
 {
-	_label.text = text;
+	if (FDIsEmpty(text) == YES)
+	{
+		_label.text = @"{ Missing Title }";
+	}
+	else
+	{
+		_label.text = text;
+	}
 }
 
 - (NSString *)text
