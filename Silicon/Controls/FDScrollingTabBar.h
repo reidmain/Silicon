@@ -2,17 +2,13 @@
 #import "FDScrollingTabBarDelegate.h"
 
 
-#pragma mark Constants
-
-
-#pragma mark - Enumerations
-
-
 #pragma mark - Class Interface
 
-@interface FDScrollingTabBar : UIView<
+@interface FDScrollingTabBar : UIView
+<
 	UICollectionViewDataSource, 
-	UICollectionViewDelegate>
+	UICollectionViewDelegate
+>
 
 
 #pragma mark - Properties
@@ -28,15 +24,6 @@
 @property (nonatomic, assign) NSUInteger selectedIndex;
 
 @property (nonatomic, weak) id<FDScrollingTabBarDelegate> delegate;
-
-
-#pragma mark - Constructors
-
-
-#pragma mark - Static Methods
-
-
-#pragma mark - Instance Methods
 
 
 @end

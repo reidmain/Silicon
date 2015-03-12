@@ -62,6 +62,9 @@
 		UIViewController *previouslySelectedViewController = _selectedViewController;
 		self.selectedIndex = [_viewControllers indexOfObject: previouslySelectedViewController];
 		
+		// Layout the view in case the size of the scroll tab bar has changed.
+		[self.view layoutIfNeeded];
+		
 		[self _tilePages];
 	}
 }
@@ -174,7 +177,7 @@
 		options: 0 
 		metrics: nil 
 		views: autoLayoutViews]];
-	[self.view addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:[topLayoutGuide]-0-[_scrollingTabBar(==47)]" 
+	[self.view addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:[topLayoutGuide]-0-[_scrollingTabBar]" 
 		options: 0 
 		metrics: nil 
 		views: autoLayoutViews]];

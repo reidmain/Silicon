@@ -4,7 +4,7 @@
 #import "UIView+Layout.h"
 
 
-#pragma mark Constants
+#pragma mark - Constants
 
 #define CellPadding 14.0f
 
@@ -21,9 +21,6 @@ static NSString * const CellIdentifier = @"ScrollingTabBarCell";
 @end
 
 
-#pragma mark - Class Variables
-
-
 #pragma mark - Class Definition
 
 @implementation FDScrollingTabBar
@@ -38,11 +35,22 @@ static NSString * const CellIdentifier = @"ScrollingTabBarCell";
 
 #pragma mark - Properties
 
+- (void)setBarTintColor: (UIColor *)barTintColor
+{
+	_barTintColor = barTintColor;
+	
+	// Set the background color of the collection view and the mask view.
+	_collectionView.backgroundColor = _barTintColor;
+	_maskView.backgroundColor = _collectionView.backgroundColor;
+}
+
 - (void)setItems: (NSArray *)items
 {
 	if (_items != items)
 	{
 		_items = items;
+		
+		[self invalidateIntrinsicContentSize];
 		
 		[_collectionView reloadData];
 		
@@ -69,15 +77,6 @@ static NSString * const CellIdentifier = @"ScrollingTabBarCell";
 	NSIndexPath *selectedIndexPath = [[_collectionView indexPathsForSelectedItems] firstObject];
 	
 	return selectedIndexPath.row;
-}
-
-- (void)setBarTintColor: (UIColor *)barTintColor
-{
-	_barTintColor = barTintColor;
-	
-	// Set the background color of the collection view and the mask view.
-	_collectionView.backgroundColor = _barTintColor;
-	_maskView.backgroundColor = _collectionView.backgroundColor;
 }
 
 
@@ -114,10 +113,14 @@ static NSString * const CellIdentifier = @"ScrollingTabBarCell";
 }
 
 
-#pragma mark - Public Methods
-
-
 #pragma mark - Overridden Methods
+
+- (CGSize)intrinsicContentSize
+{
+	CGSize intrinsicContentSize = CGSizeMake(UIViewNoIntrinsicMetric, [_items count] > 1 ? 47.0f : 0.0f);
+	
+	return intrinsicContentSize;
+}
 
 - (void)layoutSubviews
 {
@@ -212,7 +215,11 @@ static NSString * const CellIdentifier = @"ScrollingTabBarCell";
 		options: 0 
 		metrics: nil 
 		views: autoLayoutViews]];
-	[self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-0-[_collectionView]-0-[separatorView(==0.5)]-0-|" 
+	[self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-0-[_collectionView]-0-|" 
+		options: 0 
+		metrics: nil 
+		views: autoLayoutViews]];
+	[self addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:[separatorView(==0.5)]-0-|" 
 		options: 0 
 		metrics: nil 
 		views: autoLayoutViews]];
@@ -287,8 +294,6 @@ static NSString * const CellIdentifier = @"ScrollingTabBarCell";
 	
 	NSString *item = [_items objectAtIndex: indexPath.row];
 	_templateCell.text = item;
-	
-//	_templateCell.selected = [[collectionView indexPathsForSelectedItems] containsObject: indexPath];
 	
 	CGSize sizeForItem = [_templateCell.contentView systemLayoutSizeFittingSize: UILayoutFittingCompressedSize];
 	sizeForItem.height = collectionView.bounds.size.height;
