@@ -124,7 +124,7 @@
 
 - (void)tintColorDidChange
 {
-//	_label.textColor = [self tintColor];
+	_label.textColor = [self tintColor];
 }
 
 
