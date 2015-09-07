@@ -155,6 +155,7 @@
 	_scrollView.frame = self.view.bounds;
 	_scrollView.autoresizingMask = UIViewAutoresizingFlexibleWidth 
 		| UIViewAutoresizingFlexibleHeight;
+	_scrollView.scrollsToTop = NO;
 	
 	// Add the scroll view to the controller's view.
 	[self.view addSubview: _scrollView];

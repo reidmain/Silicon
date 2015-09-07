@@ -157,6 +157,7 @@ static NSString * const CellIdentifier = @"ScrollingTabBarCell";
 	_collectionView.dataSource = self;
 	_collectionView.delegate = self;
 	_collectionView.backgroundColor = _barTintColor;
+	_collectionView.scrollsToTop = NO;
 	
 	// Ensure the collection view always bounces horizontally and displays no scrolling indicators.
 	_collectionView.alwaysBounceHorizontal = YES;
