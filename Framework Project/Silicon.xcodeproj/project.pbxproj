@@ -15,14 +15,10 @@
 		27C4523F19E4F8BB004DCE8A /* FDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794FBF91789F2C60015146A /* FDViewController.m */; };
 		27C4524019E4F8BF004DCE8A /* FDScrollingTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 270957D5193BA3D900D2DC49 /* FDScrollingTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		27C4524119E4F8C3004DCE8A /* FDScrollingTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270957D6193BA3D900D2DC49 /* FDScrollingTabBarController.m */; };
-		27C4524219E4F8CA004DCE8A /* FDActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 27EAC5F218D92E480085C7B6 /* FDActionSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		27C4524319E4F8CA004DCE8A /* FDActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 27EAC5F318D92E480085C7B6 /* FDActionSheet.m */; };
 		27C4524419E4F8CA004DCE8A /* FDScrollingTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 2742828D1949E95E001CF13C /* FDScrollingTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		27C4524519E4F8CA004DCE8A /* FDScrollingTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2742828E1949E95E001CF13C /* FDScrollingTabBar.m */; };
 		27C4524619E4F8CA004DCE8A /* FDScrollingTabBarDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 27795CF7194B9ED20090DBBD /* FDScrollingTabBarDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		27C4524819E4F8CA004DCE8A /* FDScrollingTabBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FDE4111941444B00BC777F /* FDScrollingTabBarCell.m */; };
-		27C4524919E4F8CE004DCE8A /* FDActionSheet+OpenURL.h in Headers */ = {isa = PBXBuildFile; fileRef = 27E7A7AF1916A52600509B42 /* FDActionSheet+OpenURL.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		27C4524A19E4F8CE004DCE8A /* FDActionSheet+OpenURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E7A7B01916A52600509B42 /* FDActionSheet+OpenURL.m */; };
 		27C4524B19E4F8CE004DCE8A /* NSBundle+Universal.h in Headers */ = {isa = PBXBuildFile; fileRef = 2794FBDE1789DC3D0015146A /* NSBundle+Universal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		27C4524C19E4F8CE004DCE8A /* NSBundle+Universal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794FBDF1789DC3D0015146A /* NSBundle+Universal.m */; };
 		27C4524D19E4F8CE004DCE8A /* NSDate+RelativeStrings.h in Headers */ = {isa = PBXBuildFile; fileRef = 27DDD27A1915BA2F00254BC8 /* NSDate+RelativeStrings.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -65,13 +61,6 @@
 			remoteGlobalIDString = 2739252619B662790045EA4B;
 			remoteInfo = "FDKeychain OS X";
 		};
-		27A0425B19D13CAE00B723DB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 27A0425119D13CAE00B723DB /* FDKeychain.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 27F5117916AF1FEE00B05F89;
-			remoteInfo = "FDKeychain iOS (Static)";
-		};
 		27A0426519D13CBA00B723DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 27A0425D19D13CBA00B723DB /* FDDataClient.xcodeproj */;
@@ -86,12 +75,47 @@
 			remoteGlobalIDString = 2771CCA119B7A97B008A198A;
 			remoteInfo = "FDDataClient Mac";
 		};
-		27A0426919D13CBA00B723DB /* PBXContainerItemProxy */ = {
+		27B73D831BA4CF3F00E74DB6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 27A0425D19D13CBA00B723DB /* FDDataClient.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 27D82F5318A5B083004A9D05;
-			remoteInfo = "FDDataClient iOS (Static)";
+			remoteGlobalIDString = 2737F4041BA3EC6F00A4BF30;
+			remoteInfo = "FDDataClient watchOS";
+		};
+		27B73D851BA4CF3F00E74DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27A0425D19D13CBA00B723DB /* FDDataClient.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2737F4171BA3ED4100A4BF30;
+			remoteInfo = "FDDataClient iOS Tests";
+		};
+		27B73D871BA4CF3F00E74DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27A0425D19D13CBA00B723DB /* FDDataClient.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2737F4261BA3ED4800A4BF30;
+			remoteInfo = "FDDataClient OS X Tests";
+		};
+		27B73D8D1BA4CF3F00E74DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27A0425119D13CAE00B723DB /* FDKeychain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2737F44C1BA4C17E00A4BF30;
+			remoteInfo = "FDKeychain watchOS";
+		};
+		27B73D8F1BA4CF3F00E74DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27A0425119D13CAE00B723DB /* FDKeychain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2737F4541BA4C21F00A4BF30;
+			remoteInfo = "FDKeychain iOS Tests";
+		};
+		27B73D911BA4CF3F00E74DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27A0425119D13CAE00B723DB /* FDKeychain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2737F4631BA4C22600A4BF30;
+			remoteInfo = "FDKeychain OS X Tests";
 		};
 		27C4522719E4F85B004DCE8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -135,6 +159,20 @@
 			remoteGlobalIDString = 275999DB19E4EB93009B6C56;
 			remoteInfo = "FDSQLiteDatabase iOS";
 		};
+		27EE96691BA4E24D00670640 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27C4522119E4F85B004DCE8A /* FDImageLoader.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2726074E1BA4D76300511D02;
+			remoteInfo = "FDImageLoader iOS Tests";
+		};
+		27EE96701BA4E24D00670640 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27C4522919E4F86D004DCE8A /* FDSQLiteDatabase.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27EE96471BA4DF1C00670640;
+			remoteInfo = "FDSQLiteDatabase iOS Tests";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -170,10 +208,6 @@
 		27C4525A19E4F98D004DCE8A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27DDD27A1915BA2F00254BC8 /* NSDate+RelativeStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RelativeStrings.h"; sourceTree = "<group>"; };
 		27DDD27B1915BA2F00254BC8 /* NSDate+RelativeStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RelativeStrings.m"; sourceTree = "<group>"; };
-		27E7A7AF1916A52600509B42 /* FDActionSheet+OpenURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FDActionSheet+OpenURL.h"; sourceTree = "<group>"; };
-		27E7A7B01916A52600509B42 /* FDActionSheet+OpenURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FDActionSheet+OpenURL.m"; sourceTree = "<group>"; };
-		27EAC5F218D92E480085C7B6 /* FDActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDActionSheet.h; sourceTree = "<group>"; };
-		27EAC5F318D92E480085C7B6 /* FDActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDActionSheet.m; sourceTree = "<group>"; };
 		27ECC1EA195118B400732DCF /* FDCircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDCircleView.h; sourceTree = "<group>"; };
 		27ECC1EB195118B400732DCF /* FDCircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDCircleView.m; sourceTree = "<group>"; };
 		27ECC1EC195118B400732DCF /* FDDegreesToRadians.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDDegreesToRadians.h; sourceTree = "<group>"; };
@@ -206,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				272FBB231786611E002EAF62 /* Silicon Framework */,
+				2785435618C4D420000B3EA6 /* Vendors */,
 				272FBB1F1786611E002EAF62 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -224,7 +259,6 @@
 				272FBB33178662E3002EAF62 /* Silicon.h */,
 				272FBB31178661E0002EAF62 /* Silicon */,
 				27C4525919E4F98D004DCE8A /* iOS Supporting Files */,
-				2785435618C4D420000B3EA6 /* Vendors */,
 			);
 			path = "Silicon Framework";
 			sourceTree = "<group>";
@@ -255,8 +289,6 @@
 		272FBB6417870306002EAF62 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				27E7A7AF1916A52600509B42 /* FDActionSheet+OpenURL.h */,
-				27E7A7B01916A52600509B42 /* FDActionSheet+OpenURL.m */,
 				2794FBDE1789DC3D0015146A /* NSBundle+Universal.h */,
 				2794FBDF1789DC3D0015146A /* NSBundle+Universal.m */,
 				27DDD27A1915BA2F00254BC8 /* NSDate+RelativeStrings.h */,
@@ -286,15 +318,17 @@
 				27ECC1E9195118B400732DCF /* FDLongPressMenu */,
 			);
 			name = Vendors;
-			path = ../../Vendors;
+			path = ../Vendors;
 			sourceTree = "<group>";
 		};
 		27A0425219D13CAE00B723DB /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				27A0425819D13CAE00B723DB /* FDKeychain.framework */,
+				27B73D8E1BA4CF3F00E74DB6 /* FDKeychain.framework */,
 				27A0425A19D13CAE00B723DB /* FDKeychain.framework */,
-				27A0425C19D13CAE00B723DB /* libFDKeychain.a */,
+				27B73D901BA4CF3F00E74DB6 /* FDKeychain iOS Tests.xctest */,
+				27B73D921BA4CF3F00E74DB6 /* FDKeychain OS X Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -303,8 +337,10 @@
 			isa = PBXGroup;
 			children = (
 				27A0426619D13CBA00B723DB /* FDDataClient.framework */,
+				27B73D841BA4CF3F00E74DB6 /* FDDataClient.framework */,
 				27A0426819D13CBA00B723DB /* FDDataClient.framework */,
-				27A0426A19D13CBA00B723DB /* libFDDataClient.a */,
+				27B73D861BA4CF3F00E74DB6 /* FDDataClient iOS Tests.xctest */,
+				27B73D881BA4CF3F00E74DB6 /* FDDataClient OS X Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -325,6 +361,7 @@
 			isa = PBXGroup;
 			children = (
 				27C4522819E4F85B004DCE8A /* FDImageLoader.framework */,
+				27EE966A1BA4E24D00670640 /* FDImageLoader iOS Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -333,6 +370,7 @@
 			isa = PBXGroup;
 			children = (
 				27C4522F19E4F86D004DCE8A /* FDSQLiteDatabase.framework */,
+				27EE96711BA4E24D00670640 /* FDSQLiteDatabase iOS Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -348,8 +386,6 @@
 		27EAC5F118D92E020085C7B6 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
-				27EAC5F218D92E480085C7B6 /* FDActionSheet.h */,
-				27EAC5F318D92E480085C7B6 /* FDActionSheet.m */,
 				2742828D1949E95E001CF13C /* FDScrollingTabBar.h */,
 				2742828E1949E95E001CF13C /* FDScrollingTabBar.m */,
 				27795CF7194B9ED20090DBBD /* FDScrollingTabBarDelegate.h */,
@@ -392,7 +428,6 @@
 				27C4524019E4F8BF004DCE8A /* FDScrollingTabBarController.h in Headers */,
 				27C4525319E4F8CE004DCE8A /* UITableViewCell+Universal.h in Headers */,
 				27C4524419E4F8CA004DCE8A /* FDScrollingTabBar.h in Headers */,
-				27C4524219E4F8CA004DCE8A /* FDActionSheet.h in Headers */,
 				27C4524F19E4F8CE004DCE8A /* UIColor+Creation.h in Headers */,
 				27D90F6A19E4FD4D000E68AD /* FDRadialLongPressMenu.h in Headers */,
 				27D90F6619E4FD4D000E68AD /* FDLongPressMenuDelegate.h in Headers */,
@@ -401,7 +436,6 @@
 				27C4525719E4F8CE004DCE8A /* UIViewController+ScrollViewInsets.h in Headers */,
 				27C4525119E4F8CE004DCE8A /* UIDevice+Family.h in Headers */,
 				27C4524B19E4F8CE004DCE8A /* NSBundle+Universal.h in Headers */,
-				27C4524919E4F8CE004DCE8A /* FDActionSheet+OpenURL.h in Headers */,
 				27D90F6C19E4FD4D000E68AD /* UIView+LongPressMenu.h in Headers */,
 				27C4524D19E4F8CE004DCE8A /* NSDate+RelativeStrings.h in Headers */,
 				27C4524619E4F8CA004DCE8A /* FDScrollingTabBarDelegate.h in Headers */,
@@ -443,7 +477,7 @@
 		272FBB161786611E002EAF62 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "1414 Degrees";
 				TargetAttributes = {
 					2775317D19E4F77300AFAB61 = {
@@ -501,13 +535,6 @@
 			remoteRef = 27A0425919D13CAE00B723DB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		27A0425C19D13CAE00B723DB /* libFDKeychain.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libFDKeychain.a;
-			remoteRef = 27A0425B19D13CAE00B723DB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		27A0426619D13CBA00B723DB /* FDDataClient.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -522,11 +549,46 @@
 			remoteRef = 27A0426719D13CBA00B723DB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		27A0426A19D13CBA00B723DB /* libFDDataClient.a */ = {
+		27B73D841BA4CF3F00E74DB6 /* FDDataClient.framework */ = {
 			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libFDDataClient.a;
-			remoteRef = 27A0426919D13CBA00B723DB /* PBXContainerItemProxy */;
+			fileType = wrapper.framework;
+			path = FDDataClient.framework;
+			remoteRef = 27B73D831BA4CF3F00E74DB6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27B73D861BA4CF3F00E74DB6 /* FDDataClient iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "FDDataClient iOS Tests.xctest";
+			remoteRef = 27B73D851BA4CF3F00E74DB6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27B73D881BA4CF3F00E74DB6 /* FDDataClient OS X Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "FDDataClient OS X Tests.xctest";
+			remoteRef = 27B73D871BA4CF3F00E74DB6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27B73D8E1BA4CF3F00E74DB6 /* FDKeychain.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FDKeychain.framework;
+			remoteRef = 27B73D8D1BA4CF3F00E74DB6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27B73D901BA4CF3F00E74DB6 /* FDKeychain iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "FDKeychain iOS Tests.xctest";
+			remoteRef = 27B73D8F1BA4CF3F00E74DB6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27B73D921BA4CF3F00E74DB6 /* FDKeychain OS X Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "FDKeychain OS X Tests.xctest";
+			remoteRef = 27B73D911BA4CF3F00E74DB6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		27C4522819E4F85B004DCE8A /* FDImageLoader.framework */ = {
@@ -541,6 +603,20 @@
 			fileType = wrapper.framework;
 			path = FDSQLiteDatabase.framework;
 			remoteRef = 27C4522E19E4F86D004DCE8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27EE966A1BA4E24D00670640 /* FDImageLoader iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "FDImageLoader iOS Tests.xctest";
+			remoteRef = 27EE96691BA4E24D00670640 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27EE96711BA4E24D00670640 /* FDSQLiteDatabase iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "FDSQLiteDatabase iOS Tests.xctest";
+			remoteRef = 27EE96701BA4E24D00670640 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -569,11 +645,9 @@
 				27C4525419E4F8CE004DCE8A /* UITableViewCell+Universal.m in Sources */,
 				27C4525619E4F8CE004DCE8A /* UIView+Layout.m in Sources */,
 				27C4523D19E4F8B1004DCE8A /* FDPushBackAnimator.m in Sources */,
-				27C4524A19E4F8CE004DCE8A /* FDActionSheet+OpenURL.m in Sources */,
 				27C4523F19E4F8BB004DCE8A /* FDViewController.m in Sources */,
 				27D90F6D19E4FD4D000E68AD /* UIView+LongPressMenu.m in Sources */,
 				27C4524119E4F8C3004DCE8A /* FDScrollingTabBarController.m in Sources */,
-				27C4524319E4F8CA004DCE8A /* FDActionSheet.m in Sources */,
 				27C4525019E4F8CE004DCE8A /* UIColor+Creation.m in Sources */,
 				27C4525819E4F8CE004DCE8A /* UIViewController+ScrollViewInsets.m in Sources */,
 				27C4524819E4F8CA004DCE8A /* FDScrollingTabBarCell.m in Sources */,
@@ -625,7 +699,8 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -636,11 +711,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.1414degrees.silicon;
 				PRODUCT_NAME = Silicon;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -661,17 +734,15 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.1414degrees.silicon;
 				PRODUCT_NAME = Silicon;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -679,19 +750,17 @@
 		2775318E19E4F77400AFAB61 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = "iOS Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -702,19 +771,17 @@
 		2775318F19E4F77400AFAB61 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = "iOS Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";

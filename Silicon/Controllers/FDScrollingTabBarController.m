@@ -80,7 +80,7 @@
 - (void)setSelectedIndex: (NSUInteger)selectedIndex
 {
 	// Determine what view controller maps to the selected index. If there is no mapping default to the first controller.
-	UIViewController *viewControllerToSelect = [_viewControllers tryObjectAtIndex: selectedIndex];
+	UIViewController *viewControllerToSelect = [_viewControllers fd_tryObjectAtIndex: selectedIndex];
 	if (viewControllerToSelect == nil)
 	{
 		selectedIndex = 0;
@@ -300,7 +300,7 @@
 {
 	NSUInteger selectedControllerIndex = floorf(CGRectGetMidX(_scrollView.bounds) / CGRectGetWidth(_scrollView.bounds));
 	
-	_selectedViewController = [_viewControllers tryObjectAtIndex: selectedControllerIndex];
+	_selectedViewController = [_viewControllers fd_tryObjectAtIndex: selectedControllerIndex];
 }
 
 
