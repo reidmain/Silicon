@@ -928,6 +928,7 @@
 				27EE96831BA4E36C00670640 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
